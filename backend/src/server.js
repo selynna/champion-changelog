@@ -12,10 +12,14 @@ app.listen(port, () => {
     console.log(`we are using port ${port}`);
 })
 
-app.use(function(req, res, next) {
+app.use(async function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
+	
+	// test call to get all patches
+	var database = require("./database");
+	console.log(await database.getAllPatches());
 });
 
 app.use('/', express.static('public'))
