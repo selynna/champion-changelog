@@ -19,7 +19,7 @@ connection.connect(function(err){
 
 exports.getAllPatches = function(){
 	return new Promise((resolve, reject) => {
-		connection.query('SELECT * from patch ORDER BY id DESC', function(err, rows, fields){
+		connection.query('SELECT * FROM patch ORDER BY id DESC', function(err, rows, fields){
 			connection.end();
 			if(!err){
 //				console.log('(DEBUG) result: ', rows);
@@ -34,7 +34,7 @@ exports.getAllPatches = function(){
 
 exports.getAllChangesForChampionId = function(championId){
 	return new Promise((resolve, reject) => {
-		connection.query('SELECT * from patch_champion_changes WHERE championId = ? ORDER BY patchId DESC', [championId], function(err, rows, fields){
+		connection.query('SELECT * FROM patch_champion_changes WHERE championId = ? ORDER BY patchId DESC', [championId], function(err, rows, fields){
 			connection.end();
 			if(!err){
 //				console.log('(DEBUG) result: ', rows);
@@ -49,7 +49,7 @@ exports.getAllChangesForChampionId = function(championId){
 
 exports.getAllChangesForChampionIdAfterDate = function(championId, date){
 	return new Promise((resolve, reject) => {
-		connection.query('SELECT * from patch_champion_changes JOIN patch ON (patch.id = patch_champion_changes.patchId) WHERE championId = ? AND date > ? ORDER BY patchId DESC', [championId, date], function(err, rows, fields){
+		connection.query('SELECT * FROM patch_champion_changes JOIN patch ON (patch.id = patch_champion_changes.patchId) WHERE championId = ? AND date > ? ORDER BY patchId DESC', [championId, date], function(err, rows, fields){
 			connection.end();
 			if(!err){
 //				console.log('(DEBUG) result: ', rows);
@@ -62,6 +62,36 @@ exports.getAllChangesForChampionIdAfterDate = function(championId, date){
 	})
 };
 
-exports.getAllChangesForChampionIdAfterDate(77, new Date('October 1, 2018 00:00:00')).then((response) => {
+exports.getRelevantItemsForPatchIdAndChampionId = function(patchId, championId){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * FROM patch_champion_items WHERE patchId = ? AND championId = ? ORDER BY patchId DESC', [patchId, championId], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getRelevantRunesForPatchIdAndChampionId = function(patchId, championId){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * FROM patch_champion_runes WHERE patchId = ? AND championId = ? ORDER BY patchId DESC', [patchId, championId], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getRelevantItemsForPatchIdAndChampionId(1, 77).then((response) => {
 	console.log(response);
 });
