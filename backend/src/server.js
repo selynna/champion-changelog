@@ -32,4 +32,4 @@ router.route('/endpoint').get(function(req, res) {
     res.status(200).send("Successful GET request")
 });
 
-router.get("/lastplayed", riotAPIController.lastPlayed);
+router.get("/lastplayed/:summoner/:champion", riotAPIController.lastPlayed);
