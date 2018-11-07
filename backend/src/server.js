@@ -3,7 +3,7 @@ const express = require("express")
 const needle = require("needle")
 const app = express(); //server object
 const router = express.Router();
-const getMatchHistory = require('./controllers/riotAPIController')
+const riotAPIController = require('./controllers/riotAPIController')
 
 const port = 4000;
 app.set('port',port);
@@ -31,3 +31,5 @@ router.route('/endpoint').post(function (req,res) {
 router.route('/endpoint').get(function(req, res) {
     res.status(200).send("Successful GET request")
 });
+
+router.get("/lastplayed", riotAPIController.lastPlayed);
