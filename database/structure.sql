@@ -21,7 +21,7 @@ CREATE TABLE `patch` (
 --
 
 CREATE TABLE `patch_champion_changes` (
-  `parchId` int(10) UNSIGNED NOT NULL,
+  `patchId` int(10) UNSIGNED NOT NULL,
   `championId` int(10) UNSIGNED NOT NULL,
   `changes` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -57,7 +57,7 @@ CREATE TABLE `patch_champion_runes` (
 --
 
 CREATE TABLE `patch_item_changes` (
-  `parchId` int(10) UNSIGNED NOT NULL,
+  `patchId` int(10) UNSIGNED NOT NULL,
   `itemId` int(10) UNSIGNED NOT NULL,
   `changes` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -69,7 +69,7 @@ CREATE TABLE `patch_item_changes` (
 --
 
 CREATE TABLE `patch_rune_changes` (
-  `parchId` int(10) UNSIGNED NOT NULL,
+  `patchId` int(10) UNSIGNED NOT NULL,
   `runeId` int(10) UNSIGNED NOT NULL,
   `changes` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
