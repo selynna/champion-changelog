@@ -31,3 +31,37 @@ exports.getAllPatches = function(){
 		});
 	})
 };
+
+exports.getAllChangesForChampionId = function(championId){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * from patch_champion_changes WHERE championId = ? ORDER BY patchId DESC', [championId], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getAllChangesForChampionIdAfterDate = function(championId, date){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * from patch_champion_changes JOIN patch ON (patch.id = patch_champion_changes.patchId) WHERE championId = ? AND date > ? ORDER BY patchId DESC', [championId, date], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getAllChangesForChampionIdAfterDate(77, new Date('October 1, 2018 00:00:00')).then((response) => {
+	console.log(response);
+});
