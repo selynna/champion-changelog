@@ -12,3 +12,53 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeue-Thin.eot');
+    src: url('./assets/fonts/BebasNeue-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BebasNeue-Thin.woff') format('woff'),
+        url('./assets/fonts/BebasNeue-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('./assets/fonts/BebasNeueBook.eot');
+    src: url('./assets/fonts/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BebasNeueBook.woff') format('woff'),
+        url('./assets/fonts/BebasNeueBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeueBold.eot');
+    src: url('./assets/fonts/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BebasNeueBold.woff') format('woff'),
+        url('./assets/fonts/BebasNeueBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeueRegular.eot');
+    src: url('./assets/fonts/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BebasNeueRegular.woff') format('woff'),
+        url('./assets/fonts/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('./assets/fonts/BebasNeueLight.eot');
+    src: url('./assets/fonts/BebasNeueLight.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/BebasNeueLight.woff') format('woff'),
+        url('./assets/fonts/BebasNeueLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
