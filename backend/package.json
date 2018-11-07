@@ -1,0 +1,25 @@
+{
+  "name": "riot-patch-notes",
+  "version": "1.0.0",
+  "description": "patch notes timeline for lol champions",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selynna/riot-patch-notes.git"
+  },
+  "author": "riot games hackers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selynna/riot-patch-notes/issues"
+  },
+  "homepage": "https://github.com/selynna/riot-patch-notes#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "needle": "^2.2.4"
+  }
+}
