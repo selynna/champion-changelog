@@ -85,7 +85,7 @@ exports.getRelevantItemsForChampionId = function(championId){
 	})
 };
 
-exports.getRelevantRunesForChampionId = function(patchId, championId){
+exports.getRelevantRunesForChampionId = function(championId){
 	return new Promise((resolve, reject) => {
 		connection.query('SELECT * FROM champion_runes WHERE championId = ? ORDER BY runeId DESC', [championId], function(err, rows, fields){
 			connection.end();
