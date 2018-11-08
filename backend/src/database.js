@@ -92,6 +92,66 @@ exports.getRelevantRunesForPatchIdAndChampionId = function(patchId, championId){
 	})
 };
 
-exports.getRelevantItemsForPatchIdAndChampionId(1, 77).then((response) => {
+exports.getItemChangesForPatchIdAndItemId = function(patchId, itemId){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * FROM patch_item_changes WHERE patchId = ? AND itemId = ? ORDER BY patchId DESC', [patchId, itemId], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getRuneChangesForPatchIdAndRuneId = function(patchId, runeId){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * FROM patch_rune_changes WHERE patchId = ? AND runeId = ? ORDER BY patchId DESC', [patchId, runeId], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getAllItemChangesForPatchIdAndChampionId = function(patchId, championId){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * FROM patch_item_changes RIGHT JOIN patch_champion_items ON (patch_champion_items.patchId = patch_item_changes.patchId AND patch_champion_items.itemId = patch_item_changes.itemId) WHERE patch_champion_items.patchId = ? AND patch_champion_items.championId = ? ORDER BY patch_champion_items.itemId DESC', [patchId, championId], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId){
+	return new Promise((resolve, reject) => {
+		connection.query('SELECT * FROM patch_rune_changes RIGHT JOIN patch_champion_runes ON (patch_champion_runes.patchId = patch_rune_changes.patchId AND patch_champion_runes.itemId = patch_rune_changes.runeId) WHERE patch_champion_runes.patchId = ? AND patch_champion_runes.championId = ? ORDER BY patch_champion_runes.runeId DESC', [patchId, championId], function(err, rows, fields){
+			connection.end();
+			if(!err){
+//				console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+//				console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getAllItemChangesForPatchIdAndChampionId(1, 77).then((response) => {
 	console.log(response);
 });
