@@ -1,27 +1,36 @@
 .championHeader {
+  font-family: Bebas Neue;
   display: flex;
   justify-content: center;
   align-items: center;
   align-self: flex-end;
   margin: 15px 0;
+  font-size: 1.5em;
 }
 
 .champion {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .champion h1, h2 {
   margin: 0 5px;
 }
 
-.champion h1 {
-  text-align: right;
+.champion h2 {
+  font-size: 1em;
 }
 
+.championHeaderInfo {
+  display: flex;
+  flex-direction: row;
+
+}
 .championPicture {
-  height: 70px;
-  width: 70px;
+  height: 2em;
+  width: 2em;
   background-image: url('../assets/img/akali.png');
   background-size: 100% 100%;
+  background-position: center;
 }

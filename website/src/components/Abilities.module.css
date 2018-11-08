@@ -1,0 +1,67 @@
+.abilitiesWrapper {
+  font-family: "Helvetica Neue";
+}
+
+.ability {
+  margin: 20px;
+}
+.abilityIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.abilitiesHeader {
+  font-family: Bebas Neue;
+  font-size: 28px;
+  margin: 20px;
+  margin-bottom: 10px !important;
+}
+
+.abilityName {
+  font-size: 18px;
+}
+
+.costrange {
+  font-size: 14px;
+}
+
+.abilityDesc {
+  font-size: 14px;
+  margin-left: 18px;
+}
+
+.vline {
+  border-left: 2px solid black;
+  height: 40px;
+  margin: 0 10px;
+}
+
+.abilityP, .abilityQ, .abilityW, .abilityE, .abilityR {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px;
+  background-image: url('../assets/icons/akali-p.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.costChangeIcon, .rangeChangeIcon {
+  height: 1em;
+  width: 1em;
+  margin-right: 3px;
+  background-image: url('../assets/icons/up1.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cost, .range {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cost p, .range p {
+  margin: 0;
+}

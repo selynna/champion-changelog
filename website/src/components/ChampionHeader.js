@@ -6,10 +6,11 @@ class ChampionHeader extends Component {
     return (
       <div className={styles.championHeader}>
         <div className={styles.champion}>
-          <h1>Akali</h1>
-          <h2>The Rogue Assassin</h2>
+          <div className={styles.championHeaderInfo}>
+            <div className={styles.championPicture}></div>
+            <h1>Akali</h1>
+          </div>
         </div>
-        <div className={styles.championPicture}></div>
       </div>
     );
   }

@@ -1,15 +1,23 @@
 .infoCardWrapper {
+  font-family: "Bebas Neue";
   display: flex;
   flex-direction: column;
   width: 30vw;
-  height: 80vh;
+  justify-content: center;
 }
 
 .infoCard {
   border: 1px solid black;
   border-radius: 15px;
-  width: 30vw;
+  width: 40vw;
   height: 75vh;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .infoCard {
+  }
+
 }
 
 .championHeader {

@@ -1,0 +1,10 @@
+<svg width="15px" height="10px" viewBox="-1 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch
+         -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 1.000000)" stroke-linecap="square">
+        <path d="M0.5,7.5 L6.5,0.5" id="Line" stroke="#7ED321" stroke-width="1.5"></path>
+        <path d="M6.5,7.5 L12.5,0.5" id="Line" stroke="#7ED321" stroke-width="1.5" transform="translate(9.500000, 4.000000) scale(1, -1) translate(-9.500000, -4.000000) "></path>
+    </g>
+</svg>

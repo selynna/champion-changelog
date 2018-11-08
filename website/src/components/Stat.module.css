@@ -1,3 +1,40 @@
-.stat {
+.statWrapper {
+  font-family: "Helvetica Neue";
+  display: flex;
+  flex-direction: column;
+  flex: 30%;
+  margin: 10px 2px;
+}
 
+@media only screen and (max-width: 600px) {
+  .statWrapper {
+    min-width: 0px;
+  }
+}
+
+.statItemHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+
+.statItem {
+  font-size: 16px;
+  margin: 0;
+}
+
+.statChangeIcon {
+  height: 1em;
+  width: 1em;
+  margin-right: 3px;
+  background-image: url('../assets/icons/up1.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.levelChange {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 14px;
 }
