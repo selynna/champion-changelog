@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 
-var debug = true;
+var debug = false;
 var connection = mysql.createConnection({
 	host:'aurora.lolskill.net',
 	user:'hackathon',
