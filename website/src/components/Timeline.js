@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import styles from "./Timeline.module.css";
-import InfoCard from "./InfoCard";
-import ChampionHeader from "./ChampionHeader";
-import HorizontalTimelineContent from "react-horizontal-timeline";
+import React, { Component } from 'react';
+import styles from './Timeline.module.css';
+import InfoCard from './InfoCard';
+import ChampionHeader from './ChampionHeader';
+import HorizontalTimelineContent from 'react-horizontal-timeline';
+import ChampionData from '../assets/static-data/championFull.json';
 
 class Timeline extends Component {
   constructor(props) {
@@ -39,17 +40,22 @@ class Timeline extends Component {
   }
 
   render() {
+    const champion = "Syndra";
+    const champData = {ChampionData}.ChampionData;
+    const champions = champData.data;
+    console.log("champs");
+    console.log(champions);
     const patches = this.state.patches;
     return (
       <div className={styles.timeline}>
         <div className={styles.info}>
           <div className={styles.championHeaderWrapper}>
             <div className={styles.tmp}>
-              <ChampionHeader />
+              <ChampionHeader name={champion} champData={champions[champion]} />
             </div>
           </div>
           <div className={styles.infoCardContainer}>
-            <InfoCard />
+            <InfoCard name={champion} champData={champions[champion]} />
           </div>
         </div>
         <div className={styles.timelineWrapper}>
