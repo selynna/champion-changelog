@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import re
 page = requests.get("https://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes")
 # print(page.content)
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -23,11 +24,12 @@ for ability in abilityChanges:
         currentAbility = {"name": ability.get_text()}
     else:
         attrName = ability.select(".attribute")[0].get_text() #name of attribute
-        currentAbility[attrName] = ability.get_text().replace(/\\n/g, '')
+        currentAbility[attrName] = ability.get_text()
 
 aatroxJsonData = json.dumps(abilities)
+cleaned = re.sub(r"[-()\#/@;<>`+=~|.!?]", "", aatroxJsonData)
 with open('aatrox.json', 'w') as outfile:
     json.dump(aatroxJsonData, outfile, sort_keys=True, indent=4)
-print(aatroxJsonData)
+print(cleaned)
 print(name, overview)
 exit()
