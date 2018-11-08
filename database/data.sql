@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2018 at 08:11 AM
+-- Generation Time: Nov 08, 2018 at 08:43 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -3774,16 +3774,19 @@ INSERT INTO `patch_champion_changes` (`patchId`, `championId`, `changes`, `overv
 ('8.22', 497, '[{\"ARMOR\":\"33\",\"HEALTH\":\"480\",\"name\":\"Base Stats\"}]', 'Health and armor decreased.');
 
 --
--- Dumping data for table `patch_rune_changes`
+-- Dumping data for table `patch_item_changes`
 --
 
-INSERT INTO `patch_rune_changes` (`patchId`, `runeId`, `changes`) VALUES
-('8.22', 8112, '{\"BASE DAMAGE\":\"\\nBASE DAMAGE 50-220 (at levels 1-18) \\u21d2 30-180 (at levels 1-18)\\n\",\"COOLDOWN\":\"\\nCOOLDOWN 50-25 seconds (at levels 1-18) \\u21d2 25-20 seconds (at levels 1-18)\\n\",\"DAMAGE RATIO (AD)\":\"\\nDAMAGE RATIO (AD) 0.5 bonus attack damage \\u21d2 0.4 bonus attack damage\\n\",\"name\":\"Electrocute\",\"DAMAGE RATIO (AP)\":\"\\nDAMAGE RATIO (AP) 0.3 ability power \\u21d2 0.25 ability power\\n\"}'),
-('8.22', 8126, '{\"BASE DAMAGE\":\"\\nBASE DAMAGE 15-40 \\u21d2 8-40\\n\",\"name\":\"Cheap Shot\"}'),
-('8.22', 8143, '{\"MAGIC PENETRATION\":\"\\nMAGIC PENETRATION 8 \\u21d2 6\\n\",\"name\":\"Sudden Impact\",\"LETHALITY\":\"\\nLETHALITY 10 \\u21d2 7\\n\"}'),
-('8.22', 8214, '{\"BASE SHIELDING\":\"\\nBASE SHIELDING 30-80 (at levels 1-18) \\u21d2 35-80 (at levels 1-18)\\n\",\"BASE DAMAGE\":\"\\nBASE DAMAGE 15-40 (at levels 1-18) \\u21d2 10-40 (at levels 1-18)\\n\",\"name\":\"Summon Aery\"}'),
-('8.22', 8234, '{\"ATTACK DAMAGE\":\"\\nATTACK DAMAGE 9.6% bonus movement speed \\u21d2 6% bonus movement speed\\n\",\"ABILITY POWER\":\"\\nABILITY POWER 16% bonus movement speed \\u21d2 10% bonus movement speed\\n\",\"name\":\"Celerity\"}'),
-('8.22', 8237, '{\"BASE DAMAGE\":\"\\nBASE DAMAGE 20-60 \\u21d2 10-30\\n\",\"COOLDOWN\":\"\\nCOOLDOWN 20 seconds \\u21d2 10 seconds\\n\",\"name\":\"Scorch\"}');
+INSERT INTO `patch_item_changes` (`patchId`, `itemId`, `changes`, `overview`) VALUES
+('8.13', 3124, '{\"attributes\":[{\"attribute\":\"PERCENT ATTACK DAMAGE PER STACK\",\"attribute-after\":\"2.5%\",\"attribute-before\":\"4%\"},{\"attribute\":\"PERCENT ABILITY POWER PER STACK\",\"attribute-after\":\"2.5%\",\"attribute-before\":\"4%\"}],\"item_name\":\"Guinsoo\'s Rageblade\",\"summary\":\"Attack damage and ability power per stack decreased.\"}', 'Attack damage and ability power per stack decreased.'),
+('8.15', 3031, '{\"attributes\":[{\"attribute\":\"TOTAL COST\",\"attribute-after\":\"3400 gold\",\"attribute-before\":\"3600 gold\"},{\"attribute\":\"BUILD PATH\",\"attribute-after\":\"BF Sword + Pickaxe + 1225 gold\",\"attribute-before\":\"BF Sword + BF Sword + 1000 gold\"},{\"attribute\":\"TRUE DAMAGE CONVERSION\",\"attribute-after\":\"10%\",\"attribute-before\":\"15%\"},{\"attribute\":\"ATTACK DAMAGE\",\"attribute-after\":\"70\",\"attribute-before\":\"80\"},{\"attribute\":\"updatedTRUE CRIT TEXT\",\"attribute-after\":\"True Damage Critical Strikes now display as a blue\\/white icon instead of the purple Magic Damage Crit icon\"}],\"item_name\":\"Infinity Edge\",\"summary\":\"Total cost decreased. Build path changed. True damage decreased. Attack damage decreased.\"}', 'Total cost decreased. Build path changed. True damage decreased. Attack damage decreased.'),
+('8.15', 3095, '{\"attributes\":[{\"attribute\":\"BUILD PATH\",\"attribute-after\":\"BF Sword + Long Sword + Long Sword + Dagger + 500 gold\",\"attribute-before\":\"BF Sword + Pickaxe + Dagger + Dagger + 425 gold\"},{\"attribute\":\"TOTAL COST\",\"attribute-after\":\"2800 gold\",\"attribute-before\":\"3200 gold\"},{\"attribute\":\"ATTACK DAMAGE\",\"attribute-after\":\"65\",\"attribute-before\":\"75\"},{\"attribute\":\"ATTACK SPEED\",\"attribute-after\":\"25%\",\"attribute-before\":\"30%\"}],\"item_name\":\"Stormrazor\",\"summary\":\"Cost decreased. Attack damage decreased. Attack speed decreased.\"}', 'Cost decreased. Attack damage decreased. Attack speed decreased.'),
+('8.15', 3139, '{\"attributes\":[{\"attribute\":\"TOTAL COST\",\"attribute-after\":\"3400 gold\",\"attribute-before\":\"3700 gold\"},{\"attribute\":\"COMBINE COST\",\"attribute-after\":\"325 gold\",\"attribute-before\":\"525 gold\"},{\"attribute\":\"ATTACK DAMAGE\",\"attribute-after\":\"50\",\"attribute-before\":\"65\"}],\"item_name\":\"Mercurial Scimitar\",\"summary\":\"Total and combine cost decreased. Attack damage decreased.\"}', 'Total and combine cost decreased. Attack damage decreased.'),
+('8.15', 3508, '{\"attributes\":[{\"attribute\":\"ATTACK DAMAGE\",\"attribute-after\":\"75\",\"attribute-before\":\"70\"}],\"item_name\":\"Essence Reaver\",\"summary\":\"Attack damage increased.\"}', 'Attack damage increased.'),
+('8.17', 3095, '{\"attributes\":[{\"attribute\":\"CRITICAL STRIKE MODIFIER\",\"attribute-after\":\"140-200% (at 0-30% crit chance)\",\"attribute-before\":\"160-200% (at 0-30% crit chance)\"},{\"attribute\":\"ATTACK SPEED\",\"attribute-after\":\"35%\",\"attribute-before\":\"25%\"},{\"attribute\":\"ATTACK DAMAGE\",\"attribute-after\":\"60\",\"attribute-before\":\"65\"}],\"item_name\":\"Stormrazor\",\"summary\":\"Guaranteed crit damage decreased below 30% crit. Attack speed increased and attack damage decreased.\"}', 'Guaranteed crit damage decreased below 30% crit. Attack speed increased and attack damage decreased.'),
+('8.19', 3151, '{\"attributes\":[{\"attribute\":\"ABILITY POWER\",\"attribute-after\":\"75\",\"attribute-before\":\"80\"},{\"attribute\":\"DoT against non impaired targets\",\"attribute-after\":\"1.5% Max HP per second\",\"attribute-before\":\"1% Max HP per second\"},{\"attribute\":\"DoT against impaired targets\",\"attribute-after\":\"2.5% Max HP per second\",\"attribute-before\":\"2% Max HP per second\"}],\"item_name\":\"Liandry\'s Torment\",\"summary\":\"Passive max HP burn increased. AP decreased.\"}', 'Passive max HP burn increased. AP decreased.'),
+('8.21', 3508, '{\"attributes\":[{\"attribute\":\"COST\",\"attribute-after\":\"3000 gold (250 gold combine cost)\",\"attribute-before\":\"3200 gold (450 gold combine cost)\"}],\"item_name\":\"Essence Reaver\",\"summary\":\"Costs less.\"}', 'Costs less.'),
+('8.21', 3814, '{\"attributes\":[{\"attribute\":\"COST\",\"attribute-after\":\"3000 gold (625 gold combine cost)\",\"attribute-before\":\"3100 gold (725 gold combine cost)\"},{\"attribute\":\"VEIL CHANNEL TIME\",\"attribute-after\":\"1 second\",\"attribute-before\":\"1.5 seconds\"}],\"item_name\":\"Edge of Night\",\"summary\":\"Costs less. Veil channel time decreased.\"}', 'Costs less. Veil channel time decreased.');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
