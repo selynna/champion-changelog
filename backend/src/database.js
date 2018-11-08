@@ -70,9 +70,9 @@ exports.getAllChangesForChampionIdAfterDate = function(championId, date){
 	})
 };
 
-exports.getRelevantItemsForPatchIdAndChampionId = function(patchId, championId){
+exports.getRelevantItemsForChampionId = function(championId){
 	return new Promise((resolve, reject) => {
-		connection.query('SELECT * FROM patch_champion_items WHERE patchId = ? AND championId = ? ORDER BY patchId DESC', [patchId, championId], function(err, rows, fields){
+		connection.query('SELECT * FROM champion_items WHERE championId = ? ORDER BY championId DESC', [championId], function(err, rows, fields){
 			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
@@ -85,9 +85,9 @@ exports.getRelevantItemsForPatchIdAndChampionId = function(patchId, championId){
 	})
 };
 
-exports.getRelevantRunesForPatchIdAndChampionId = function(patchId, championId){
+exports.getRelevantRunesForChampionId = function(patchId, championId){
 	return new Promise((resolve, reject) => {
-		connection.query('SELECT * FROM patch_champion_runes WHERE patchId = ? AND championId = ? ORDER BY patchId DESC', [patchId, championId], function(err, rows, fields){
+		connection.query('SELECT * FROM champion_runes WHERE championId = ? ORDER BY runeId DESC', [championId], function(err, rows, fields){
 			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
@@ -132,7 +132,7 @@ exports.getRuneChangesForPatchIdAndRuneId = function(patchId, runeId){
 
 exports.getAllItemChangesForPatchIdAndChampionId = function(patchId, championId){
 	return new Promise((resolve, reject) => {
-		connection.query('SELECT * FROM patch_item_changes RIGHT JOIN patch_champion_items ON (patch_champion_items.patchId = patch_item_changes.patchId AND patch_champion_items.itemId = patch_item_changes.itemId) WHERE patch_champion_items.patchId = ? AND patch_champion_items.championId = ? ORDER BY patch_champion_items.itemId DESC', [patchId, championId], function(err, rows, fields){
+		connection.query('SELECT * FROM patch_item_changes RIGHT JOIN champion_items ON (champion_items.itemId = patch_item_changes.itemId) WHERE patch_item_changes.patchId = ? AND champion_items.championId = ? ORDER BY champion_items.itemId ASC', [patchId, championId], function(err, rows, fields){
 			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
@@ -147,7 +147,7 @@ exports.getAllItemChangesForPatchIdAndChampionId = function(patchId, championId)
 
 exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId){
 	return new Promise((resolve, reject) => {
-		connection.query('SELECT * FROM patch_rune_changes RIGHT JOIN patch_champion_runes ON (patch_champion_runes.patchId = patch_rune_changes.patchId AND patch_champion_runes.itemId = patch_rune_changes.runeId) WHERE patch_champion_runes.patchId = ? AND patch_champion_runes.championId = ? ORDER BY patch_champion_runes.runeId DESC', [patchId, championId], function(err, rows, fields){
+		connection.query('SELECT * FROM patch_rune_changes RIGHT JOIN champion_runes ON (champion_runes.runeId = patch_rune_changes.runeId) WHERE patch_rune_changes.patchId = ? AND champion_runes.championId = ? ORDER BY champion_runes.runeId ASC', [patchId, championId], function(err, rows, fields){
 			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
@@ -160,6 +160,6 @@ exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId)
 	})
 };
 
-exports.getAllPatches(1).then((response) => {
+exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
 	console.log(response);
 });
