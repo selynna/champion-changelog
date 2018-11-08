@@ -2,6 +2,11 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import re
+
+def removeSpecial(object):
+    for key in object:
+        object[key] = object[key].replace("\n","")
+
 page = requests.get("https://na.leagueoflegends.com/en/news/game-updates/patch/patch-816-notes")
 # print(page.content)
 soup = BeautifulSoup(page.content, 'html.parser')
@@ -13,23 +18,39 @@ patches = soup.find_all('div',class_='patch-change-block white-stone accent-befo
 #         break
 # else:
 #     patch = None
-name = patches[0].select('h3 a')[0].get_text()
-overview = patches[0].select('.summary')[0].get_text()
-abilityChanges = patches[0].select('.attribute-change,.change-detail-title')
-abilities = []
-currentAbility = {}
-for ability in abilityChanges:
-    if 'change-detail-title' in ability['class']:
-        abilities.append(currentAbility)
-        currentAbility = {"name": ability.get_text()}
-    else:
-        attrName = ability.select(".attribute")[0].get_text() #name of attribute
-        currentAbility[attrName] = ability.get_text()
+patchData = {"8.22": []}
+for patch in patches:
+    name = patch.select('h3 a')[0].get_text()
+    overview = patch.select('.summary')[0].get_text()
+    championData = {"name": name, "overview": overview}
+    abilityChanges = list(patch.find('div').children)
+    abilities = []
+    currentAbility = {}
+    for ability in abilityChanges:
+        if ability=="\n":
+            continue
+        if 'change-detail-title' in ability['class']:
+            print("hello")
+            abilities.append(currentAbility)
+            currentAbility = {"name": ability.get_text()}
+        elif 'attribute-change' in ability['class']:
+            print("goodbye")
+            attrName = ability.select(".attribute")[0].get_text() #name of attribute
+            if(len(ability.select(".attribute-removed"))!=0): # data was removed
+                print(attrName)
+                currentAbility[attrName] = ability.select(".attribute-removed")[0].get_text()
+                continue
+            if(len(ability.select(".attribute-after"))!=0): # data was removed
+                print(attrName)
+                currentAbility[attrName] = ability.select(".attribute-after")[0].get_text()
+                continue
+            currentAbility[attrName] = ability.select(".attribute-before")[0].get_text() + " => " + ability.select(".attribute-after")[0].get_text()
+    abilities.append(currentAbility)
+    removeSpecial(abilities[0])
+    championData["changes"] = abilities[1:]
+    patchData["8.22"].append(championData)
+# cleaned = re.sub(r"[-()\#/@;<>`+=~|.!?]", "", aatroxJsonData)
 
-aatroxJsonData = json.dumps(abilities)
-cleaned = re.sub(r"[-()\#/@;<>`+=~|.!?]", "", aatroxJsonData)
-with open('aatrox.json', 'w') as outfile:
-    json.dump(aatroxJsonData, outfile, sort_keys=True, indent=4)
-print(cleaned)
-print(name, overview)
+with open('scrapedpatchdata.json', 'w') as outfile:
+    json.dump(patchData, outfile, sort_keys=True, indent=4)
 exit()
