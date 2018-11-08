@@ -50,7 +50,7 @@ class SearchBar extends Component {
     });
 
     this.setState({
-      displayedChampions: searchQuery.length > 1 ? filteredChampions : [],
+      displayedChampions: searchQuery.length > 2 ? filteredChampions : [],
       filteredChampions,
       searchQuery
     });

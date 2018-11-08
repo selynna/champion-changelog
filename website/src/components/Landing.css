@@ -1,6 +1,10 @@
 
 .landing {
-  background-color: #38A5F7;
+    
+  /* background: #38A5F7; */
+  background:linear-gradient(0deg,rgba(56,165,247, 0.8),rgba(56,165,247,0.5)),url(../assets/img/poolparty_wallpaper.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
   color: #fff;
 }
 
