@@ -214,9 +214,9 @@ exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId)
 };
 
 // testing
-exports.getAllChangesForChampionIdAfterDate(32, new Date('2018-01-01')).then((response) => {
-	console.log(response);
-});
+//exports.getAllChangesForChampionIdAfterDate(32, new Date('2018-01-01')).then((response) => {
+//	console.log(response);
+//});
 //exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
 //	console.log(response);
 //});
