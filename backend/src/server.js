@@ -37,3 +37,4 @@ router.route('/endpoint').get(function(req, res) {
 });
 
 router.get("/lastplayed/:summoner/:champion", riotAPIController.lastPlayed);
+router.get("/statchanges/:champion/:patch",riotAPIController.statChanges);
