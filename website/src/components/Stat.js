@@ -8,7 +8,7 @@ const Stat = ({ item, base, levelIncrease }) => (
       <div className={styles.statChangeIcon}></div>
       <p className={styles.statItem}>{item}:</p>
     </div>
-    <p className={styles.levelChange}>{base} ({levelIncrease} per level)</p>
+    <p className={styles.levelChange}>{base} (+{levelIncrease} per level)</p>
   </div>
 );
 
