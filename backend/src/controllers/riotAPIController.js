@@ -53,6 +53,7 @@ let getChampionFromDDragon = (championName, patchVersion="8.22.1") => {
                 reject();
                 return;
             }
+
             resolve(body);
         })
     })
