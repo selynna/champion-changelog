@@ -41,6 +41,35 @@ exports.getAllPatches = function(limit){
 	})
 };
 
+exports.getCurrentPatchForDate = function(date){
+	return new Promise((resolve, reject) => {
+		connection.query(`
+			(
+				SELECT *
+				FROM patch
+				WHERE date <= ?
+				LIMIT 1
+			) UNION (
+				SELECT *
+				FROM patch
+				ORDER BY date ASC
+				LIMIT 1
+			)
+			ORDER BY date DESC
+			LIMIT 1
+		`, [date], function(err, rows, fields){
+//			connection.end();
+			if(!err){
+				if(debug) console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+				if(debug) console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
 exports.getAllChangesForChampionId = function(championId, limit){
 	if(!limit){
 		limit = 2147483647;
@@ -214,9 +243,14 @@ exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId)
 };
 
 // testing
-//exports.getAllChangesForChampionIdAfterDate(32, new Date('2018-01-01')).then((response) => {
-//	console.log(response);
-//});
-//exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
-//	console.log(response);
-//});
+if(debug){
+	exports.getPatchForDate(new Date('2018-06-01')).then((response) => {
+		console.log(response);
+	});
+	exports.getAllChangesForChampionIdAfterDate(142, new Date('2018-01-01')).then((response) => {
+		console.log(response);
+	});
+//	exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
+//		console.log(response);
+//	});
+}
