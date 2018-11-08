@@ -4,11 +4,13 @@ import "./index.css";
 import App from "./components/App";
 import * as serviceWorker from "./serviceWorker";
 
+/*
 import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
 import "uikit/dist/css/uikit.css";
 
 UIkit.use(Icons);
+*/
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

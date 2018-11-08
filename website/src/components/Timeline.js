@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
 import styles from './Timeline.module.css';
+import InfoCard from './InfoCard';
 
 class Timeline extends Component {
   render() {
     return (
       <div className={styles.timeline}>
-        <h1>Akali</h1>
-        <h2>The Rogue Assassin</h2>
+        <div className={styles.infoCardContainer}>
+          <InfoCard />
+        </div>
       </div>
     );
   }
