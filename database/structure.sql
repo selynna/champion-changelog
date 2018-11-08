@@ -1,3 +1,8 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
 --
 -- Database: `riotpatchnotes`
 --
@@ -9,8 +14,7 @@
 --
 
 CREATE TABLE `patch` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
+  `id` varchar(255) NOT NULL,
   `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -21,7 +25,7 @@ CREATE TABLE `patch` (
 --
 
 CREATE TABLE `patch_champion_changes` (
-  `patchId` int(10) UNSIGNED NOT NULL,
+  `patchId` varchar(255) NOT NULL,
   `championId` int(10) UNSIGNED NOT NULL,
   `changes` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -33,7 +37,7 @@ CREATE TABLE `patch_champion_changes` (
 --
 
 CREATE TABLE `patch_champion_items` (
-  `patchId` int(10) UNSIGNED NOT NULL,
+  `patchId` varchar(255) NOT NULL,
   `championId` int(10) UNSIGNED NOT NULL,
   `itemId` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -45,7 +49,7 @@ CREATE TABLE `patch_champion_items` (
 --
 
 CREATE TABLE `patch_champion_runes` (
-  `patchId` int(10) UNSIGNED NOT NULL,
+  `patchId` varchar(255) NOT NULL,
   `championId` int(10) UNSIGNED NOT NULL,
   `runeId` int(10) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -57,7 +61,7 @@ CREATE TABLE `patch_champion_runes` (
 --
 
 CREATE TABLE `patch_item_changes` (
-  `patchId` int(10) UNSIGNED NOT NULL,
+  `patchId` varchar(255) NOT NULL,
   `itemId` int(10) UNSIGNED NOT NULL,
   `changes` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -69,7 +73,7 @@ CREATE TABLE `patch_item_changes` (
 --
 
 CREATE TABLE `patch_rune_changes` (
-  `patchId` int(10) UNSIGNED NOT NULL,
+  `patchId` varchar(255) NOT NULL,
   `runeId` int(10) UNSIGNED NOT NULL,
   `changes` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -83,4 +87,16 @@ CREATE TABLE `patch_rune_changes` (
 --
 ALTER TABLE `patch`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `patch_champion_items`
+--
+ALTER TABLE `patch_champion_items`
+  ADD PRIMARY KEY (`patchId`,`championId`,`itemId`);
+
+--
+-- Indexes for table `patch_champion_runes`
+--
+ALTER TABLE `patch_champion_runes`
+  ADD PRIMARY KEY (`patchId`,`championId`,`runeId`);
 COMMIT;
