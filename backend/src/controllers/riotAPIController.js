@@ -40,19 +40,42 @@ let getAccountIDFromSummonerName = (summonerName) => { return new Promise((resol
 })
 }
 
-let getChampionIDFromName = (championName) => { //Champion Name is case sensitive, Syndra, not syndra
+let getChampionIDFromName = async (championName) => { //Champion Name is case sensitive, Syndra, not syndra
+    let body = await getChampionFromDDragon(championName);
+    return body.data[championName].key;
+}
+
+let getChampionFromDDragon = (championName, patchVersion="8.22.1") => {
     return new Promise((resolve, reject) => {
-        needle.get(`http://ddragon.leagueoflegends.com/cdn/8.22.1/data/en_US/champion/${championName}.json`, (error, response,body) => {
+        needle.get(`http://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/champion/${championName}.json`, (error, response,body) => {
             if (error) {
                 console.log(body);
                 reject();
                 return;
             }
-            resolve(body.data[championName].key);
+
+            resolve(body);
         })
     })
 }
 
+let statChanges = async (req, res) => {
+    let stats = await getChampionDifferences(req.params.champion, req.params.patch)
+    res.status(200).send(stats);
+}
+
+let getChampionDifferences = async (championName, patchVersion) => { // get the differences of that champion since the version
+    let currentStats = (await getChampionFromDDragon(championName)).data[championName].stats
+    let oldStats = (await getChampionFromDDragon(championName, patchVersion)).data[championName].stats
+    let statDifferences = {}
+    Object.keys(currentStats).forEach((key)=> {
+        let difference = currentStats[key] - oldStats[key]
+        statDifferences[key] = {stat: currentStats[key], statChange: difference}
+    });
+    return statDifferences;
+}
+
 module.exports = {
-    lastPlayed: lastPlayed
+    lastPlayed: lastPlayed,
+    statChanges: statChanges
 }

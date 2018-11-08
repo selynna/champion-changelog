@@ -7,9 +7,9 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-horizontal-timeline": "https://github.com/selynna/react-horizontal-timeline/tarball/master",
+    "react-modal": "^3.6.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.1",
-    "uikit": "^3.0.0-rc.21"
+    "react-scripts": "2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,60 @@
+.landing {
+    min-height: 100vh;
+}
+
+.search-champs {
+    display: flex;
+    flex-flow:column;
+    width: 280px;
+    margin-right: 20px;
+}
+.champs-list {
+    list-style-type: none;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    display: block;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.champs-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: #242424;
+}
+.champs-list-item-hover:hover {
+    background-color: #f1c40f;
+    border-radius: 8px;
+}
+
+.champs-list-item:hover {
+    cursor: pointer;
+  }
+
+.champs-list-item-name {
+    font-weight: 900;
+}
+
+.champs-list-item-title {
+    font-weight: 300;
+}
+
+.icon-circular {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+  }
+
+
+
+  .search-champ-field {
+    display: block;
+    padding: 0.7em 0.25em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    text-align: center;
+    box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.2);
+  }

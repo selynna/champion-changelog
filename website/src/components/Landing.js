@@ -1,93 +1,76 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./Landing.css";
 
-import Header from "./Header";
+import SearchBar from "./SearchBar";
 
 class Landing extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      champ: null,
+      name: ""
+    };
+
+    this.submit = this.submit.bind(this);
+    this.handleNameChange = this.handleNameChange.bind(this);
+    this.handleChampChange = this.handleChampChange.bind(this);
+  }
+
+  handleNameChange(event) {
+    var searchQuery = event.target.value;
+    this.setState({ name: searchQuery });
+  }
+
+  handleChampChange(champ) {
+    this.setState({ champ });
+  }
+
+  submit() {
+    fetch(
+      `http://localhost:4000/api/lastplayed/${this.state.name}/${
+        this.state.champ.id
+      }`
+    )
+      .then(response => response.json())
+      .then(data => console.log(data));
+  }
   render() {
     return (
-      <div className="uk-container App">
-        <Header />
-        <div className="uk-margin-large-top">
-          <div className="uk-container-small uk-margin-auto">
-            <h1 className="appName uk-text-center uk-heading-hero uk-text-bold">
-              PATCH VIEW
-            </h1>
-            <h5 className="appDesc uk-text-center">
+      <div className="landing">
+        <div className="landing-container">
+          <nav className="landing-nav">
+            <a href="/">Patch Review</a>
+            <a
+              className="landing-nav-end"
+              href="https://na.leagueoflegends.com/en/news/game-updates/patch/patch-822-notes"
+            >
+              Read Latest Patch Notes
+            </a>
+          </nav>
+
+          <div className="landing-title-container">
+            <h1 className="landing-title">PATCH REVIEW</h1>
+            <p className="landing-subtitle">
               Find changes to your champs since you last played
-            </h5>
+            </p>
 
-            <div className="uk-flex uk-flex-center ">
-              <button
-                className="clear-button uk-margin-right"
-                uk-toggle="target: #modal-close-default"
-              >
-                <img
-                  className="icon-circular orange-outline"
-                  src={
-                    "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cc/AatroxSquare.png"
-                  }
-                  alt=""
+            <div className="search-container">
+              <SearchBar onChangeChamp={this.handleChampChange} />
+              <h1 className="landing-plus">+</h1>
+              <div className="search-names">
+                <input
+                  className="search-name-field"
+                  type="text"
+                  placeholder="In-game Name"
+                  value={this.state.name}
+                  onChange={this.handleNameChange}
                 />
-              </button>
-              <div className="uk-margin">
-                <div uk-form-custom="target: true">
-                  <input className="uk-input" type="text" placeholder="Name" />
-                </div>
-                <button className="uk-button uk-button-default uk-light">
-                  Submit
-                </button>
               </div>
+              <button className="submit-button" onClick={this.submit}>
+                Submit
+              </button>
             </div>
-          </div>
-        </div>
-
-        <div id="modal-close-default" uk-modal="">
-          <div className="uk-modal-dialog uk-modal-body">
-            <button
-              className="uk-modal-close-default"
-              type="button"
-              uk-close=""
-            />
-            <h2 className="uk-modal-title uk-text-center">
-              Choose your champion
-            </h2>
-            <button
-              className="clear-button uk-margin-right"
-              uk-toggle="target: #modal-close-default"
-            >
-              <img
-                className="icon-circular"
-                src={
-                  "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cc/AatroxSquare.png"
-                }
-                alt=""
-              />
-            </button>
-            <button
-              className="clear-button uk-margin-right"
-              uk-toggle="target: #modal-close-default"
-            >
-              <img
-                className="icon-circular"
-                src={
-                  "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cc/AatroxSquare.png"
-                }
-                alt=""
-              />
-            </button>
-            <button
-              className="clear-button uk-margin-right"
-              uk-toggle="target: #modal-close-default"
-            >
-              <img
-                className="icon-circular"
-                src={
-                  "https://vignette.wikia.nocookie.net/leagueoflegends/images/c/cc/AatroxSquare.png"
-                }
-                alt=""
-              />
-            </button>
           </div>
         </div>
       </div>
