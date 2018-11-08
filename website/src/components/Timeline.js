@@ -8,19 +8,32 @@ import ChampionData from '../assets/static-data/championFull.json';
 class Timeline extends Component {
   constructor(props) {
     super(props);
-    this.state = { 
-      value: 0, 
-      previous: 0, 
+    this.state = {
+      value: 0,
+      previous: 0,
       patches: [
-        ['11/07/2018', 'Patch 8.22'],
-        ['11/06/2017', 'Patch 8.21'],
-        ['11/05/2016', 'Patch 8.20'],
-        ['11/04/2015', 'Patch 8.19'],
+        ["11/07/2018", "Patch 8.22"],
+        ["11/06/2017", "Patch 8.21"],
+        ["11/05/2016", "Patch 8.20"],
+        ["11/04/2015", "Patch 8.19"]
       ],
-      stylesBackground: '#f8f8f8',
-      stylesForeground: '#7b9d6f',
-      stylesOutline: '#dfdfdf',
+      stylesBackground: "#f8f8f8",
+      stylesForeground: "#7b9d6f",
+      stylesOutline: "#dfdfdf"
     };
+  }
+
+  componentDidMount() {
+    // Fetch data from API
+    // Uncomment after API endpoint finished
+    // const { match } = this.props;
+    // fetch(
+    //   `http://localhost:4000/api/lastplayed/${match.params.name}/${
+    //     match.champId
+    //   }`
+    // )
+    //   .then(response => response.json())
+    //   .then(data => console.log(data));
   }
 
   render() {
@@ -43,9 +56,9 @@ class Timeline extends Component {
           </div>
         </div>
         <div className={styles.timelineWrapper}>
-          <HorizontalTimelineContent 
+          <HorizontalTimelineContent
             index={this.state.value}
-            indexClick={(index) => {
+            indexClick={index => {
               this.setState({ value: index, previous: this.state.value });
             }}
             styles={{
@@ -53,7 +66,8 @@ class Timeline extends Component {
               foreground: this.state.stylesForeground,
               outline: this.state.stylesOutline
             }}
-            values={patches}/>
+            values={patches}
+          />
         </div>
       </div>
     );

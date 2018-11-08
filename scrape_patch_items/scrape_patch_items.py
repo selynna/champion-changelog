@@ -1,8 +1,11 @@
 import requests, bs4, sys, re, json
 
+ATTRIBUTE_TAGS = ['new', 'removed', 'updated']
+LIST_OF_ATTRIBUTES = ['attribute', 'attribute-before', 'attribute-after', 'attribute-removed']
+
 def create_page_soup(version):
     #Requests the Champion.gg page of the desired champion
-    page = requests.get('https://na.leagueoflegends.com/en/news/game-updates/patch/patch-' + version + '-notes')
+    page = requests.get('https://na.leagueoflegends.com/en/news/game-updates/patch/patch-' + re.sub('[.]', '', version) + '-notes')
 
     #Checks the page status and raises an exception in case of an error e.g. 404
     try:
@@ -27,13 +30,11 @@ def find_items(page_soup):
 
 def get_items(items_header):
     items_list = []
-    LIST_OF_ATTRIBUTES = ['attribute', 'attribute-before', 'attribute-after']
 
     # Iterate through item divs
     for div in items_header.next_siblings:
         if div.name == 'p':
             break
-        print div.name
         if div.name == 'div' and div['class'][0] == 'content-border':
             new_item = {}
             new_item['item_name'] = div.select('h3')[0].text.encode('ascii','ignore')
@@ -49,9 +50,20 @@ def get_items(items_header):
                 new_attribute = {}
 
                 # Create 3 fields of attributes
+                #import pdb; pdb.set_trace()
                 for class_name in LIST_OF_ATTRIBUTES:
+                    sub_class_name = ''
                     try:
-                        new_attribute[class_name] = each_change.find('span', class_=class_name).text.encode('ascii','ignore')
+                        name = each_change.find('span', class_=class_name).text.encode('ascii','ignore')
+                        # Grab the name of the tag (either 'new', 'removed', or 'updated')
+                        try:
+                            sub_class_name = each_change.find('span', {'class': ATTRIBUTE_TAGS}).text.encode('ascii','ignore')
+                        except Exception:
+                            pass
+
+                        new_attribute['attribute-type'] = sub_class_name
+                        new_attribute[class_name] = name[len(sub_class_name if class_name == 'attribute' else ''):]
+
                     except Exception:
                         continue
                 attributes_list.append(new_attribute)
@@ -69,7 +81,7 @@ def write_to_json(items_list):
 
 
 def main():
-    versions = ['822', '821', '820', '819', '818', '817', '816', '815', '814', '813']
+    versions = ['8.22', '8.21', '8.20', '8.19', '8.18', '8.17', '8.16', '8.15', '8.14', '8.13']
     all_items = []
     for v in versions:
         page_soup = create_page_soup(v)

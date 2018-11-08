@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import "./Landing.css";
 
 import SearchBar from "./SearchBar";
@@ -12,7 +13,7 @@ class Landing extends Component {
       name: ""
     };
 
-    this.submit = this.submit.bind(this);
+    // this.submit = this.submit.bind(this);
     this.handleNameChange = this.handleNameChange.bind(this);
     this.handleChampChange = this.handleChampChange.bind(this);
   }
@@ -26,15 +27,6 @@ class Landing extends Component {
     this.setState({ champ });
   }
 
-  submit() {
-    fetch(
-      `http://localhost:4000/api/lastplayed/${this.state.name}/${
-        this.state.champ.id
-      }`
-    )
-      .then(response => response.json())
-      .then(data => console.log(data));
-  }
   render() {
     return (
       <div className="landing">
@@ -67,8 +59,17 @@ class Landing extends Component {
                   onChange={this.handleNameChange}
                 />
               </div>
-              <button className="submit-button" onClick={this.submit}>
-                Submit
+              <button className="submit-button">
+                <Link
+                  to={
+                    this.state.champ && this.state.name.length > 0
+                      ? `/timeline/${this.state.name}/${this.state.champ.id}`
+                      : "/"
+                  }
+                  style={{ textDecoration: "none", color: "White" }}
+                >
+                  Submit
+                </Link>
               </button>
             </div>
           </div>
