@@ -1,3 +1,8 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
 --
 -- Database: `riotpatchnotes`
 --
@@ -82,4 +87,16 @@ CREATE TABLE `patch_rune_changes` (
 --
 ALTER TABLE `patch`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `patch_champion_items`
+--
+ALTER TABLE `patch_champion_items`
+  ADD PRIMARY KEY (`patchId`,`championId`,`itemId`);
+
+--
+-- Indexes for table `patch_champion_runes`
+--
+ALTER TABLE `patch_champion_runes`
+  ADD PRIMARY KEY (`patchId`,`championId`,`runeId`);
 COMMIT;
