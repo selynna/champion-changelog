@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.css';
-import Timeline from './Timeline.js';
-import Landing from './Landing.js';
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import logo from "./logo.svg";
+import "./App.css";
+import Timeline from "./Timeline.js";
+import Landing from "./Landing.js";
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
         <Router>
           <div>
             <Route exact path="/" component={Landing} />
-            <Route path="/timeline" component={Timeline} />
+            <Route path="/timeline/:name/:champId" component={Timeline} />
           </div>
         </Router>
       </div>

@@ -1,21 +1,20 @@
-var express    = require("express");
-var mysql      = require('mysql');
+var mysql = require('mysql');
 
 var debug = false;
-
 var connection = mysql.createConnection({
-	host:'localhost',
-	user:'root',
-	password:'',
-	database:'riotpatchnotes'
+	host:'aurora.lolskill.net',
+	user:'hackathon',
+	password:'yoBhM61tfxSEJCxS',
+	database:'hackathon'
 });
-var app = express();
 
 connection.connect(function(err){
-	if(!err){
-		console.log("(DEBUG) db connected");    
-	}else{
-		console.log("(DEBUG) db connection error");    
+	if(debug){
+		if(!err){
+			console.log("(DEBUG) db connected");    
+		}else{
+			console.log("(DEBUG) db connection error");    
+		}
 	}
 });
 
@@ -30,7 +29,36 @@ exports.getAllPatches = function(limit){
 			ORDER BY id DESC
 			LIMIT ?
 		`, [limit], function(err, rows, fields){
-			connection.end();
+//			connection.end();
+			if(!err){
+				if(debug) console.log('(DEBUG) result: ', rows);
+				resolve(rows);
+			}else{
+				if(debug) console.log('(DEBUG) db query error: ' + err);
+				reject();
+			}
+		});
+	})
+};
+
+exports.getCurrentPatchForDate = function(date){
+	return new Promise((resolve, reject) => {
+		connection.query(`
+			(
+				SELECT *
+				FROM patch
+				WHERE date <= ?
+				LIMIT 1
+			) UNION (
+				SELECT *
+				FROM patch
+				ORDER BY date ASC
+				LIMIT 1
+			)
+			ORDER BY date DESC
+			LIMIT 1
+		`, [date], function(err, rows, fields){
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -54,7 +82,7 @@ exports.getAllChangesForChampionId = function(championId, limit){
 			ORDER BY patchId DESC
 			LIMIT ?
 		`, [championId, limit], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -76,7 +104,7 @@ exports.getAllChangesForChampionIdAfterDate = function(championId, date){
 			AND date > ?
 			ORDER BY patchId DESC
 		`, [championId, date], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -96,7 +124,7 @@ exports.getRelevantItemsForChampionId = function(championId){
 			WHERE championId = ?
 			ORDER BY championId DESC
 		`, [championId], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -116,7 +144,7 @@ exports.getRelevantRunesForChampionId = function(championId){
 			WHERE championId = ?
 			ORDER BY runeId DESC
 		`, [championId], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -137,7 +165,7 @@ exports.getItemChangesForPatchIdAndItemId = function(patchId, itemId){
 			AND itemId = ?
 			ORDER BY patchId DESC
 		`, [patchId, itemId], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -158,7 +186,7 @@ exports.getRuneChangesForPatchIdAndRuneId = function(patchId, runeId){
 			AND runeId = ?
 			ORDER BY patchId DESC
 		`, [patchId, runeId], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -180,7 +208,7 @@ exports.getAllItemChangesForPatchIdAndChampionId = function(patchId, championId)
 			AND champion_items.championId = ?
 			ORDER BY champion_items.itemId ASC
 		`, [patchId, championId], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -202,7 +230,7 @@ exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId)
 			AND champion_runes.championId = ?
 			ORDER BY champion_runes.runeId ASC
 		`, [patchId, championId], function(err, rows, fields){
-			connection.end();
+//			connection.end();
 			if(!err){
 				if(debug) console.log('(DEBUG) result: ', rows);
 				resolve(rows);
@@ -215,6 +243,14 @@ exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId)
 };
 
 // testing
-exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
-	console.log(response);
-});
+if(debug){
+	exports.getPatchForDate(new Date('2018-06-01')).then((response) => {
+		console.log(response);
+	});
+	exports.getAllChangesForChampionIdAfterDate(142, new Date('2018-01-01')).then((response) => {
+		console.log(response);
+	});
+//	exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
+//		console.log(response);
+//	});
+}

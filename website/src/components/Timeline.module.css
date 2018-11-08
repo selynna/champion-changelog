@@ -1,30 +1,24 @@
 .timeline {
-  font-family: Bebas Neue;
-}
-
-.timelineHeader {
+  width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.champion {
+.info {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
-.champion h1, h2 {
-  margin: 0;
+.timelineWrapper {
+  width: 60%;
+  height: 100px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
 }
 
-.champion h1 {
-  text-align: right;
-
-}
-
-.championPicture {
-  width: 50px;
-  height: 50px;
-  background-image: url('../assets/img/akali.png');
-  background-size: 100% 100%;
+.championHeaderWrapper {
+  width: 100%;
+  display: flex;
 }

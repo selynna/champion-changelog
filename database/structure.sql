@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2018 at 08:08 AM
+-- Generation Time: Nov 08, 2018 at 08:43 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -103,7 +103,8 @@ CREATE TABLE `patch_champion_changes` (
 CREATE TABLE `patch_item_changes` (
   `patchId` varchar(255) NOT NULL,
   `itemId` int(10) UNSIGNED NOT NULL,
-  `changes` mediumtext NOT NULL
+  `changes` mediumtext NOT NULL,
+  `overview` mediumtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------

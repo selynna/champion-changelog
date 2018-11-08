@@ -4,8 +4,11 @@ import styles from './Stat.module.css';
 
 const Stat = ({ item, base, levelIncrease }) => (
   <div className={styles.statWrapper}>
-    <p>{item}:</p>
-    <p>{base} ({levelIncrease} per level)</p>
+    <div className={styles.statItemHeader}>
+      <div className={styles.statChangeIcon}></div>
+      <p className={styles.statItem}>{item}:</p>
+    </div>
+    <p className={styles.levelChange}>{base} ({levelIncrease} per level)</p>
   </div>
 );
 
