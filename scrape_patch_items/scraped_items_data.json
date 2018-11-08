@@ -1,7 +1,7 @@
 [
     {
         "items": [], 
-        "version_num": "822"
+        "version_num": "8.22"
     }, 
     {
         "items": [
@@ -10,12 +10,14 @@
                     {
                         "attribute": "COST", 
                         "attribute-after": "3000 gold (625 gold combine cost)", 
-                        "attribute-before": "3100 gold (725 gold combine cost)"
+                        "attribute-before": "3100 gold (725 gold combine cost)", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "VEIL CHANNEL TIME", 
                         "attribute-after": "1 second", 
-                        "attribute-before": "1.5 seconds"
+                        "attribute-before": "1.5 seconds", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Edge of Night", 
@@ -26,18 +28,19 @@
                     {
                         "attribute": "COST", 
                         "attribute-after": "3000 gold (250 gold combine cost)", 
-                        "attribute-before": "3200 gold (450 gold combine cost)"
+                        "attribute-before": "3200 gold (450 gold combine cost)", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Essence Reaver", 
                 "summary": "Costs less."
             }
         ], 
-        "version_num": "821"
+        "version_num": "8.21"
     }, 
     {
         "items": [], 
-        "version_num": "820"
+        "version_num": "8.20"
     }, 
     {
         "items": [
@@ -46,28 +49,31 @@
                     {
                         "attribute": "ABILITY POWER", 
                         "attribute-after": "75", 
-                        "attribute-before": "80"
+                        "attribute-before": "80", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "DoT against non impaired targets", 
                         "attribute-after": "1.5% Max HP per second", 
-                        "attribute-before": "1% Max HP per second"
+                        "attribute-before": "1% Max HP per second", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "DoT against impaired targets", 
                         "attribute-after": "2.5% Max HP per second", 
-                        "attribute-before": "2% Max HP per second"
+                        "attribute-before": "2% Max HP per second", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Liandry's Torment", 
                 "summary": "Passive max HP burn increased. AP decreased."
             }
         ], 
-        "version_num": "819"
+        "version_num": "8.19"
     }, 
     {
         "items": [], 
-        "version_num": "818"
+        "version_num": "8.18"
     }, 
     {
         "items": [
@@ -76,17 +82,20 @@
                     {
                         "attribute": "CRITICAL STRIKE MODIFIER", 
                         "attribute-after": "140-200% (at 0-30% crit chance)", 
-                        "attribute-before": "160-200% (at 0-30% crit chance)"
+                        "attribute-before": "160-200% (at 0-30% crit chance)", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "ATTACK SPEED", 
                         "attribute-after": "35%", 
-                        "attribute-before": "25%"
+                        "attribute-before": "25%", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "ATTACK DAMAGE", 
                         "attribute-after": "60", 
-                        "attribute-before": "65"
+                        "attribute-before": "65", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Stormrazor", 
@@ -97,23 +106,25 @@
                     {
                         "attribute": "PROC DAMAGE", 
                         "attribute-after": "30-150 damage (at levels 1-18)", 
-                        "attribute-before": "30-200 (at levels 1-18)"
+                        "attribute-before": "30-200 (at levels 1-18)", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "LETHALITY", 
                         "attribute-after": "21", 
-                        "attribute-before": "18"
+                        "attribute-before": "18", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Duskblade", 
                 "summary": "Proc damage decreased. Lethality increased."
             }
         ], 
-        "version_num": "817"
+        "version_num": "8.17"
     }, 
     {
         "items": [], 
-        "version_num": "816"
+        "version_num": "8.16"
     }, 
     {
         "items": [
@@ -122,24 +133,29 @@
                     {
                         "attribute": "COST", 
                         "attribute-after": "400 gold", 
-                        "attribute-before": "350 gold"
+                        "attribute-before": "350 gold", 
+                        "attribute-type": ""
                     }, 
                     {
-                        "attribute": "newTWISTED TREELINE", 
-                        "attribute-after": "These changes also apply on Twisted Treeline."
+                        "attribute": "TWISTED TREELINE", 
+                        "attribute-after": "These changes also apply on Twisted Treeline.", 
+                        "attribute-type": "new"
                     }, 
                     {
                         "attribute": "TOTAL COST", 
-                        "attribute-after": "850 gold (unchanged)"
+                        "attribute-after": "850 gold (unchanged)", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "COMBINE COST", 
                         "attribute-after": "450 gold", 
-                        "attribute-before": "500 gold"
+                        "attribute-before": "500 gold", 
+                        "attribute-type": ""
                     }, 
                     {
-                        "attribute": "newTWISTED TREELINE", 
-                        "attribute-after": "These changes also apply on Twisted Treeline."
+                        "attribute": "TWISTED TREELINE", 
+                        "attribute-after": "These changes also apply on Twisted Treeline.", 
+                        "attribute-type": "new"
                     }
                 ], 
                 "item_name": "Support Items", 
@@ -150,26 +166,31 @@
                     {
                         "attribute": "TOTAL COST", 
                         "attribute-after": "3400 gold", 
-                        "attribute-before": "3600 gold"
+                        "attribute-before": "3600 gold", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "BUILD PATH", 
                         "attribute-after": "BF Sword + Pickaxe + 1225 gold", 
-                        "attribute-before": "BF Sword + BF Sword + 1000 gold"
+                        "attribute-before": "BF Sword + BF Sword + 1000 gold", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "TRUE DAMAGE CONVERSION", 
                         "attribute-after": "10%", 
-                        "attribute-before": "15%"
+                        "attribute-before": "15%", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "ATTACK DAMAGE", 
                         "attribute-after": "70", 
-                        "attribute-before": "80"
+                        "attribute-before": "80", 
+                        "attribute-type": ""
                     }, 
                     {
-                        "attribute": "updatedTRUE CRIT TEXT", 
-                        "attribute-after": "True Damage Critical Strikes now display as a blue/white icon instead of the purple Magic Damage Crit icon"
+                        "attribute": "TRUE CRIT TEXT", 
+                        "attribute-after": "True Damage Critical Strikes now display as a blue/white icon instead of the purple Magic Damage Crit icon", 
+                        "attribute-type": "updated"
                     }
                 ], 
                 "item_name": "Infinity Edge", 
@@ -180,22 +201,26 @@
                     {
                         "attribute": "BUILD PATH", 
                         "attribute-after": "BF Sword + Long Sword + Long Sword + Dagger + 500 gold", 
-                        "attribute-before": "BF Sword + Pickaxe + Dagger + Dagger + 425 gold"
+                        "attribute-before": "BF Sword + Pickaxe + Dagger + Dagger + 425 gold", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "TOTAL COST", 
                         "attribute-after": "2800 gold", 
-                        "attribute-before": "3200 gold"
+                        "attribute-before": "3200 gold", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "ATTACK DAMAGE", 
                         "attribute-after": "65", 
-                        "attribute-before": "75"
+                        "attribute-before": "75", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "ATTACK SPEED", 
                         "attribute-after": "25%", 
-                        "attribute-before": "30%"
+                        "attribute-before": "30%", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Stormrazor", 
@@ -206,7 +231,8 @@
                     {
                         "attribute": "ATTACK DAMAGE", 
                         "attribute-after": "75", 
-                        "attribute-before": "70"
+                        "attribute-before": "70", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Essence Reaver", 
@@ -217,12 +243,14 @@
                     {
                         "attribute": "GOLD COST", 
                         "attribute-after": "2800 gold", 
-                        "attribute-before": "2900 gold"
+                        "attribute-before": "2900 gold", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "GOLD COST", 
                         "attribute-after": "2700 gold", 
-                        "attribute-before": "2800 gold"
+                        "attribute-before": "2800 gold", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Zeal Items", 
@@ -233,17 +261,20 @@
                     {
                         "attribute": "TOTAL COST", 
                         "attribute-after": "3400 gold", 
-                        "attribute-before": "3700 gold"
+                        "attribute-before": "3700 gold", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "COMBINE COST", 
                         "attribute-after": "325 gold", 
-                        "attribute-before": "525 gold"
+                        "attribute-before": "525 gold", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "ATTACK DAMAGE", 
                         "attribute-after": "50", 
-                        "attribute-before": "65"
+                        "attribute-before": "65", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Mercurial Scimitar", 
@@ -252,37 +283,42 @@
             {
                 "attributes": [
                     {
-                        "attribute": "removedSHARE THE LOAD"
+                        "attribute": "SHARE THE LOAD", 
+                        "attribute-removed": "If you have the most individual total gold on your team, lane minion kills will grant 10 less gold", 
+                        "attribute-type": "removed"
                     }, 
                     {
-                        "attribute": "newSHARE THE LOAD", 
-                        "attribute-after": "If you have the highest minion score on your team, lane minion kills will grant you 10 less gold"
+                        "attribute": "SHARE THE LOAD", 
+                        "attribute-after": "If you have the highest minion score on your team, lane minion kills will grant you 10 less gold", 
+                        "attribute-type": "new"
                     }, 
                     {
-                        "attribute": "newTWISTED TREELINE", 
-                        "attribute-after": "The Monster Hunter changes also apply on Twisted Treeline."
+                        "attribute": "TWISTED TREELINE", 
+                        "attribute-after": "The Monster Hunter changes also apply on Twisted Treeline.", 
+                        "attribute-type": "new"
                     }
                 ], 
                 "item_name": "Jungle Items", 
                 "summary": "Monster Hunter restriction now applies if the champion has the highest minion kill score, not the most gold."
             }
         ], 
-        "version_num": "815"
+        "version_num": "8.15"
     }, 
     {
         "items": [
             {
                 "attributes": [
                     {
-                        "attribute": "newMONSTER HUNTER", 
-                        "attribute-after": "If you have the most individual total gold on your team, lane minions kills will grant 10 less gold. This penalty is removed upon completion of an Enchantment on a Skirmisher's Sabre or Stalker's Blade."
+                        "attribute": "MONSTER HUNTER", 
+                        "attribute-after": "If you have the most individual total gold on your team, lane minions kills will grant 10 less gold. This penalty is removed upon completion of an Enchantment on a Skirmisher's Sabre or Stalker's Blade.", 
+                        "attribute-type": "new"
                     }
                 ], 
                 "item_name": "Jungle Items", 
                 "summary": "If you have the most individual total gold on your team, lane minions kills grant less gold."
             }
         ], 
-        "version_num": "814"
+        "version_num": "8.14"
     }, 
     {
         "items": [
@@ -291,18 +327,20 @@
                     {
                         "attribute": "PERCENT ATTACK DAMAGE PER STACK", 
                         "attribute-after": "2.5%", 
-                        "attribute-before": "4%"
+                        "attribute-before": "4%", 
+                        "attribute-type": ""
                     }, 
                     {
                         "attribute": "PERCENT ABILITY POWER PER STACK", 
                         "attribute-after": "2.5%", 
-                        "attribute-before": "4%"
+                        "attribute-before": "4%", 
+                        "attribute-type": ""
                     }
                 ], 
                 "item_name": "Guinsoo's Rageblade", 
                 "summary": "Attack damage and ability power per stack decreased."
             }
         ], 
-        "version_num": "813"
+        "version_num": "8.13"
     }
 ]
