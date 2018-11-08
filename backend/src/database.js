@@ -1,15 +1,12 @@
-var express    = require("express");
-var mysql      = require('mysql');
+var mysql = require('mysql');
 
 var debug = false;
-
 var connection = mysql.createConnection({
-	host:'localhost',
-	user:'root',
-	password:'',
-	database:'riotpatchnotes'
+	host:'aurora.lolskill.net',
+	user:'hackathon',
+	password:'yoBhM61tfxSEJCxS',
+	database:'hackathon'
 });
-var app = express();
 
 connection.connect(function(err){
 	if(!err){
@@ -215,6 +212,9 @@ exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId)
 };
 
 // testing
-exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
+exports.getAllChangesForChampionIdAfterDate(32, new Date('2018-01-01')).then((response) => {
 	console.log(response);
 });
+//exports.getAllItemChangesForPatchIdAndChampionId('8.22', 1).then((response) => {
+//	console.log(response);
+//});
