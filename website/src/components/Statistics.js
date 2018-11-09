@@ -32,15 +32,15 @@ class Statistics extends Component {
             <div className={styles.statsRow2}>
               <Stat item="Armor" 
                 base={stats.armor[0]}
-                levelIncrease={stats.armor[1]}/>
+                levelIncrease={stats.armor[1]}
                 buff={stats.armor[2]} />
               <Stat item="Attack Speed" 
                 base={stats.attackSpeed[0]} 
-                levelIncrease={stats.attackSpeed[1]}/>
+                levelIncrease={stats.attackSpeed[1]}
                 buff={stats.attackSpeed[2]} />
               <Stat item="Magic Resist" 
                 base={stats.mr[0]} 
-                levelIncrease={stats.mr[1]}/>
+                levelIncrease={stats.mr[1]}
                 buff={stats.mr[2]} />
             </div>
             <div className={styles.statsRow4}>
