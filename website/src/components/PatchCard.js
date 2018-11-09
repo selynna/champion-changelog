@@ -18,8 +18,6 @@ class PatchCard extends Component {
     const e = champData.spells[2];
     const r = champData.spells[3];
 
-    console.log("bsd");
-    console.log(bsd.hp.statChange);
     const data = champData.stats;
     const stats = {
       hp: [data.hp, data.hpperlevel, bsd.hp.statChange],
@@ -54,39 +52,67 @@ class PatchCard extends Component {
       ];
     }
 
-    console.log(stats);
     const abilities = [p, q, w, e, r];
     this.setState({ abilities: abilities, stats: stats });
   }
 
   render() {
-    console.log(this.props.patch);
     const { patch } = this.props;
-
     const changes = [];
-
+    console.log("patch");
     console.log(patch);
+    console.log(this.props.items);
+
     patch.forEach(section => {
       if (section.type === "champion") {
         section.changes.forEach((change, key) => {
           changes.push(
             <div key={key}>
               <h5 style={{ color: "#3498db" }}>{change.name}</h5>
+
               {Object.keys(change)
-                .filter(attribute => attribute !== "name")
+                .filter(
+                  attribute => !(attribute === "name" || attribute === "isBuff")
+                )
                 .map(attribute => {
-                  if (change[attribute].before && change[attribute].after) {
+                  if (
+                    change[attribute].before !== undefined &&
+                    change[attribute].after !== undefined &&
+                    change[attribute].before !== null &&
+                    change[attribute].after !== null
+                  ) {
                     return (
-                      <p key={attribute}>{`${attribute}: ${
-                        change[attribute].before
-                      } => ${change[attribute].after}`}</p>
+                      <div
+                        key={attribute}
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
+                        {change[attribute].isBuff ? (
+                          <div className={styles.statUpIcon} />
+                        ) : (
+                          <div className={styles.statDownIcon} />
+                        )}
+                        <p style={{ margin: "5px", maxWidth: "286px" }}>
+                          <span className={styles.attributeName}>
+                            {attribute}
+                          </span>
+                          {`: ${
+                            change[attribute].before.length > 0
+                              ? change[attribute].before + " => "
+                              : change[attribute].before
+                          } ${change[attribute].after}`}
+                        </p>
+                      </div>
                     );
                   } else if (change[attribute].removed) {
                     const attributeLabel = attribute.slice("removed".length);
+
                     return (
-                      <p key={attribute}>{`${attributeLabel}: Removed => ${
-                        change[attribute].removed
-                      }`}</p>
+                      <p key={attribute}>
+                        <span className={styles.attributeName}>
+                          {attributeLabel}
+                        </span>
+                        {`: Removed => ${change[attribute].removed}`}
+                      </p>
                     );
                   } else return null;
                 })}
@@ -96,39 +122,76 @@ class PatchCard extends Component {
       } else if (section.type === "item") {
         changes.push(
           <div key={section.changes.item_name}>
-            <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
+            <div style={{ display: "flex", alignItems: "flex-end" }}>
+              <div
+                className={styles.itemIcon}
+                style={{
+                  backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/item/${
+                    this.props.items[section.changes.item_name].image.full
+                  }')`
+                }}></div>
+              <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
+              {section.changes.isBuff ? (
+                <div className={styles.statUpIcon} />
+              ) : (
+                <div className={styles.statDownIcon} />
+              )}
+            </div>
             {section.changes.attributes.map(attribute => {
               return (
-                <p key={attribute.attribute}>{`${attribute.attribute}: ${
-                  attribute["attribute-before"]
-                    ? attribute["attribute-before"] + " => "
-                    : ""
-                }${attribute["attribute-after"]}`}</p>
+                <p key={attribute.attribute}>
+                  <span className={styles.attributeName}>
+                    {attribute.attribute}
+                  </span>
+                  {`: ${
+                    attribute["attribute-before"]
+                      ? attribute["attribute-before"] + " => "
+                      : ""
+                  }${attribute["attribute-after"]}`}
+                </p>
               );
             })}
           </div>
         );
       } else if (section.type === "rune") {
+        console.log("Runes");
+        console.log(this.props.runes);
         changes.push(
           <div key={section.changes.name}>
-            <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
+            <div style={{ display: "flex", alignItems: "flex-end" }}>
+              <div
+                className={styles.itemIcon}
+                style={{
+                  background: `url('https://ddragon.leagueoflegends.com/cdn/img/${
+                    this.props.runes[section.changes.name]
+                  }') no-repeat 0 0`, backgroundSize: `100% 100%`
+                }}></div>
+              <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
+              {section.changes.isBuff ? (
+                <div className={styles.statUpIcon} />
+              ) : (
+                <div className={styles.statDownIcon} />
+              )}
+            </div>
             {Object.keys(section.changes)
-              .filter(attribute => attribute !== "name")
+              .filter(
+                attribute => !(attribute === "name" || attribute === "isBuff")
+              )
               .map(attribute => {
                 return (
-                  <p key={attribute}>{`${attribute}: ${
-                    section.changes[attribute]
-                  }`}</p>
+                  <p key={attribute}>
+                    <span className={styles.attributeName}>{attribute}</span>
+                    {`: ${section.changes[attribute]}`}
+                  </p>
                 );
               })}
           </div>
         );
       }
     });
-    console.log(changes);
     return (
       <div className={styles.patchCardWrapper}>
-        <div className={styles.patchCard} style={{overflowY: 'scroll'}}>
+        <div className={styles.patchCard} style={{ overflowY: "scroll" }}>
           <h2>{`Patch Notes`}</h2>
           {changes}
         </div>

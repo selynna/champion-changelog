@@ -52,6 +52,13 @@ class InfoCard extends Component {
     }
 
     const abilities = [p, q, w, e, r];
+    for (var i = 0; i < abilities.length; i++) {
+        var regex = /(<([^>]+)>)/ig
+        ,   body = abilities[i].description 
+        ,   result = body.replace(regex, "");
+        abilities[i].description = result;
+    }
+
     this.setState({ abilities: abilities, stats: stats });
   }
 

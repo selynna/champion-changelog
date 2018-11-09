@@ -6,6 +6,8 @@ import HorizontalTimelineContent from "react-horizontal-timeline";
 import ChampionData from "../assets/static-data/championFull.json";
 import Loader from "react-loader";
 import PatchCard from "./PatchCard";
+import Items from '../assets/static-data/itemsFinal.json';
+import Runes from '../assets/static-data/reversedRunes.json';
 
 import Navbar from "./Navbar";
 
@@ -115,14 +117,31 @@ class Timeline extends Component {
   }
 
   render() {
+
+    let items = { Items }.Items;
+    let runes = { Runes }.Runes;
+
+    /*
+    let itemsArr = { ItemsArr }.ItemsArr.data;
+    let itemsTmp = {};
+    console.log(itemsArr);
+    for (var item in itemsArr) {
+      itemsTmp[itemsArr[item].name] = {
+        name: itemsArr[item].name,
+        id: item,
+        image: itemsArr[item].image
+      }
+    }
+
+    console.log(JSON.stringify(itemsTmp));
+    */
+    
     const { match } = this.props;
     const champion = match.params.champId;
 
     const champData = { ChampionData }.ChampionData;
     const champions = champData.data;
     const baseStatDifferences = this.state.baseStatDifferences;
-
-    console.log(champions[champion]);
 
     const bg = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
 
@@ -133,8 +152,6 @@ class Timeline extends Component {
       patches = Object.keys(this.state.changes).map(patchNum => {
         return [patchNum, "Patch " + patchNum];
       });
-
-      console.log(this.state.changes);
     }
     return (
       <div className={styles.timeline}>
@@ -182,6 +199,8 @@ class Timeline extends Component {
                               ? this.state.changes[patches[this.state.value][0]]
                               : []
                           }
+                          items={items}
+                          runes={runes}
                         />
 
                       </div>

@@ -9,18 +9,13 @@ class Abilities extends Component {
       currAbility: 0,
       togglePassive: true
     };
-    console.log("abilities");
-    console.log(this.state.abilities);
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(e) {
-    console.log("clicked");
     e.stopPropagation();
-    console.log(e.target.className);
 
     const clickedClass = e.target.className.split("_")[1];
-    console.log(clickedClass);
 
     if (clickedClass === "abilityP") {
       this.setState({
@@ -60,7 +55,6 @@ class Abilities extends Component {
     // const { passive, spells } = this.props;
     const togglePassive = this.state.togglePassive;
     const abilities = this.state.abilities;
-    console.log(this.state.abilities);
     const ability = abilities[this.state.currAbility];
     return (
       <div className={styles.abilitiesWrapper}>

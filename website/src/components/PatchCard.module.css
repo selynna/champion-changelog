@@ -21,6 +21,12 @@
   font-size: 14px;
 }
 
+.itemIcon {
+  height: 1.5em;
+  width: 1.5em;
+  margin-right: 5px;
+  background-size: 100% 100%;
+}
 
 .patchCardWrapper h2 {
   font-family: "Bebas Neue";
@@ -41,3 +47,38 @@
   z-index: 101;
 }
 
+.attributeName {
+  font-family: Bebas Neue;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}
+
+.statUpIcon {
+  height: 1em;
+  width: 25px;
+  /* margin-right: 3px; */
+  background-image: url('../assets/icons/up.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.statDownIcon {
+  height: 1em;
+  width: 25px;
+  background-image: url('../assets/icons/down.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.statNoChangeIcon {
+  height: 1em;
+  width: 25px;
+  margin-right: 3px;
+  background-image: url('../assets/icons/nochange.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
