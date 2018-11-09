@@ -59,13 +59,15 @@ class InfoCard extends Component {
     console.log("test stats");
     console.log(this.state.stats);
 
-    const { champData } = this.props;
     return (
       <div className={styles.infoCardWrapper}>
         <div className={styles.infoCard}>
           <Statistics stats={this.state.stats} />
           {/* <Abilities abilities={this.state.abilities} /> */}
-          <Abilities abilities={this.state.abilities} />
+          <Abilities
+            abilities={this.state.abilities}
+            partype={this.props.champData.partype}
+          />
         </div>
       </div>
     );
