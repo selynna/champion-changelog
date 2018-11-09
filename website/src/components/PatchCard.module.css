@@ -1,12 +1,41 @@
 .patchCardWrapper {
+  font-family: "Helvetica Neue";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.patchCardWrapper h2 {
   font-family: "Bebas Neue";
-  width: 20vw;
+  font-size: 28px;
+}
+
+.patchCardWrapper h5 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.patchCardWrapper p {
+  font-size: 14px;
+}
+
+
+.patchCardWrapper h2 {
+  font-family: "Bebas Neue";
+  font-size: 28px;
 }
 
 .patchCard {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.2);
   border-radius: 15px;
-  width: 33vw;
-  padding: 10px;
+  width: 25vw;
+  padding: 20px;
+
+  min-height: 60vh;
+  background-color: #fff;
+  /* overflow:auto; */
 }
 

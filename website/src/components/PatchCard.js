@@ -65,19 +65,62 @@ class PatchCard extends Component {
 
     const changes = [];
 
+    console.log(patch);
     patch.forEach(section => {
       if (section.type === "champion") {
         section.changes.forEach((change, key) => {
           changes.push(
             <div key={key}>
-              <p>{change.name}</p>
+              <h5>{change.name}</h5>
+              {Object.keys(change)
+                .filter(attribute => attribute !== "name")
+                .map(attribute => {
+                  if (change[attribute].before && change[attribute].after) {
+                    return (
+                      <p key={attribute}>{`${attribute}: ${
+                        change[attribute].before
+                      } => ${change[attribute].after}`}</p>
+                    );
+                  } else if (change[attribute].removed) {
+                    const attributeLabel = attribute.slice("removed".length);
+                    return (
+                      <p key={attribute}>{`${attributeLabel}: Removed => ${
+                        change[attribute].removed
+                      }`}</p>
+                    );
+                  } else return null;
+                })}
             </div>
           );
         });
-      } else {
+      } else if (section.type === "item") {
+        changes.push(
+          <div key={section.changes.item_name}>
+            <h5>{section.changes.item_name}</h5>
+            {section.changes.attributes.map(attribute => {
+              return (
+                <p key={attribute.attribute}>{`${attribute.attribute}: ${
+                  attribute["attribute-before"]
+                    ? attribute["attribute-before"] + " => "
+                    : ""
+                }${attribute["attribute-after"]}`}</p>
+              );
+            })}
+          </div>
+        );
+      } else if (section.type === "rune") {
         changes.push(
           <div key={section.changes.name}>
-            <p>{section.changes.name}</p>
+            <h5>{section.changes.name}</h5>
+            {Object.keys(section.changes)
+              .filter(attribute => attribute !== "name")
+              .map(attribute => {
+                return (
+                  <p key={attribute}>{`${attribute}: ${
+                    section.changes[attribute]
+                  }`}</p>
+                );
+              })}
           </div>
         );
       }
