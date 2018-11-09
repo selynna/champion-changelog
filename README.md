@@ -2,6 +2,14 @@
 
 Champion Changelog is a patch TL;DR since you last played the champion.
 
+## Running the app
+
+Run `npm install` in website/ and backend/ to download the required packages, and ensure that you have the latest version of Node.
+
+You need to start the backend and the frontend in order for the app to work: 
+- in website/, `npm run start`
+- in backend/, `npm start`
+
 ## Public endpoint
 
 Scraping patch data is difficult, so we made an endpoint to help others also use the patch data we scraped from the Riot PatchNotes. Our data goes from 7.22 (Runes Reforged) to 8.22 for Runes and 8.13 to 8.22 for champion data.
@@ -31,4 +39,3 @@ This endpoint will return all the changes to champions for a particular patch nu
 ```
 
 This endpoint will return all the relevant changes (based on top 10 items and runes scraped from champion.gg which can be found in `info.json`) for a particular champion on a particular patch. This includes only runes and champion changes for now.
-
