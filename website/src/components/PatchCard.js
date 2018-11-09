@@ -65,29 +65,49 @@ class PatchCard extends Component {
 
     const changes = [];
 
-    console.log(patch);
     patch.forEach(section => {
       if (section.type === "champion") {
         section.changes.forEach((change, key) => {
           changes.push(
             <div key={key}>
               <h5 style={{ color: "#3498db" }}>{change.name}</h5>
+
               {Object.keys(change)
-                .filter(attribute => attribute !== "name")
+                .filter(
+                  attribute => !(attribute === "name" || attribute === "isBuff")
+                )
                 .map(attribute => {
-                  if (change[attribute].before && change[attribute].after) {
+                  if (
+                    change[attribute].before !== undefined &&
+                    change[attribute].after !== undefined &&
+                    change[attribute].before !== null &&
+                    change[attribute].after !== null
+                  ) {
                     return (
-                      <p key={attribute}>
-                        <span className={styles.attributeName}>
-                          {attribute}
-                        </span>
-                        {`: ${change[attribute].before} => ${
-                          change[attribute].after
-                        }`}
-                      </p>
+                      <div
+                        key={attribute}
+                        style={{ display: "flex", alignItems: "center" }}
+                      >
+                        {change[attribute].isBuff ? (
+                          <div className={styles.statUpIcon} />
+                        ) : (
+                          <div className={styles.statDownIcon} />
+                        )}
+                        <p style={{ margin: "5px", maxWidth: "286px" }}>
+                          <span className={styles.attributeName}>
+                            {attribute}
+                          </span>
+                          {`: ${
+                            change[attribute].before.length > 0
+                              ? change[attribute].before + " => "
+                              : change[attribute].before
+                          } ${change[attribute].after}`}
+                        </p>
+                      </div>
                     );
                   } else if (change[attribute].removed) {
                     const attributeLabel = attribute.slice("removed".length);
+
                     return (
                       <p key={attribute}>
                         <span className={styles.attributeName}>
@@ -104,7 +124,14 @@ class PatchCard extends Component {
       } else if (section.type === "item") {
         changes.push(
           <div key={section.changes.item_name}>
-            <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
+            <div style={{ display: "flex", alignItems: "flex-end" }}>
+              <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
+              {section.changes.isBuff ? (
+                <div className={styles.statUpIcon} />
+              ) : (
+                <div className={styles.statDownIcon} />
+              )}
+            </div>
             {section.changes.attributes.map(attribute => {
               return (
                 <p key={attribute.attribute}>
@@ -124,9 +151,18 @@ class PatchCard extends Component {
       } else if (section.type === "rune") {
         changes.push(
           <div key={section.changes.name}>
-            <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
+            <div style={{ display: "flex", alignItems: "flex-end" }}>
+              <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
+              {section.changes.isBuff ? (
+                <div className={styles.statUpIcon} />
+              ) : (
+                <div className={styles.statDownIcon} />
+              )}
+            </div>
             {Object.keys(section.changes)
-              .filter(attribute => attribute !== "name")
+              .filter(
+                attribute => !(attribute === "name" || attribute === "isBuff")
+              )
               .map(attribute => {
                 return (
                   <p key={attribute}>
