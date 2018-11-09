@@ -128,7 +128,7 @@ class PatchCard extends Component {
     console.log(changes);
     return (
       <div className={styles.patchCardWrapper}>
-        <div className={styles.patchCard}>
+        <div className={styles.patchCard} style={{overflowY: 'scroll'}}>
           <h2>{`Patch Notes`}</h2>
           {changes}
         </div>
