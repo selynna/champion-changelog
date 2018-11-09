@@ -53,6 +53,17 @@ class Timeline extends Component {
       .catch(err => console.log(err));
   }
 
+  componentWillMount() {
+    const patches = this.state.patches;
+    this.data = patches.map((date, index) => {
+      return ({
+        date: patches[index][0],
+        title: patches[index][1],
+        component: ( <div className='container' key={index}><p>asdf</p></div>)
+      });
+    });
+  }
+
   render() {
     const { match } = this.props;
     const champion = match.params.champId;
@@ -86,6 +97,7 @@ class Timeline extends Component {
             </div>
             <div className={styles.timelineWrapper}>
               <HorizontalTimelineContent
+                content={this.data}
                 index={this.state.value}
                 indexClick={index => {
                   this.setState({ value: index, previous: this.state.value });
