@@ -1,0 +1,2079 @@
+{
+    "8.13": [
+        {
+            "changes": [
+                {
+                    "ATTACK SPEED (AT MAX STACKS)": {
+                        "after": "30-50%", 
+                        "before": "20-40%"
+                    }, 
+                    "ON-HIT BASE DAMAGE (AT MAX STACKS)": {
+                        "after": "4-48 (at levels 1-18)", 
+                        "before": "10-66 (at levels 1-18)"
+                    }, 
+                    "ON-HIT RATIO (AT MAX STACKS)": {
+                        "after": "16% bonus attack damage", 
+                        "before": "8-16% total attack damage"
+                    }, 
+                    "name": "Passive - Ionian Fervor"
+                }, 
+                {
+                    "MAXIMUM BASE DAMAGE": {
+                        "after": "20/50/80/110/140", 
+                        "before": "20/60/100/140/180"
+                    }, 
+                    "MAXIMUM DAMAGE RATIO (AD)": {
+                        "after": "1.0 total attack damage", 
+                        "before": "1.2 total attack damage"
+                    }, 
+                    "MINIMUM BASE DAMAGE": {
+                        "after": "10/25/40/55/70", 
+                        "before": "10/30/50/70/90"
+                    }, 
+                    "MINIMUM DAMAGE RATIO (AD)": {
+                        "after": "0.5 total attack damage", 
+                        "before": "0.6 total attack damage"
+                    }, 
+                    "name": "W - Defiant Dance"
+                }, 
+                {
+                    "MARK DURATION": {
+                        "after": "5 seconds", 
+                        "before": "6 seconds"
+                    }, 
+                    "name": "E - Flawless Duet"
+                }, 
+                {
+                    "MARK DURATION": {
+                        "after": "5 seconds", 
+                        "before": "6 seconds"
+                    }, 
+                    "name": "R - Vanguard's Edge"
+                }
+            ], 
+            "name": "Irelia", 
+            "overview": "Passive on-hit damage decreased. Passive attack speed increased. W damage decreased at lower stacks."
+        }, 
+        {
+            "changes": [
+                {
+                    "ATTACK DAMAGE GROWTH": {
+                        "after": "2.75", 
+                        "before": "3.11"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "DAMAGE AMPLIFICATION TO MINIONS": {
+                        "after": "200%", 
+                        "before": "400%"
+                    }, 
+                    "name": "R - The Culling"
+                }
+            ], 
+            "name": "Lucian", 
+            "overview": "Attack damage growth decreased. R damage amplification to minions decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "ARMOR GROWTH": {
+                        "after": "5", 
+                        "before": "4"
+                    }, 
+                    "HEALTH GROWTH": {
+                        "after": "100", 
+                        "before": "110"
+                    }, 
+                    "MAGIC RESIST GROWTH": {
+                        "after": "2", 
+                        "before": "1.25"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "BASE DAMAGE": {
+                        "after": "95/125/155/185/215", 
+                        "before": "95/130/165/200/235"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "1.0 bonus attack damage", 
+                        "before": "0.8 bonus attack damage"
+                    }, 
+                    "name": "E - Phantom Undertow"
+                }, 
+                {
+                    "BASE DAMAGE": {
+                        "after": "200/250/300/350/400/450/475/500/525/550/575/590/605 (at levels 6-18)", 
+                        "before": "190/240/290/340/390/440/475/510/545/580/615/635/655 (at levels 6-18)"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.8 bonus attack damage", 
+                        "before": "0.6 bonus attack damage"
+                    }, 
+                    "name": "R - Death From Below"
+                }
+            ], 
+            "name": "Pyke", 
+            "overview": "Health growth decreased. Armor and magic resist growth increased. E and R base damage decreased at later ranks. E and R damage ratio increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "DAMAGE RATIO PER SPEAR after the first": {
+                        "after": "(+20 / 23.75 / 27.5 / 31.25 / 35% total attack damage)", 
+                        "before": "(+20 / 22.5 / 25 / 27.5 / 30% total attack damage)"
+                    }, 
+                    "name": "E - Rend"
+                }
+            ], 
+            "name": "Kalista", 
+            "overview": "E damage ratio increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COST": {
+                        "after": "1 mana", 
+                        "before": "0 mana"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.8 ability power", 
+                        "before": "0.7 ability power"
+                    }, 
+                    "name": "W - Nether Blade"
+                }, 
+                {
+                    "DAMAGE RATIO": {
+                        "after": "0.8 ability power", 
+                        "before": "0.7 ability power"
+                    }, 
+                    "name": "E - Force Pulse"
+                }, 
+                {
+                    "DAMAGE RATIO": {
+                        "after": "0.4 ability power", 
+                        "before": "0.3 ability power"
+                    }, 
+                    "name": "R - Riftwalk"
+                }
+            ], 
+            "name": "Kassadin", 
+            "overview": "W now costs mana and can stack Tear. W, E, and R damage ratios increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "7 seconds", 
+                        "before": "9 seconds"
+                    }, 
+                    "name": "W - Command: Dissonance"
+                }
+            ], 
+            "name": "Orianna", 
+            "overview": "W cooldown decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEALTH REGEN": {
+                        "after": "7.0 health per 5 seconds", 
+                        "before": "5.5 health per 5 seconds"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "120/90/60 seconds", 
+                        "before": "130/95/60 seconds"
+                    }, 
+                    "name": "R - Blade of the Exile"
+                }
+            ], 
+            "name": "Riven", 
+            "overview": "Health regen increased. R cooldown decreased at early ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "4 STACK DAMAGE RATIO": {
+                        "after": "1.10/1.43/1.76/2.09/2.42 bonus attack damage", 
+                        "before": "1.10/1.32/1.54/1.76/1.98 bonus attack damage"
+                    }, 
+                    "name": "E - Explosive Charge"
+                }
+            ], 
+            "name": "Tristana", 
+            "overview": "E damage ratio increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "13/11.5/10/8.5/7 seconds", 
+                        "before": "13/12/11/10/9 seconds"
+                    }, 
+                    "name": "E - Spinning Slash"
+                }
+            ], 
+            "name": "Tryndamere", 
+            "overview": "E cooldown decreased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "MAXIMUM DAMAGE RATIO": {
+                        "after": "2.1 bonus attack damage", 
+                        "before": "1.5 bonus attack damage"
+                    }, 
+                    "name": "E - Contaminate"
+                }
+            ], 
+            "name": "Twitch", 
+            "overview": "E damage ratio increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "60/95/130/165/200", 
+                        "before": "75/120/175/210/255"
+                    }, 
+                    "name": "E - Hookshot"
+                }
+            ], 
+            "name": "Camille", 
+            "overview": "E base damage decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "ATTACK DAMAGE": {
+                        "after": "30/45/60/75/90", 
+                        "before": "30/50/70/90/110"
+                    }, 
+                    "name": "E - Masochism"
+                }
+            ], 
+            "name": "Dr. Mundo", 
+            "overview": "E attack damage reduced at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "COST": {
+                        "after": "50/55/60/65/70 mana", 
+                        "before": "70/75/80/95/90 mana"
+                    }, 
+                    "name": "Q - Alpha Strike", 
+                    "removedMINION SLAYER": {
+                        "removed": "No longer deals bonus damage to minions"
+                    }
+                }
+            ], 
+            "name": "Master Yi", 
+            "overview": "Q bonus damage to minions removed. Q mana cost decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE HEALTH REGEN": {
+                        "after": "7 health per 5 seconds", 
+                        "before": "9 health per 5 seconds"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "FLAME LENGTH": {
+                        "after": "500", 
+                        "before": "550"
+                    }, 
+                    "FLAME WIDTH": {
+                        "after": "175", 
+                        "before": "225"
+                    }, 
+                    "name": "W - Bellows Breath"
+                }
+            ], 
+            "name": "Ornn", 
+            "overview": "Base health regen decreased. W size decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "DAMAGE RATIO FULLY CHARGED": {
+                        "after": "0.8 ability power", 
+                        "before": "1.0 ability power"
+                    }, 
+                    "name": "E - Tides of Blood"
+                }
+            ], 
+            "name": "Vladimir", 
+            "overview": "E damage decreased when charged."
+        }, 
+        {
+            "changes": [
+                {
+                    "MOVEMENT SPEED DURATION": {
+                        "after": "2/2.25/2.5/2.75/3 seconds", 
+                        "before": "2/2.5/3/3.5/4 seconds"
+                    }, 
+                    "TOTAL DAMAGE RATIO": {
+                        "after": "0.65 ability power", 
+                        "before": "0.75 ability power"
+                    }, 
+                    "name": "W - Spell Thief"
+                }
+            ], 
+            "name": "Zoe", 
+            "overview": "W damage ratio decreased. W movement speed duration decreased at late ranks."
+        }
+    ], 
+    "8.14": [
+        {
+            "changes": [
+                {
+                    "HEALTH": {
+                        "after": "581", 
+                        "before": "531"
+                    }, 
+                    "HEALTH GROWTH": {
+                        "after": "84", 
+                        "before": "88"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Jinx", 
+            "overview": "Base health increased. Health growth decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE ARMOR": {
+                        "after": "26", 
+                        "before": "20.4"
+                    }, 
+                    "MANA REGEN": {
+                        "after": "11.5 mana per 5 seconds", 
+                        "before": "8.5 mana per 5 seconds"
+                    }, 
+                    "MANA REGEN GROWTH": {
+                        "after": "0.5 mana per 5 seconds", 
+                        "before": "0.8 mana per 5 seconds"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "SOULFLARE DETONATION DAMAGE": {
+                        "after": "35/140/245/350 (at Mantra levels 1/2/3/4)", 
+                        "before": "50/150/250/350 (at Mantra levels 1/2/3/4)"
+                    }, 
+                    "SPLASH RADIUS": {
+                        "after": "280", 
+                        "before": "250"
+                    }, 
+                    "name": "Q - Inner Flame"
+                }
+            ], 
+            "name": "Karma", 
+            "overview": "Base mana regen increased; growth decreased. Base armor increased; Q splash radius increased. Empowered detonation damage decreased at early ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "30/50/70/90/110", 
+                        "before": "30/47.5/65/82.5/100"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.45/0.525/0.6/0.675/0.75 total attack damage", 
+                        "before": "0.45/0.50/0.55/0.6/0.65 total attack damage"
+                    }, 
+                    "name": "Q - Decimating Smash"
+                }
+            ], 
+            "name": "Sion", 
+            "overview": "Q base damage and damage ratio increased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEALTH": {
+                        "after": "582", 
+                        "before": "542"
+                    }, 
+                    "HEALTH GROWTH": {
+                        "after": "84", 
+                        "before": "87"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Twitch", 
+            "overview": "Base health increased. Health growth decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "CHARM DURATION": {
+                        "after": "1.4/1.55/1.7/1.85/2 seconds", 
+                        "before": "1/1.25/1.5/1.75/2 seconds"
+                    }, 
+                    "COST": {
+                        "after": "70 mana", 
+                        "before": "85 mana"
+                    }, 
+                    "name": "E - Charm"
+                }
+            ], 
+            "name": "Ahri", 
+            "overview": "E mana cost decreased. E charm duration increased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "75/125/175/225/275", 
+                        "before": "75/120/165/210/255"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.8 ability power", 
+                        "before": "0.7 ability power"
+                    }, 
+                    "name": "Q - Noxious Blast"
+                }
+            ], 
+            "name": "Cassiopeia", 
+            "overview": "Q base damage increased late. Q damage ratio increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "120/170/220/270/320", 
+                        "before": "80/140/200/260/320"
+                    }, 
+                    "RESISTANCE REDUCTION PER STACK": {
+                        "after": "1/1.375/1.75/2.125/2.5", 
+                        "before": "0.5/1/1.5/2/2.5"
+                    }, 
+                    "name": "E - Gatling Gun"
+                }
+            ], 
+            "name": "Corki", 
+            "overview": "E base damage and resistance reduction per stack increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEALTH GROWTH": {
+                        "after": "93", 
+                        "before": "85"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Elise", 
+            "overview": "Health growth increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "LIFESTEAL": {
+                        "after": "12/18/24% (at levels 1/7/13)", 
+                        "before": "10/15/20% (at levels 1/7/13)"
+                    }, 
+                    "name": "Passive - Soul Eater"
+                }
+            ], 
+            "name": "Nasus", 
+            "overview": "Passive lifesteal increased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "BONUS ATTACK SPEED AT LEVEL 1": {
+                        "after": "8%", 
+                        "before": "0%"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "BASE DAMAGE": {
+                        "after": "60/85/110/135/160", 
+                        "before": "50/75/100/125/150"
+                    }, 
+                    "name": "W - Aegis of Zeonia"
+                }
+            ], 
+            "name": "Pantheon", 
+            "overview": "Bonus attack speed at level 1 added. W base damage increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "DAMAGE RATIO": {
+                        "after": "0.5 bonus attack damage", 
+                        "before": "0.4 bonus attack damage"
+                    }, 
+                    "name": "Q - Queen's Wrath"
+                }, 
+                {
+                    "DAMAGE RATIO": {
+                        "after": "0.5 bonus attack damage", 
+                        "before": "0.4 bonus attack damage"
+                    }, 
+                    "name": "Q - Prey Seeker"
+                }, 
+                {
+                    "DAMAGE RATIO": {
+                        "after": "2.0 bonus attack damage", 
+                        "before": "1.85 bonus attack damage"
+                    }, 
+                    "name": "R - Void Rush"
+                }
+            ], 
+            "name": "Rek'Sai", 
+            "overview": "Q and R damage ratios increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "7 seconds", 
+                        "before": "9 seconds"
+                    }, 
+                    "name": "Q - Boomerang Blade"
+                }
+            ], 
+            "name": "Sivir", 
+            "overview": "Q cooldown decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "DAMAGE RATIO": {
+                        "after": "0.8 ability power", 
+                        "before": "0.6 ability power"
+                    }, 
+                    "name": "Q - Plasma Fission"
+                }
+            ], 
+            "name": "Vel'Koz", 
+            "overview": "Q damage ratio increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "MAXIMUM HEALTH DAMAGE": {
+                        "after": "4/6.5/9/11.5/14% target's maximum health", 
+                        "before": "4/6/8/10/12% target's maximum health"
+                    }, 
+                    "name": "W - Silver Bolts"
+                }
+            ], 
+            "name": "Vayne", 
+            "overview": "W damage increased late."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE ATTACK SPEED": {
+                        "after": "0.644", 
+                        "before": "0.625"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "110/85/60 seconds", 
+                        "before": "130/100/70 seconds"
+                    }, 
+                    "name": "R - Assault and Battery"
+                }
+            ], 
+            "name": "Vi", 
+            "overview": "Base attack speed increased. R cooldown decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "CAST RANGE": {
+                        "after": "800", 
+                        "before": "700"
+                    }, 
+                    "name": "W - Gravity Field"
+                }
+            ], 
+            "name": "Viktor", 
+            "overview": "W cast range increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEALTH COST REFUND ON HIT": {
+                        "after": "40% (still doubled on kill)", 
+                        "before": "50%"
+                    }, 
+                    "name": "Q - Infected Cleaver"
+                }
+            ], 
+            "name": "Dr. Mundo", 
+            "overview": "Q health refund decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "12/11/10/9/8 seconds", 
+                        "before": "12/10.5/9/7.5/6 seconds"
+                    }, 
+                    "name": "Q - Gleaming Quill"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "130/110/90 seconds", 
+                        "before": "120/100/80 seconds"
+                    }, 
+                    "name": "R - The Quickness"
+                }
+            ], 
+            "name": "Rakan", 
+            "overview": "Q cooldown increased late. R cooldown increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "MAX STUN DURATION": {
+                        "after": "1.5 seconds", 
+                        "before": "2 seconds"
+                    }, 
+                    "name": "R - Glacial Prison"
+                }
+            ], 
+            "name": "Sejuani", 
+            "overview": "R stun duration decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "SLOW": {
+                        "after": "15/20/25/30/35%", 
+                        "before": "35%"
+                    }, 
+                    "name": "Q - Twilight Assault"
+                }
+            ], 
+            "name": "Shen", 
+            "overview": "Q slow decreased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "MAX EXPLOSION DAMAGE RATIO": {
+                        "after": "1.05 ability power", 
+                        "before": "1.35 ability power"
+                    }, 
+                    "name": "R - Demon Flare"
+                }
+            ], 
+            "name": "Swain", 
+            "overview": "R explosion damage ratio decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "INCOMING DAMAGE": {
+                        "after": "70/85/100/115/130", 
+                        "before": "70/95/120/145/170"
+                    }, 
+                    "name": "W - Rake"
+                }
+            ], 
+            "name": "Talon", 
+            "overview": "W return damage decreased late."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "65/100/135/170/205", 
+                        "before": "65/110/155/200/245"
+                    }, 
+                    "name": "E - Nimbus Strike"
+                }
+            ], 
+            "name": "Wukong", 
+            "overview": "E base damage decreased late."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "75/105/135/165/195", 
+                        "before": "75/120/165/210/255"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.55 ability power", 
+                        "before": "0.65 ability power"
+                    }, 
+                    "name": "W - Spell Thief"
+                }
+            ], 
+            "name": "Zoe", 
+            "overview": "W base damage decreased late. W damage ratio decreased."
+        }
+    ], 
+    "8.15": [
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE PER HIT": {
+                        "after": "60/80/100/120/140", 
+                        "before": "65/85/105/125/145"
+                    }, 
+                    "COST": {
+                        "after": "70/75/80/85/90 mana", 
+                        "before": "50/60/70/80/90 mana"
+                    }, 
+                    "name": "E - Dark Wind"
+                }
+            ], 
+            "name": "Fiddlesticks", 
+            "overview": "E cost increased at early ranks. E base damage decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "ACTIVE BASE DAMAGE": {
+                        "after": "50/70/90/110/130", 
+                        "before": "40/50/60/70/80"
+                    }, 
+                    "ACTIVE DAMAGE RATIO": {
+                        "after": "0.6 ability power", 
+                        "before": "0.4 ability power"
+                    }, 
+                    "ON-HIT DAMAGE RATIO": {
+                        "after": "0.4 ability power", 
+                        "before": "0.3 ability power"
+                    }, 
+                    "name": "W - Seastone Trident"
+                }, 
+                {
+                    "CHOMPER DAMAGE RATIO": {
+                        "after": "1.1 ability power", 
+                        "before": "0.9 ability power"
+                    }, 
+                    "GIGALODON DAMAGE RATIO": {
+                        "after": "1.3 ability power", 
+                        "before": "1.2 ability power"
+                    }, 
+                    "GUPPY DAMAGE RATIO": {
+                        "after": "0.9 ability power", 
+                        "before": "0.6 ability power"
+                    }, 
+                    "name": "R - Chum the Waters"
+                }
+            ], 
+            "name": "Fizz", 
+            "overview": "W active base damage increased. W active and on-hit damage ratios increased. R ability power ratios increased, increased less for larger sharks."
+        }, 
+        {
+            "changes": [
+                {
+                    "ATTACK DAMAGE": {
+                        "after": "63", 
+                        "before": "60"
+                    }, 
+                    "HEALTH": {
+                        "after": "580", 
+                        "before": "550"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "DAMAGE PER STACK": {
+                        "after": "4-17 (at levels 1-18)", 
+                        "before": "1-12 (at levels 1-18)"
+                    }, 
+                    "name": "Passive - Ionian Fervor"
+                }, 
+                {
+                    "BASE DAMAGE": {
+                        "after": "5/25/45/65/85", 
+                        "before": "10/30/50/70/90"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.6 total attack damage", 
+                        "before": "0.7 total attack damage"
+                    }, 
+                    "RANGE": {
+                        "after": "600", 
+                        "before": "625"
+                    }, 
+                    "name": "Q - Bladesurge"
+                }, 
+                {
+                    "DAMAGE REDUCTION": {
+                        "after": "50%", 
+                        "before": "45/50/55/60/65%"
+                    }, 
+                    "name": "W - Defiant Dance"
+                }, 
+                {
+                    "BASE DAMAGE": {
+                        "after": "70/110/150/190/230", 
+                        "before": "80/120/160/200/240"
+                    }, 
+                    "RANGE": {
+                        "after": "850", 
+                        "before": "900"
+                    }, 
+                    "name": "E - Flawless Duet", 
+                    "removedMONSTER REDUCTION": {
+                        "removed": "No longer deals 50% damage to monsters"
+                    }
+                }, 
+                {
+                    "RANGE": {
+                        "after": "1000", 
+                        "before": "1050"
+                    }, 
+                    "name": "R - Vanguard's Edge"
+                }
+            ], 
+            "name": "Irelia", 
+            "overview": "Attack damage increased. Health increased. Passive damage increased. Q range, base damage, and damage ratio decreased. E range and base damage decreased. R range decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "WOLF BONUS ATTACK SPEED": {
+                        "after": "25% bonus attack speed", 
+                        "before": "50% bonus attack speed"
+                    }, 
+                    "name": "W - Wolf's Frenzy"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "180/150/120 seconds", 
+                        "before": "160/130/100 seconds"
+                    }, 
+                    "name": "R - Lamb's Respite"
+                }
+            ], 
+            "name": "Kindred", 
+            "overview": "W attack speed scaling (for Wolf) decreased. R cooldown increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "MANA REGEN": {
+                        "after": "11 mana per 5 seconds", 
+                        "before": "15 mana per 5 seconds"
+                    }, 
+                    "name": "Base Stats"
+                }, 
+                {
+                    "COST": {
+                        "after": "80 mana", 
+                        "before": "50 mana"
+                    }, 
+                    "name": "E - Black Shield"
+                }
+            ], 
+            "name": "Morgana", 
+            "overview": "Base mana regen decreased. Black Shield cost increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BONUS ATTACK SPEED": {
+                        "after": "55/65/75/85/95%", 
+                        "before": "40/50/60/70/80%"
+                    }, 
+                    "name": "W - Vicious Strikes"
+                }
+            ], 
+            "name": "Olaf", 
+            "overview": "W bonus attack speed increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "ARMOR": {
+                        "after": "28", 
+                        "before": "32"
+                    }, 
+                    "name": "Base Stats"
+                }, 
+                {
+                    "BASE DAMAGE": {
+                        "after": "10-95 (at levels 1-18)", 
+                        "before": "15-100 (at levels 1-18)"
+                    }, 
+                    "name": "Passive - Harrier"
+                }
+            ], 
+            "name": "Quinn", 
+            "overview": "Armor decreased. Passive damage decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "70/110/150/190/230", 
+                        "before": "50/95/140/185/230"
+                    }, 
+                    "name": "Q - Dark Sphere"
+                }
+            ], 
+            "name": "Syndra", 
+            "overview": "Q base damage increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "22/19.5/17/14.5/12 seconds", 
+                        "before": "22/20.5/19/17.5/16 seconds"
+                    }, 
+                    "name": "W - Dark Passage"
+                }, 
+                {
+                    "MAXIMUM ATTACK DAMAGE CONTRIBUTION": {
+                        "after": "100/125/150/175/200%", 
+                        "before": "80/110/140/170/200%"
+                    }, 
+                    "name": "E - Flay"
+                }
+            ], 
+            "name": "Thresh", 
+            "overview": "W cooldown decreased at later ranks. E maximum attack damage contribution increased at early ranks."
+        }
+    ], 
+    "8.16": [
+        {
+            "changes": [
+                {
+                    "CHARGES WHEN LEARNED": {
+                        "after": "1", 
+                        "before": "2"
+                    }, 
+                    "PASSIVE HEALING AGAINST NON-CHAMPIONS": {
+                        "after": "15%", 
+                        "before": "33%"
+                    }, 
+                    "name": "E - Umbral Dash"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "160/140/120 seconds", 
+                        "before": "140/130/120 seconds"
+                    }, 
+                    "name": "R - World Ender"
+                }
+            ], 
+            "name": "Aatrox", 
+            "overview": "E passive healing against non-champions decreased. Charges granted on learning E decreased. R cooldown increased at early ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "ACTIVE DAMAGE RATIO": {
+                        "after": "0.5 ability power", 
+                        "before": "0.6 ability power"
+                    }, 
+                    "ON-HIT DAMAGE RATIO": {
+                        "after": "0.35 ability power", 
+                        "before": "0.4 ability power"
+                    }, 
+                    "name": "W - Seastone Trident"
+                }, 
+                {
+                    "CHOMPER DAMAGE RATIO": {
+                        "after": "1.0 ability power", 
+                        "before": "1.1 ability power"
+                    }, 
+                    "GIGALODON DAMAGE RATIO": {
+                        "after": "1.2 ability power", 
+                        "before": "1.3 ability power"
+                    }, 
+                    "GUPPY DAMAGE RATIO": {
+                        "after": "0.8 ability power", 
+                        "before": "0.9 ability power"
+                    }, 
+                    "name": "R - Chum the Waters"
+                }
+            ], 
+            "name": "Fizz", 
+            "overview": "W damage ratio decreased. R damage ratio decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "55/95/135/175/215", 
+                        "before": "55/90/125/160/195"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.7 bonus attack damage", 
+                        "before": "0.6 bonus attack damage"
+                    }, 
+                    "name": "Q - Rampage"
+                }
+            ], 
+            "name": "Hecarim", 
+            "overview": "Q base damage increased at later ranks. Q damage ratio increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "MAGIC RESIST": {
+                        "after": "26", 
+                        "before": "30"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Orianna", 
+            "overview": "Base magic resist decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "ATTACK DAMAGE GROWTH": {
+                        "after": "2.4", 
+                        "before": "3"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Quinn", 
+            "overview": "Attack damage growth decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "ARMOR": {
+                        "after": "33", 
+                        "before": "36"
+                    }, 
+                    "HEALTH": {
+                        "after": "480", 
+                        "before": "510"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Rakan", 
+            "overview": "Health and armor decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "MOVEMENT SPEED": {
+                        "after": "335", 
+                        "before": "340"
+                    }, 
+                    "name": "Base Stats"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "16/15/14/13/12 seconds", 
+                        "before": "12 seconds"
+                    }, 
+                    "name": "W - Seismic Shove"
+                }, 
+                {
+                    "name": "R - Weaver's Wall", 
+                    "removedVISION": {
+                        "removed": "Wall no longer grants vision"
+                    }
+                }
+            ], 
+            "name": "Taliyah", 
+            "overview": "Movement speed decreased. W cooldown increased at early ranks. R wall no longer grants vision."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "20/30/40/50/60", 
+                        "before": "20/40/60/80/100"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "1.0/1.1/1.2/1.3/1.4 total attack damage", 
+                        "before": "1.0/1.05/1.1/1.15/1.2 total attack damage"
+                    }, 
+                    "STOLEN ATTACK DAMAGE DURATION": {
+                        "after": "5 seconds", 
+                        "before": "8 seconds"
+                    }, 
+                    "name": "Q - Chomp"
+                }
+            ], 
+            "name": "Trundle", 
+            "overview": "Q base damage decreased at later ranks. Q damage ratio increased at later ranks. Q attack damage sap duration decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "13/12/11/10/9 seconds", 
+                        "before": "13/11.5/10/8.5/7 seconds"
+                    }, 
+                    "name": "E - Spinning Slash"
+                }
+            ], 
+            "name": "Tryndamere", 
+            "overview": "E cooldown increased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "10/40/70/100/130", 
+                        "before": "30/60/90/120/150"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "1.0/1.1/1.2/1.3/1.4 total attack damage", 
+                        "before": "1.1/1.2/1.3/1.4/1.5 total attack damage"
+                    }, 
+                    "name": "Q - Crushing Blow"
+                }
+            ], 
+            "name": "Wukong", 
+            "overview": "Q base damage decreased. Q damage ratio decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE LEVELS 1-6": {
+                        "after": "10/12/16/20/24/28", 
+                        "before": "12/15/20/25/30/35"
+                    }, 
+                    "BASE DAMAGE LEVELS 11-14": {
+                        "after": "60/68/76/84", 
+                        "before": "79/86/93/100"
+                    }, 
+                    "BASE DAMAGE LEVELS 15-18": {
+                        "after": "94/104/114/124", 
+                        "before": "109/117/126/135"
+                    }, 
+                    "BASE DAMAGE LEVELS 7-10": {
+                        "after": "34/40/46/52", 
+                        "before": "48/53/67/73"
+                    }, 
+                    "DAMAGE RATIO": {
+                        "after": "0.2 ability power", 
+                        "before": "0.325 ability power"
+                    }, 
+                    "name": "Passive - More Sparkles!"
+                }, 
+                {
+                    "DAMAGE RATIO": {
+                        "after": "0.4 ability power", 
+                        "before": "0.55 ability power"
+                    }, 
+                    "name": "W - Spell Thief"
+                }
+            ], 
+            "name": "Zoe", 
+            "overview": "Passive damage decreased at all ranks. W damage ratio decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "14/13/12/11/10 seconds", 
+                        "before": "14 seconds"
+                    }, 
+                    "name": "W - Eclipse"
+                }
+            ], 
+            "name": "Leona", 
+            "overview": "W cooldown decreased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE SHIELD": {
+                        "after": "60/70/80/90/100", 
+                        "before": "65/70/75/80/85"
+                    }, 
+                    "COOLDOWN": {
+                        "after": "12 seconds", 
+                        "before": "18 seconds"
+                    }, 
+                    "DURATION": {
+                        "after": "6 seconds", 
+                        "before": "10 seconds"
+                    }, 
+                    "SHIELD SCALING": {
+                        "after": "9/10/11/12/13% maximum health", 
+                        "before": "9/11/13/15/17% maximum health"
+                    }, 
+                    "name": "W - Titan's Wrath"
+                }
+            ], 
+            "name": "Nautilus", 
+            "overview": "W base shield decreased slightly early, increased at later ranks. W maximum health scaling decreased at later ranks. W duration and cooldown decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BONUS ARMOR": {
+                        "after": "60/70/80/90/100%", 
+                        "before": "50/60/70/80/90%"
+                    }, 
+                    "BONUS MAGIC RESIST": {
+                        "after": "30/35/40/45/50%", 
+                        "before": "25/30/35/40/45%"
+                    }, 
+                    "name": "W - Defensive Ball Curl"
+                }
+            ], 
+            "name": "Rammus", 
+            "overview": "W bonus resists increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "MAXIMUM HEALTH GAIN FROM ENEMIES": {
+                        "after": "4", 
+                        "before": "3"
+                    }, 
+                    "MAXIMUM HEALTH GAIN FROM LARGE ENEMIES": {
+                        "after": "15", 
+                        "before": "10"
+                    }, 
+                    "name": "W - Soul Furnace"
+                }
+            ], 
+            "name": "Sion", 
+            "overview": "W health gain increased."
+        }
+    ], 
+    "8.17": [
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "110/95/80 seconds", 
+                        "before": "130/110/90 seconds"
+                    }, 
+                    "name": "R - Tempered Fate"
+                }
+            ], 
+            "name": "Bard", 
+            "overview": "R cooldown decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "CRIT DAMAGE ON SECOND ATTACK": {
+                        "after": "160/170/180/190/200%", 
+                        "before": "140/155/170/185/200%"
+                    }, 
+                    "name": "E - Bladework"
+                }
+            ], 
+            "name": "Fiora", 
+            "overview": "E crit damage on second attack increased at early ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "30/60/90/120/150", 
+                        "before": "30/65/100/135/170"
+                    }, 
+                    "name": "Q - Decisive Strike"
+                }
+            ], 
+            "name": "Garen", 
+            "overview": "Q damage decreased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "INCREASED DAMAGE TO MINIONS": {
+                        "after": "100%", 
+                        "before": "70%"
+                    }, 
+                    "name": "Q - Bladesurge"
+                }
+            ], 
+            "name": "Irelia", 
+            "overview": "Q damage bonus to minions increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "5/3.5/2 seconds", 
+                        "before": "6/4/2 seconds"
+                    }, 
+                    "name": "R - Riftwalk"
+                }
+            ], 
+            "name": "Kassadin", 
+            "overview": "R cooldown decreased at early ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "DURATION": {
+                        "after": "7/7.5/8/8.5/9 seconds", 
+                        "before": "5/6/7/8/9 seconds"
+                    }, 
+                    "SHADOW ASSASSIN BONUS MOVEMENT SPEED": {
+                        "after": "80%", 
+                        "before": "70%"
+                    }, 
+                    "name": "E - Shadow Step"
+                }
+            ], 
+            "name": "Kayn", 
+            "overview": "E duration increased early. Shadow E movement speed increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "28 seconds", 
+                        "before": "35 seconds"
+                    }, 
+                    "DAMAGE REDUCTION": {
+                        "after": "60/62.5/65/67.5/70%", 
+                        "before": "50/55/60/65/70%"
+                    }, 
+                    "name": "W - Meditate"
+                }
+            ], 
+            "name": "Master Yi", 
+            "overview": "W cooldown decreased; damage reduction increased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "110/90/70 seconds", 
+                        "before": "130/100/70 seconds"
+                    }, 
+                    "name": "R - Thrill of the Hunt"
+                }
+            ], 
+            "name": "Rengar", 
+            "overview": "R cooldown decreased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEALTH": {
+                        "after": "499", 
+                        "before": "549"
+                    }, 
+                    "HEALTH GROWTH": {
+                        "after": "89", 
+                        "before": "86"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Varus", 
+            "overview": "Base health decreased; health growth increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BONUS ATTACK SPEED AT LEVEL 1": {
+                        "after": "8%", 
+                        "before": "0%"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Wukong", 
+            "overview": "Now has level 1 bonus attack speed."
+        }, 
+        {
+            "changes": [
+                {
+                    "ATTACK DAMAGE GROWTH (LEVELS 14+)": {
+                        "after": "11", 
+                        "before": "10"
+                    }, 
+                    "ATTACK DAMAGE GROWTH (LEVELS 2-7)": {
+                        "after": "1", 
+                        "before": "3"
+                    }, 
+                    "ATTACK DAMAGE GROWTH (LEVELS 8-13)": {
+                        "after": "6", 
+                        "before": "5"
+                    }, 
+                    "name": "Mist Walkers"
+                }
+            ], 
+            "name": "Yorick", 
+            "overview": "Mist Walker damage decreased."
+        }
+    ], 
+    "8.18": [
+        {
+            "changes": [
+                {
+                    "PASSIVE HEALING VS CHAMPIONS": {
+                        "after": "20/22.5/25/27.5/30%", 
+                        "before": "20/21.25/22.5/23.75/25%"
+                    }, 
+                    "name": "E - Umbral Dash"
+                }, 
+                {
+                    "BONUS ATTACK DAMAGE": {
+                        "after": "20/25/30%", 
+                        "before": "20/22.5/25%"
+                    }, 
+                    "name": "R - World Ender"
+                }
+            ], 
+            "name": "Aatrox", 
+            "overview": "E passive healing increased at later ranks. R bonus attack damage increased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE (BOTH CASTS)": {
+                        "after": "100/150/200", 
+                        "before": "120/180/240"
+                    }, 
+                    "name": "R - Perfect Execution"
+                }
+            ], 
+            "name": "Akali", 
+            "overview": "R base damage decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE HEALTH": {
+                        "after": "540", 
+                        "before": "576.6"
+                    }, 
+                    "name": "Base stats"
+                }
+            ], 
+            "name": "Braum", 
+            "overview": "Base health decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "PROC DAMAGE": {
+                        "after": "15% target's missing health (at all levels)", 
+                        "before": "15-20% target's missing health (at levels 1-18)"
+                    }, 
+                    "name": "Passive - Caustic Wounds"
+                }
+            ], 
+            "name": "Kai'Sa", 
+            "overview": "Passive damage decreased at later levels."
+        }, 
+        {
+            "changes": [
+                {
+                    "DAMAGE RATIO": {
+                        "after": "0.6/0.75/0.9/1.05/1.2 bonus attack damage", 
+                        "before": "0.6/0.7/0.8/0.9/1.0 bonus attack damage"
+                    }, 
+                    "name": "Q - Piercing Light"
+                }
+            ], 
+            "name": "Lucian", 
+            "overview": "Q damage ratio increased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "EMPOWERED DICE ARMOR REDUCTION": {
+                        "after": "25/27.5/30/32.5/35%", 
+                        "before": "15/20/25/30/35%"
+                    }, 
+                    "EMPOWERED DICE DAMAGE": {
+                        "after": "70/115/160/205/250", 
+                        "before": "60/105/150/195/240"
+                    }, 
+                    "name": "E - Slice and Dice"
+                }
+            ], 
+            "name": "Renekton", 
+            "overview": "Empowered E damage increased. Empowered E armor reduction increased at early ranks. "
+        }, 
+        {
+            "changes": [
+                {
+                    "EMPOWERED ROOT DURATION": {
+                        "after": "1.5 seconds", 
+                        "before": "2 seconds"
+                    }, 
+                    "name": "W - Rune Prison"
+                }
+            ], 
+            "name": "Ryze", 
+            "overview": "Empowered W root duration decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "20/35/50/65/80", 
+                        "before": "30/45/60/75/90"
+                    }, 
+                    "name": "E - Permafrost"
+                }, 
+                {
+                    "STORM EXPLOSION SLOW DURATION": {
+                        "after": "1 second", 
+                        "before": "3 seconds"
+                    }, 
+                    "name": "R - Glacial Prison"
+                }
+            ], 
+            "name": "Sejuani", 
+            "overview": "E base damage decreased. R storm slow duration decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "24/22/20/18/16 seconds", 
+                        "before": "22/20/18/16/14 seconds"
+                    }, 
+                    "SLOW PERCENT": {
+                        "after": "15/25/35/45/55%", 
+                        "before": "30/35/40/45/50%"
+                    }, 
+                    "name": "E - Pillar of Ice"
+                }
+            ], 
+            "name": "Trundle", 
+            "overview": "E cooldown increased. E slow decreased at early ranks, increased at later ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "4/3.5/3/2.5/2 seconds", 
+                        "before": "6/5/4/3/2 seconds"
+                    }, 
+                    "name": "Q - Tumble"
+                }
+            ], 
+            "name": "Vayne", 
+            "overview": "Q cooldown decreased at early ranks."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEX CORE MK-1 COST": {
+                        "after": "1150 gold", 
+                        "before": "1250 gold"
+                    }, 
+                    "PERFECT HEX CORE COST": {
+                        "after": "850 gold", 
+                        "before": "750 gold"
+                    }, 
+                    "name": "Passive - Glorious Evolution"
+                }
+            ], 
+            "name": "Viktor", 
+            "overview": "First Hex Core upgrade cost decreased."
+        }
+    ], 
+    "8.19": [
+        {
+            "changes": [
+                {
+                    "RATIO": {
+                        "after": "50/55/60/65/70% total attack damage", 
+                        "before": "40/45/50/55/60% total attack damage"
+                    }, 
+                    "name": "W - Crippling Strike"
+                }, 
+                {
+                    "Passive Armor Penetration": {
+                        "after": "15/20/25/30/35%", 
+                        "before": "10/15/20/25/30%"
+                    }, 
+                    "name": "E - Apprehend"
+                }
+            ], 
+            "name": "Darius", 
+            "overview": "W base damage increased. E armor penetration increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "Bonus Attack Damage Ratio": {
+                        "after": "0.4", 
+                        "before": "0.2"
+                    }, 
+                    "name": "Passive - Unseen Threat"
+                }, 
+                {
+                    "EVOLVED ISOLATED SLOW": {
+                        "after": "90%", 
+                        "before": "80%"
+                    }, 
+                    "EVOLVED NON-ISOLATED SLOW": {
+                        "after": "60%", 
+                        "before": "40%"
+                    }, 
+                    "name": "W - Void Spike"
+                }
+            ], 
+            "name": "Kha'Zix", 
+            "overview": "Passive damage buffed. W slow increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "10 seconds", 
+                        "before": "12 seconds"
+                    }, 
+                    "name": "W - Skittering Frenzy"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "22/21/20/19/18 seconds", 
+                        "before": "26/24/22/20/18 seconds"
+                    }, 
+                    "name": "E - Rappel"
+                }
+            ], 
+            "name": "Elise", 
+            "overview": "W and E cooldown decreased in Spider Form."
+        }, 
+        {
+            "changes": [
+                {
+                    "Bonus movespeed conversion to damage": {
+                        "after": "25/35% at levels 1/10", 
+                        "before": "15/25/35% at levels 1/7/13"
+                    }, 
+                    "name": "Passive - Tailwind"
+                }
+            ], 
+            "name": "Janna", 
+            "overview": "Passive movement speed to damage conversion increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "16/15/14/13/12", 
+                        "before": "20/18/16/14/12"
+                    }, 
+                    "MANA COST": {
+                        "after": "60", 
+                        "before": "80"
+                    }, 
+                    "name": "Q - Death Sentence"
+                }
+            ], 
+            "name": "Thresh", 
+            "overview": "Q mana cost and early cooldown decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "Base Damage (breaks even at level 11)": {
+                        "after": "250 / 290 / 330 / 370 / 410 / 450 / 475 / 500 / 525 / 550 / 575 / 590 / 605", 
+                        "before": "200 / 250 / 300 / 350 / 400 / 450 / 475 / 500 / 525 / 550 / 575 / 590 / 605"
+                    }, 
+                    "name": "R - Death From Below"
+                }
+            ], 
+            "name": "Pyke", 
+            "overview": "Early ult damage increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "Movement Speed": {
+                        "after": "330", 
+                        "before": "325"
+                    }, 
+                    "name": "Base Stats"
+                }, 
+                {
+                    "Range": {
+                        "after": "1300 / 1550 / 1800", 
+                        "before": "1200 / 1500 / 1800"
+                    }, 
+                    "name": "R - Living Artillery"
+                }
+            ], 
+            "name": "Kog'Maw", 
+            "overview": "Base movement speed increased. R range increased."
+        }
+    ], 
+    "8.20": [
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "130/105/80 seconds", 
+                        "before": "110/95/80 seconds"
+                    }, 
+                    "name": "R - Spirit Rush"
+                }
+            ], 
+            "name": "Ahri", 
+            "overview": "R cooldown increased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "EMPOWERED DAMAGE": {
+                        "after": "75/100/125/150/175", 
+                        "before": "95/115/135/155/175"
+                    }, 
+                    "name": "E - Whiplash"
+                }, 
+                {
+                    "DAMAGE": {
+                        "after": "125/250/375", 
+                        "before": "150/275/400"
+                    }, 
+                    "EXECUTE DAMAGE": {
+                        "after": "250/500/750", 
+                        "before": "300/550/800"
+                    }, 
+                    "name": "R - Last Caress"
+                }
+            ], 
+            "name": "Evelynn", 
+            "overview": "Empowered E damage decreased early. R damage decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE AD": {
+                        "after": "63", 
+                        "before": "66"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Graves", 
+            "overview": "Base AD decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEAL": {
+                        "after": "60/85/110/135/160 (+0.3 ability power) (damage vs enemy champions unchanged)", 
+                        "before": "65/95/125/155/185 (+0.3 ability power)"
+                    }, 
+                    "name": "W - Ebb and Flow"
+                }
+            ], 
+            "name": "Nami", 
+            "overview": "W heal decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE HEALTH REGEN": {
+                        "after": "7.5 per 5 seconds", 
+                        "before": "9 per 5 seconds"
+                    }, 
+                    "name": "Base Stats"
+                }
+            ], 
+            "name": "Sion", 
+            "overview": "Base health regen decreased."
+        }
+    ], 
+    "8.21": [
+        {
+            "changes": [
+                {
+                    "HEALTH": {
+                        "after": "573", 
+                        "before": "613"
+                    }, 
+                    "name": "Base stats"
+                }
+            ], 
+            "name": "Alistar", 
+            "overview": "Health decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "HEALTH": {
+                        "after": "510", 
+                        "before": "562"
+                    }, 
+                    "HEALTH REGEN": {
+                        "after": "7", 
+                        "before": "6.5"
+                    }, 
+                    "name": "Base stats"
+                }
+            ], 
+            "name": "Aurelion Sol", 
+            "overview": "Health decreased. Health regen increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "MOVEMENT SPEED": {
+                        "after": "335", 
+                        "before": "340"
+                    }, 
+                    "name": "Base stats"
+                }
+            ], 
+            "name": "Irelia", 
+            "overview": "Movement speed reduced."
+        }, 
+        {
+            "changes": [
+                {
+                    "MOVEMENT SPEED": {
+                        "after": "330", 
+                        "before": "325"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "ON-HIT DAMAGE": {
+                        "after": "30/37.5/45/52.5/60 (+0.3 ability power)", 
+                        "before": "20/30/40/50/60 (+0.3 ability power)"
+                    }, 
+                    "name": "W - Brushmaker"
+                }, 
+                {
+                    "SHIELD": {
+                        "after": "80/115/150/185/220", 
+                        "before": "75/110/145/180/215"
+                    }, 
+                    "name": "E - Triggerseed"
+                }
+            ], 
+            "name": "Ivern", 
+            "overview": "Movement speed increased. E shield increased. W on-hit damage increased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "PROC DAMAGE": {
+                        "after": "15% (+2.5% per 100 ability power) target's missing health", 
+                        "before": "15% (+3.75% per 100 ability power) target's missing health"
+                    }, 
+                    "name": "Passive - Second Skin"
+                }, 
+                {
+                    "SHIELD DURATION": {
+                        "after": "2 seconds", 
+                        "before": "3 seconds"
+                    }, 
+                    "name": "R - Killer Instinct"
+                }
+            ], 
+            "name": "Kai'Sa", 
+            "overview": "Passive proc scaling decreased. Ultimate shield duration decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "15 seconds", 
+                        "before": "18 seconds"
+                    }, 
+                    "COST": {
+                        "after": "70 mana", 
+                        "before": "100 mana"
+                    }, 
+                    "name": "W - Wall of Pain"
+                }, 
+                {
+                    "COST": {
+                        "after": "100 mana at all ranks", 
+                        "before": "150/175/200 mana"
+                    }, 
+                    "name": "R - Requiem"
+                }
+            ], 
+            "name": "Karthus", 
+            "overview": "W cooldown and cost decreased. R cost decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "40/55/70/85/100", 
+                        "before": "30/40/50/60/70"
+                    }, 
+                    "name": "Q - Stretching Strikes"
+                }
+            ], 
+            "name": "Zac", 
+            "overview": "Q damage increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "50/80/110/140/170", 
+                        "before": "50/75/100/125/150"
+                    }, 
+                    "name": "Q - Paddle Star"
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "16/15/14/13/12 seconds", 
+                        "before": "16/15.5/15/14.5/14 seconds"
+                    }, 
+                    "name": "E - Sleepy Trouble Bubble"
+                }
+            ], 
+            "name": "Zoe", 
+            "overview": "Q damage increased late. E cooldown decreased late."
+        }
+    ], 
+    "8.22": [
+        {
+            "changes": [
+                {
+                    "name": "General", 
+                    "removedCHEATER CHEATER": {
+                        "removed": "No longer has 4 last-hit assistance"
+                    }
+                }, 
+                {
+                    "COOLDOWN": {
+                        "after": "21/18.5/16/13.5/11 seconds", 
+                        "before": "17/15.5/14/12.5/11 seconds"
+                    }, 
+                    "name": "W - Twilight Shroud"
+                }, 
+                {
+                    "BASE DAMAGE": {
+                        "after": "85/150/215", 
+                        "before": "100/150/200"
+                    }, 
+                    "name": "R - Perfect Execution"
+                }
+            ], 
+            "name": "Akali", 
+            "overview": "Last-hit assistance removed. W cooldown increased early. R damage decreased early; increased late."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "75/115/155/195/235", 
+                        "before": "85/125/165/205/245"
+                    }, 
+                    "name": "W - Distortion"
+                }
+            ], 
+            "name": "LeBlanc", 
+            "overview": "W damage decreased."
+        }, 
+        {
+            "changes": [
+                {
+                    "COOLDOWN": {
+                        "after": "10 seconds", 
+                        "before": "11 seconds"
+                    }, 
+                    "DAMAGE": {
+                        "after": "7/7.25/7.5/7.75/8% target's max health", 
+                        "before": "6/6.5/7/7.5/8% target's max health"
+                    }, 
+                    "name": "E - Sapling Toss"
+                }
+            ], 
+            "name": "Maokai", 
+            "overview": "E cooldown decreased; damage increased early."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE ATTACK DAMAGE": {
+                        "after": "61", 
+                        "before": "57"
+                    }, 
+                    "name": "Base stats"
+                }, 
+                {
+                    "BASE HEAL": {
+                        "after": "60/96/132/168/204 (+0.56 ability power)(+8% bonus health)", 
+                        "before": "37.5/60/82.5/105/127.5 (+0.35 ability power)(+5% bonus health)"
+                    }, 
+                    "HEAL VS NON-CHAMPS": {
+                        "after": "125% base heal (values unchanged)", 
+                        "before": "200% base heal"
+                    }, 
+                    "name": "Q - Consume"
+                }
+            ], 
+            "name": "Nunu & Willump", 
+            "overview": "AD increased. Q heal from champs increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "BASE DAMAGE": {
+                        "after": "20/35/50/65/80", 
+                        "before": "20/30/40/50/60"
+                    }, 
+                    "RATIO": {
+                        "after": "0.1/0.2/0.3/0.4/0.5 total attack damage", 
+                        "before": "0/0.1/0.2/0.3/0.4 total attack damage"
+                    }, 
+                    "name": "Q - Chomp"
+                }
+            ], 
+            "name": "Trundle", 
+            "overview": "Q damage increased."
+        }, 
+        {
+            "changes": [
+                {
+                    "DISCHARGE BASE DAMAGE": {
+                        "after": "20/45/70/95/120", 
+                        "before": "20/50/80/110/140"
+                    }, 
+                    "DISCHARGE RATIO": {
+                        "after": "1.0 total attack damage + 0.55 ability power", 
+                        "before": "1.0 total attack damage + 0.5 ability power"
+                    }, 
+                    "name": "Q - Siphon Power"
+                }, 
+                {
+                    "BASE DAMAGE PER TICK": {
+                        "after": "130/210/290", 
+                        "before": "150/250/350"
+                    }, 
+                    "RATIO PER TICK": {
+                        "after": "0.85 ability power", 
+                        "before": "0.7 ability power"
+                    }, 
+                    "name": "R - Chaos Storm"
+                }
+            ], 
+            "name": "Viktor", 
+            "overview": "Q discharge base damage decreased late; ratio increased. R damage decreased; ratio increased."
+        }
+    ]
+}
