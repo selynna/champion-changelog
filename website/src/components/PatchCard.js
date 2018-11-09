@@ -120,19 +120,17 @@ class PatchCard extends Component {
           );
         });
       } else if (section.type === "item") {
-        console.log("items");
-        console.log(this.props.items[section.changes.item_name].image.full);
         changes.push(
           <div key={section.changes.item_name}>
             <div style={{ display: "flex", alignItems: "flex-end" }}>
-              <div 
+              <div
                 className={styles.itemIcon}
                 style={{
                   backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/item/${
                     this.props.items[section.changes.item_name].image.full
                   }')`
-                }}/>
-              <h5 style={{ color: "#9b59b6" }}>{section.changes.item_name}</h5>
+                }}></div>
+              <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
               {section.changes.isBuff ? (
                 <div className={styles.statUpIcon} />
               ) : (
@@ -156,16 +154,18 @@ class PatchCard extends Component {
           </div>
         );
       } else if (section.type === "rune") {
+        console.log("Runes");
+        console.log(this.props.runes);
         changes.push(
           <div key={section.changes.name}>
             <div style={{ display: "flex", alignItems: "flex-end" }}>
-              <div 
+              <div
                 className={styles.itemIcon}
                 style={{
-                  backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/item/${
-                    this.props.items[section.changes.item_name].image.full
+                  backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/img/${
+                    this.props.runes[section.changes.name]
                   }')`
-                }}/>
+                }}></div>
               <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
               {section.changes.isBuff ? (
                 <div className={styles.statUpIcon} />

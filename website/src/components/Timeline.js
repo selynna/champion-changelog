@@ -7,7 +7,7 @@ import ChampionData from "../assets/static-data/championFull.json";
 import Loader from "react-loader";
 import PatchCard from "./PatchCard";
 import Items from '../assets/static-data/itemsFinal.json';
-import ItemsArr from '../assets/static-data/item.json';
+import Runes from '../assets/static-data/reversedRunes.json';
 
 import Navbar from "./Navbar";
 
@@ -119,6 +119,7 @@ class Timeline extends Component {
   render() {
 
     let items = { Items }.Items;
+    let runes = { Runes }.Runes;
 
     /*
     let itemsArr = { ItemsArr }.ItemsArr.data;
@@ -199,6 +200,7 @@ class Timeline extends Component {
                               : []
                           }
                           items={items}
+                          runes={runes}
                         />
 
                       </div>
