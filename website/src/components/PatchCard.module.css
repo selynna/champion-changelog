@@ -41,3 +41,9 @@
   z-index: 101;
 }
 
+.attributeName {
+  font-family: Bebas Neue;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.5px;
+}

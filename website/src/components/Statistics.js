@@ -44,22 +44,20 @@ class Statistics extends Component {
                 levelIncrease={stats.hpRegen[1]}
                 buff={stats.hpRegen[2]}
               />
-            </div>
-            <div className={styles.statsRow2}>
               <Stat
                 item="Attack Damage"
                 base={stats.ad[0]}
                 levelIncrease={stats.ad[1]}
                 buff={stats.ad[2]}
               />
+            </div>
+            <div className={styles.statsRow2}>
               <Stat
                 item="Armor"
                 base={stats.armor[0]}
                 levelIncrease={stats.armor[1]}
                 buff={stats.armor[2]}
               />
-            </div>
-            <div className={styles.statsRow3}>
               <Stat
                 item="Attack Speed"
                 base={stats.attackSpeed[0]}
@@ -73,7 +71,7 @@ class Statistics extends Component {
                 buff={stats.mr[2]}
               />
             </div>
-            <div className={styles.statsRow4}>
+            <div className={styles.statsRow3}>
               <Stat
                 item="Movement Speed"
                 base={stats.movement[0]}
