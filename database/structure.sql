@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 4.6.6deb4
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 08, 2018 at 08:43 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 7.2.11
+-- Host: localhost
+-- Generation Time: Nov 09, 2018 at 05:56 AM
+-- Server version: 10.1.26-MariaDB-0+deb9u1
+-- PHP Version: 7.0.30-0+deb9u1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -19,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `riotpatchnotes`
+-- Database: `hackathon`
 --
 
 -- --------------------------------------------------------
@@ -170,7 +168,6 @@ ALTER TABLE `patch_item_changes`
 --
 ALTER TABLE `patch_rune_changes`
   ADD PRIMARY KEY (`patchId`,`runeId`);
-COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
