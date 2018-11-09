@@ -26,14 +26,17 @@ class Timeline extends Component {
   componentDidMount() {
     // Fetch data from API
     // Uncomment after API endpoint finished
-    // const { match } = this.props;
-    // fetch(
-    //   `http://localhost:4000/api/lastplayed/${match.params.name}/${
-    //     match.champId
-    //   }`
-    // )
-    //   .then(response => response.json())
-    //   .then(data => console.log(data));
+    const { match } = this.props;
+    fetch(
+      `http://localhost:4000/api/patchdata/${match.params.name}/${
+        match.params.champId
+      }`
+    )
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+      })
+      .catch(err => console.log(err));
   }
 
   render() {

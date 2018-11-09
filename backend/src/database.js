@@ -37,8 +37,6 @@ exports.getAllPatches = function(limit){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -67,8 +65,6 @@ exports.getCurrentPatchForDate = function(date){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -92,8 +88,6 @@ exports.getAllChangesForChampionId = function(championId, limit){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -115,8 +109,6 @@ exports.getAllChangesForChampionIdAfterDate = function(championId, date){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -136,8 +128,6 @@ exports.getRelevantItemsForChampionId = function(championId){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -157,8 +147,6 @@ exports.getRelevantRunesForChampionId = function(championId){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -179,8 +167,6 @@ exports.getItemChangesForPatchIdAndItemId = function(patchId, itemId){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -201,8 +187,6 @@ exports.getRuneChangesForPatchIdAndRuneId = function(patchId, runeId){
 				reject();
 			}
 		});
-	}).then(function(){
-//		connection.end();
 	})
 };
 
@@ -321,12 +305,12 @@ exports.getAllRuneChangesForChampionIdAfterPatchId = function(championId, patchI
 if(debug){
 //	var x = exports.getAllItemChangesForChampionIdAfterPatchId(104, '8.1');
 //	console.log('x', x);
-	exports.getAllItemChangesForChampionIdAfterPatchId(104, '8.1').then((response) => {
-		console.log('xxx', response);
-	});
-//	exports.getCurrentPatchForDate(new Date('2017-11-08T21:33:49.987Z')).then((response) => {
-//		console.log(response);
+//	exports.getAllItemChangesForChampionIdAfterPatchId(104, '8.1').then((response) => {
+//		console.log('xxx', response);
 //	});
+	exports.getCurrentPatchForDate(new Date('2017-11-08T21:33:49.987Z')).then((response) => {
+		console.log(response);
+	});
 //	exports.getAllChangesForChampionIdAfterDate(142, new Date('2018-01-01')).then((response) => {
 //		console.log(response);
 //	});
