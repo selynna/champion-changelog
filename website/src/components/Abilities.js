@@ -45,6 +45,7 @@ class Abilities extends Component {
         abilities: this.state.abilities,
         currAbility: 3,
         togglePassive: false
+
       });
     } else if (clickedClass === "abilityR") {
       this.setState({
@@ -66,7 +67,7 @@ class Abilities extends Component {
         <h1 className={styles.abilitiesHeader}>Abilities</h1>
         <div className={styles.abilityIcons}>
           <div
-            className={styles.abilityP}
+            className={ this.state.currAbility === 0 ? `${styles.abilityP} ${styles.abilityBorder}` : `${styles.abilityP}`}
             onClick={this.handleClick}
             style={{
               backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/passive/${
@@ -76,7 +77,7 @@ class Abilities extends Component {
           />
           <div className={styles.vline} />
           <div
-            className={styles.abilityQ}
+            className={ this.state.currAbility === 1 ? `${styles.abilityQ} ${styles.abilityBorder}` : `${styles.abilityQ}`}
             onClick={this.handleClick}
             style={{
               backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
@@ -85,7 +86,7 @@ class Abilities extends Component {
             }}
           />
           <div
-            className={styles.abilityW}
+            className={ this.state.currAbility === 2 ? `${styles.abilityW} ${styles.abilityBorder}` : `${styles.abilityW}`}
             onClick={this.handleClick}
             style={{
               backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
@@ -94,7 +95,7 @@ class Abilities extends Component {
             }}
           />
           <div
-            className={styles.abilityE}
+            className={ this.state.currAbility === 3 ? `${styles.abilityE} ${styles.abilityBorder}` : `${styles.abilityE}`}
             onClick={this.handleClick}
             style={{
               backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
@@ -103,7 +104,7 @@ class Abilities extends Component {
             }}
           />
           <div
-            className={styles.abilityR}
+            className={ this.state.currAbility === 4 ? `${styles.abilityR} ${styles.abilityBorder}` : `${styles.abilityR}`}
             onClick={this.handleClick}
             style={{
               backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
