@@ -7,8 +7,8 @@ Champion Changelog is a patch TL;DR since you last played the champion.
 Run `npm install` in website/ and backend/ to download the required packages, and ensure that you have the latest version of Node.
 
 You need to start the backend and the frontend in order for the app to work: 
-- in website/, `npm run start`
-- in backend/, `npm start`
+- in `website/`, `npm run start`
+- in `backend/`, `npm start`
 
 ## Public endpoint
 
