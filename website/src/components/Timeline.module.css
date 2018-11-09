@@ -4,16 +4,22 @@
 
 .timelineOverallWrapper {
   padding: 10px;
+  /* display: flex;
+  flex-direction: row; */
+  height: 98vh;
+
+}
+
+.timelineInnerWrapper {
+
   display: flex;
   flex-direction: row;
-  height: 98vh;
 
 }
 
 .info {
   display: flex;
   margin-left: 10px;
-  margin-top: 10px;
   
   flex-direction: column;
   flex: 1;

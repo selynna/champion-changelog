@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Landing.css";
 
 import SearchBar from "./SearchBar";
+import Navbar from "./Navbar";
 
 class Landing extends Component {
   constructor(props) {
@@ -31,15 +32,7 @@ class Landing extends Component {
     return (
       <div className="landing">
         <div className="landing-container">
-          <nav className="landing-nav">
-            <a href="/">Champion Changelog</a>
-            <a
-              className="landing-nav-end"
-              href="https://na.leagueoflegends.com/en/news/game-updates/patch/patch-822-notes"
-            >
-              Read Latest Patch Notes
-            </a>
-          </nav>
+          <Navbar />
 
           <div className="landing-title-container">
             <h1 className="landing-title">CHAMPION CHANGELOG</h1>

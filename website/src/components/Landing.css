@@ -9,12 +9,10 @@
   min-height: 100vh;
 }
 
-.landing-container {
-    padding: 50px;
-}
 
 .landing-nav {
     display: flex;
+    padding: 20px 40px;
 }
 
 .landing-nav > a {

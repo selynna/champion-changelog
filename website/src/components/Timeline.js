@@ -7,6 +7,8 @@ import ChampionData from "../assets/static-data/championFull.json";
 import Loader from "react-loader";
 import PatchCard from "./PatchCard";
 
+import Navbar from "./Navbar";
+
 const patches = [
   "8.22",
   "8.21",
@@ -145,70 +147,73 @@ class Timeline extends Component {
               backgroundRepeat: "noRepeat"
             }}
           >
-            <div className={styles.info}>
-              <div className={styles.championHeaderWrapper}>
-                <div className={styles.tmp}>
-                  <ChampionHeader
-                    champData={champions[champion]}
-                    lastPlayed={this.state.lastPlayed}
-                    lastPlayedPatch={this.state.lastPlayedPatch}
-                  />
-                </div>
-              </div>
-              <div className={styles.infoCardContainer}>
-                <InfoCard
-                  name={champion}
-                  champData={champions[champion]}
-                  bsd={baseStatDifferences}
-                />
-              </div>
-            </div>
-            {patches.length > 0 ? (
-              <div className={styles.timelineCardCombo}>
-                <div className={styles.timelineWrapper}>
-                  <div className="text-center">
-                    <div className={styles.timelinePatchCard}>
-                      <PatchCard
-                        name={champion}
-                        champData={champions[champion]}
-                        bsd={baseStatDifferences}
-                        patch={
-                          this.state.changes &&
-                          Object.keys(this.state.changes).length > 0
-                            ? this.state.changes[patches[this.state.value][0]]
-                            : []
-                        }
-                      />
-
-                      {this.state.value}
-                    </div>
+            <Navbar />
+            <div className={styles.timelineInnerWrapper}>
+              <div className={styles.info}>
+                <div className={styles.championHeaderWrapper}>
+                  <div className={styles.tmp}>
+                    <ChampionHeader
+                      champData={champions[champion]}
+                      lastPlayed={this.state.lastPlayed}
+                      lastPlayedPatch={this.state.lastPlayedPatch}
+                    />
                   </div>
-                  <HorizontalTimelineContent
-                    index={this.state.value}
-                    indexClick={index => {
-                      this.setState({
-                        value: index,
-                        previous: this.state.value
-                      });
-                    }}
-                    styles={{
-                      background: this.state.stylesBackground,
-                      foreground: this.state.stylesForeground,
-                      outline: this.state.stylesOutline
-                    }}
-                    values={patches}
+                </div>
+                <div className={styles.infoCardContainer}>
+                  <InfoCard
+                    name={champion}
+                    champData={champions[champion]}
+                    bsd={baseStatDifferences}
                   />
                 </div>
               </div>
-            ) : (
-              <div className={styles.noChangesContainer}>
-                <div className={styles.noChanges}>
-                  {`There are no changes since you last played ${
-                    champions[champion].name
-                  }`}
+              {patches.length > 0 ? (
+                <div className={styles.timelineCardCombo}>
+                  <div className={styles.timelineWrapper}>
+                    <div className="text-center">
+                      <div className={styles.timelinePatchCard}>
+                        <PatchCard
+                          name={champion}
+                          champData={champions[champion]}
+                          bsd={baseStatDifferences}
+                          patch={
+                            this.state.changes &&
+                            Object.keys(this.state.changes).length > 0
+                              ? this.state.changes[patches[this.state.value][0]]
+                              : []
+                          }
+                        />
+
+                        {this.state.value}
+                      </div>
+                    </div>
+                    <HorizontalTimelineContent
+                      index={this.state.value}
+                      indexClick={index => {
+                        this.setState({
+                          value: index,
+                          previous: this.state.value
+                        });
+                      }}
+                      styles={{
+                        background: this.state.stylesBackground,
+                        foreground: this.state.stylesForeground,
+                        outline: this.state.stylesOutline
+                      }}
+                      values={patches}
+                    />
+                  </div>
                 </div>
-              </div>
-            )}
+              ) : (
+                <div className={styles.noChangesContainer}>
+                  <div className={styles.noChanges}>
+                    {`There are no changes since you last played ${
+                      champions[champion].name
+                    }`}
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </Loader>
       </div>
