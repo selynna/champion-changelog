@@ -48,7 +48,6 @@ let getChampionIDFromName = async (championName) => { //Champion Name is case se
 }
 
 let getChampionFromDDragon = (championName, patchVersion="8.22.1") => {
-    console.log(`http://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/champion/${championName}.json`)
     return new Promise((resolve, reject) => {
         needle.get(`http://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/champion/${championName}.json`, (error, response,body) => {
             if (error) {
@@ -81,17 +80,27 @@ let getChampionDifferences = async (championName, patchVersion) => { // get the 
 let getAllData = async (req, res) => {
     let allData = {}
     allData.lastPlayed = await lastPlayed(req.params.summoner, req.params.champion);
-    console.log(allData)
-    console.log(allData.lastPlayed)
+    console.log(allData.lastPlayed);
     let patchId = (await database.getCurrentPatchForDate(allData.lastPlayed))[0].id
-    console.log("hello")
-    console.log(patchId);
+    allData.lastPlayedPatch = patchId;
     longPatchId = patchId+".1";
+    console.log(longPatchId)
     allData.baseStatDifferences = await getChampionDifferences(req.params.champion, longPatchId)
     let championId = await getChampionIDFromName(req.params.champion);
     allData.championChanges = await database.getAllChangesForChampionIdAfterDate(championId,allData.lastPlayed);
-    allData.championChanges.forEach((patchData) => patchData.changes = JSON.parse(patchData.changes))
-    console.log(patchId, championId)
+    allData.championChanges.forEach((patchData) => {
+        patchData.changes = JSON.parse(patchData.changes)
+        // patchData.changes.forEach((skill) => {
+        //     Object.keys((key) => {
+        //         if(!skill[key].before && !skill[key].after) {
+        //             continue;
+        //         }
+        //         if(checkBuff(skill[key].before, skill[key].after)) {
+
+        //         }
+        //     })
+        // })
+    })
     allData.runeChanges = await database.getAllRuneChangesForChampionIdAfterPatchId(championId,patchId);
     Object.keys(allData.runeChanges).forEach((patchKeys) => {
         allData.runeChanges[patchKeys].forEach((rune, i) => allData.runeChanges[patchKeys][i].changes = JSON.parse(allData.runeChanges[patchKeys][i].changes))
@@ -117,6 +126,14 @@ let getAllData = async (req, res) => {
     // })
     res.status(200).send(allData);
 }
+let checkBuff = (before, after) => {
+    if ((after.includes("cost") || after.includes("cooldown")) && !after.includes("cost refund")) {
+        return after < before
+    } else {
+        return after > before
+    }
+}
+
 
 module.exports = {
     lastPlayed: lastPlayed,
