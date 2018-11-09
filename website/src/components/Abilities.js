@@ -1,19 +1,55 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import styles from './Abilities.module.css';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import styles from "./Abilities.module.css";
 
 class Abilities extends Component {
   render() {
+    const { passive, spells } = this.props;
     return (
       <div className={styles.abilitiesWrapper}>
         <h1 className={styles.abilitiesHeader}>Abilities</h1>
         <div className={styles.abilityIcons}>
-          <div className={styles.abilityP}></div>
-          <div className={styles.vline}></div>
-          <div className={styles.abilityQ}></div>
-          <div className={styles.abilityW}></div>
-          <div className={styles.abilityE}></div>
-          <div className={styles.abilityR}></div>
+          <div
+            className={styles.abilityP}
+            style={{
+              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/passive/${
+                passive.image.full
+              }')`
+            }}
+          />
+          <div className={styles.vline} />
+          <div
+            className={styles.abilityQ}
+            style={{
+              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+                spells[0].image.full
+              }')`
+            }}
+          />
+          <div
+            className={styles.abilityW}
+            style={{
+              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+                spells[1].image.full
+              }')`
+            }}
+          />
+          <div
+            className={styles.abilityE}
+            style={{
+              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+                spells[2].image.full
+              }')`
+            }}
+          />
+          <div
+            className={styles.abilityR}
+            style={{
+              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+                spells[3].image.full
+              }')`
+            }}
+          />
         </div>
         <div className={styles.ability}>
           <div className={styles.abilityName}>
@@ -21,11 +57,11 @@ class Abilities extends Component {
           </div>
           <div className={styles.costrange}>
             <div className={styles.cost}>
-              <div className={styles.costChangeIcon}></div>
+              <div className={styles.costChangeIcon} />
               <p>Cost: 100/95/90/85/80 mana</p>
             </div>
             <div className={styles.range}>
-              <div className={styles.rangeChangeIcon}></div>
+              <div className={styles.rangeChangeIcon} />
               <p>Range: 550</p>
             </div>
           </div>
@@ -35,7 +71,6 @@ class Abilities extends Component {
         </div>
       </div>
     );
-
   }
 }
 
