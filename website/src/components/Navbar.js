@@ -7,6 +7,7 @@ const Navbar = () => {
       <a
         className="landing-nav-end"
         href="https://na.leagueoflegends.com/en/news/game-updates/patch/patch-822-notes"
+        style={{ zIndex: 200 }}
       >
         Read Latest Patch Notes
       </a>

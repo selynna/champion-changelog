@@ -33,3 +33,44 @@
   align-items: center;
   margin: 0;
 }
+
+
+.statUpIcon {
+  height: 1em;
+  width: 1em;
+  margin-right: 3px;
+  background-image: url('../assets/icons/up.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.statDownIcon {
+  height: 1em;
+  width: 1em;
+  margin-right: 3px;
+  background-image: url('../assets/icons/down.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+.statNoChangeIcon {
+  height: 1em;
+  width: 1em;
+  margin-right: 3px;
+  background-image: url('../assets/icons/nochange.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+
+
+.statisticsKey {
+  font-size: 14px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: flex-end;
+}
