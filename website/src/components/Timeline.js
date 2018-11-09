@@ -109,6 +109,10 @@ class Timeline extends Component {
                 }}
                 values={patches}
               />
+              <div className='text-center'>
+                <div><p>test</p></div>
+                {this.state.value}
+              </div>
             </div>
           </Loader>
         </div>
