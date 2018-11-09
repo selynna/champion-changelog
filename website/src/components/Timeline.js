@@ -57,32 +57,34 @@ class Timeline extends Component {
     const patches = this.state.patches;
     return (
       <div className={styles.timeline}>
-        <Loader className={styles.loadedTimeline} loaded={this.state.loaded}>
-          <div className={styles.info}>
-            <div className={styles.championHeaderWrapper}>
-              <div className={styles.tmp}>
-                <ChampionHeader champData={champions[champion]} />
+        <div class={styles.timelineOverallWrapper}>
+          <Loader className={styles.loadedTimeline} loaded={this.state.loaded}>
+            <div className={styles.info}>
+              <div className={styles.championHeaderWrapper}>
+                <div className={styles.tmp}>
+                  <ChampionHeader champData={champions[champion]} />
+                </div>
+              </div>
+              <div className={styles.infoCardContainer}>
+                <InfoCard name={champion} champData={champions[champion]} bsd={baseStatDifferences} />
               </div>
             </div>
-            <div className={styles.infoCardContainer}>
-              <InfoCard name={champion} champData={champions[champion]} bsd={baseStatDifferences} />
+            <div className={styles.timelineWrapper}>
+              <HorizontalTimelineContent
+                index={this.state.value}
+                indexClick={index => {
+                  this.setState({ value: index, previous: this.state.value });
+                }}
+                styles={{
+                  background: this.state.stylesBackground,
+                  foreground: this.state.stylesForeground,
+                  outline: this.state.stylesOutline
+                }}
+                values={patches}
+              />
             </div>
-          </div>
-          <div className={styles.timelineWrapper}>
-            <HorizontalTimelineContent
-              index={this.state.value}
-              indexClick={index => {
-                this.setState({ value: index, previous: this.state.value });
-              }}
-              styles={{
-                background: this.state.stylesBackground,
-                foreground: this.state.stylesForeground,
-                outline: this.state.stylesOutline
-              }}
-              values={patches}
-            />
-          </div>
-        </Loader>
+          </Loader>
+        </div>
       </div>
     );
   }
