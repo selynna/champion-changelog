@@ -44,25 +44,21 @@ class Timeline extends Component {
         console.log("TEST");
         console.log(data);
         console.log(data.baseStatDifferences);
+        let patches = [];
+        for (var i = 0; i < data.championChanges.length; i++) {
+          const patch = data.championChanges[i];
+          const patchInfo = [patch.date, "Patch " + patch.id];
+          patches.push(patchInfo);
+        }
         this.setState({
           baseStatDifferences: data.baseStatDifferences,
           loaded: true,
           lastPlayed: new Date(data.lastPlayed),
-          lastPlayedPatch: data.lastPlayedPatch
+          lastPlayedPatch: data.lastPlayedPatch,
+          patches: patches
         });
       })
       .catch(err => console.log(err));
-  }
-
-  componentWillMount() {
-    const patches = this.state.patches;
-    this.data = patches.map((date, index) => {
-      return ({
-        date: patches[index][0],
-        title: patches[index][1],
-        component: ( <div className='container' key={index}><p>asdf</p></div>)
-      });
-    });
   }
 
   render() {
@@ -108,7 +104,6 @@ class Timeline extends Component {
                   </div>
                 </div>
                 <HorizontalTimelineContent
-                  content={this.data}
                   index={this.state.value}
                   indexClick={index => {
                     this.setState({ value: index, previous: this.state.value });
