@@ -5,6 +5,7 @@
 .ability {
   margin: 20px;
 }
+
 .abilityIcons {
   display: flex;
   flex-direction: row;
