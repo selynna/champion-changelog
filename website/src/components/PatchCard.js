@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import styles from "./InfoCard.module.css";
-import Statistics from "./Statistics";
-import Abilities from "./Abilities";
+import styles from "./PatchCard.module.css";
 
 class PatchCard extends Component {
   constructor(props) {
@@ -54,18 +52,10 @@ class PatchCard extends Component {
   }
 
   render() {
-    console.log("test stats");
-    console.log(this.state.stats);
-
     return (
-      <div className={styles.infoCardWrapper}>
-        <div className={styles.infoCard}>
-          <Statistics stats={this.state.stats} />
-          {/* <Abilities abilities={this.state.abilities} /> */}
-          <Abilities
-            abilities={this.state.abilities}
-            partype={this.props.champData.partype}
-          />
+      <div className={styles.patchCardWrapper}>
+        <div className={styles.patchCard}>
+          <p>asdf</p>
         </div>
       </div>
     );

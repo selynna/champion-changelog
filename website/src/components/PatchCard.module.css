@@ -1,49 +1,12 @@
-.infoCardWrapper {
+.patchCardWrapper {
   font-family: "Bebas Neue";
-  display: flex;
-  flex-direction: column;
-  width: 25vw;
-  justify-content: center;
+  width: 20vw;
 }
 
-.infoCard {
+.patchCard {
   border: 1px solid black;
   border-radius: 15px;
   width: 33vw;
-  min-height: 75vh;
   padding: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-  .infoCard {
-  }
-
-}
-
-.championHeader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-end;
-  margin: 15px 0;
-}
-
-.champion {
-  display: flex;
-  flex-direction: column;
-}
-
-.champion h1, h2 {
-  margin: 0 5px;
-}
-
-.champion h1 {
-  text-align: right;
-}
-
-.championPicture {
-  height: 70px;
-  width: 70px;
-  background-image: url('../assets/img/akali.png');
-  background-size: 100% 100%;
-}
