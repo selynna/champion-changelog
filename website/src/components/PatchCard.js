@@ -125,7 +125,7 @@ class PatchCard extends Component {
         changes.push(
           <div key={section.changes.item_name}>
             <div style={{ display: "flex", alignItems: "flex-end" }}>
-              <h5 style={{ color: "#9b59b6" }}>{section.changes.item_name}</h5>
+              <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
               {section.changes.isBuff ? (
                 <div className={styles.statUpIcon} />
               ) : (
