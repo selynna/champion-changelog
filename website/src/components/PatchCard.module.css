@@ -34,8 +34,10 @@
   width: 25vw;
   padding: 20px;
 
-  min-height: 60vh;
+  max-height: 60vh;
   background-color: #fff;
-  /* overflow:auto; */
+  overflow-y: scroll;
+  position: relative;
+  z-index: 101;
 }
 

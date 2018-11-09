@@ -11,10 +11,8 @@
 }
 
 .timelineInnerWrapper {
-
   display: flex;
   flex-direction: row;
-
 }
 
 .info {
@@ -45,6 +43,7 @@
   margin: 0 auto;
   bottom: 0;
   right: 20px;
+  z-index: 100;
 }
 
 .timelinePatchCard {
