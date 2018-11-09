@@ -71,7 +71,7 @@ class PatchCard extends Component {
         section.changes.forEach((change, key) => {
           changes.push(
             <div key={key}>
-              <h5>{change.name}</h5>
+              <h5 style={{ color: "#3498db" }}>{change.name}</h5>
               {Object.keys(change)
                 .filter(attribute => attribute !== "name")
                 .map(attribute => {
@@ -96,7 +96,7 @@ class PatchCard extends Component {
       } else if (section.type === "item") {
         changes.push(
           <div key={section.changes.item_name}>
-            <h5>{section.changes.item_name}</h5>
+            <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
             {section.changes.attributes.map(attribute => {
               return (
                 <p key={attribute.attribute}>{`${attribute.attribute}: ${
@@ -111,7 +111,7 @@ class PatchCard extends Component {
       } else if (section.type === "rune") {
         changes.push(
           <div key={section.changes.name}>
-            <h5>{section.changes.name}</h5>
+            <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
             {Object.keys(section.changes)
               .filter(attribute => attribute !== "name")
               .map(attribute => {
@@ -128,7 +128,7 @@ class PatchCard extends Component {
     console.log(changes);
     return (
       <div className={styles.patchCardWrapper}>
-        <div className={styles.patchCard}>
+        <div className={styles.patchCard} style={{overflowY: 'scroll'}}>
           <h2>{`Patch Notes`}</h2>
           {changes}
         </div>
