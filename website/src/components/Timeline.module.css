@@ -12,7 +12,9 @@
 
 .info {
   display: flex;
-  justify-content: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  
   flex-direction: column;
   flex: 1;
 }
