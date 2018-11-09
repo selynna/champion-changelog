@@ -20,11 +20,12 @@
 }
 
 .timelineCardCombo {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   flex: 1;
+  align-items: center;
+  align-content: center;
 }
 
 .timelineWrapper {
@@ -33,15 +34,17 @@
   position: absolute;
   margin: 0 auto;
   bottom: 0;
-  right: 0;
+  right: 20px;
 }
 
 .timelinePatchCard {
   position: absolute;
-  top: 0;
-  right: 0;
-  height: 100px;
-  width: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  height: 90vh;
 }
 
 .timelineBar {

@@ -1,12 +1,19 @@
 .patchCardWrapper {
   font-family: "Bebas Neue";
-  width: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .patchCard {
   border: 1px solid black;
   border-radius: 15px;
-  width: 33vw;
+  width: 25vw;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+
 }
 

@@ -105,7 +105,6 @@ class Timeline extends Component {
                       champData={champions[champion]}
                       bsd={baseStatDifferences}
                     />
-                    {this.state.value}
                   </div>
                 </div>
                 <HorizontalTimelineContent
