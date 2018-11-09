@@ -18,8 +18,6 @@ class PatchCard extends Component {
     const e = champData.spells[2];
     const r = champData.spells[3];
 
-    console.log("bsd");
-    console.log(bsd.hp.statChange);
     const data = champData.stats;
     const stats = {
       hp: [data.hp, data.hpperlevel, bsd.hp.statChange],
@@ -54,16 +52,16 @@ class PatchCard extends Component {
       ];
     }
 
-    console.log(stats);
     const abilities = [p, q, w, e, r];
     this.setState({ abilities: abilities, stats: stats });
   }
 
   render() {
-    console.log(this.props.patch);
     const { patch } = this.props;
-
     const changes = [];
+    console.log("patch");
+    console.log(patch);
+    console.log(this.props.items);
 
     patch.forEach(section => {
       if (section.type === "champion") {
@@ -122,9 +120,18 @@ class PatchCard extends Component {
           );
         });
       } else if (section.type === "item") {
+        console.log("items");
+        console.log(this.props.items[section.changes.item_name].image.full);
         changes.push(
           <div key={section.changes.item_name}>
             <div style={{ display: "flex", alignItems: "flex-end" }}>
+              <div 
+                className={styles.itemIcon}
+                style={{
+                  backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/item/${
+                    this.props.items[section.changes.item_name].image.full
+                  }')`
+                }}/>
               <h5 style={{ color: "#9b59b6" }}>{section.changes.item_name}</h5>
               {section.changes.isBuff ? (
                 <div className={styles.statUpIcon} />
@@ -152,6 +159,13 @@ class PatchCard extends Component {
         changes.push(
           <div key={section.changes.name}>
             <div style={{ display: "flex", alignItems: "flex-end" }}>
+              <div 
+                className={styles.itemIcon}
+                style={{
+                  backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/item/${
+                    this.props.items[section.changes.item_name].image.full
+                  }')`
+                }}/>
               <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
               {section.changes.isBuff ? (
                 <div className={styles.statUpIcon} />
@@ -175,7 +189,6 @@ class PatchCard extends Component {
         );
       }
     });
-    console.log(changes);
     return (
       <div className={styles.patchCardWrapper}>
         <div className={styles.patchCard} style={{ overflowY: "scroll" }}>

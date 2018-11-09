@@ -13,8 +13,6 @@ class ChampionHeader extends Component {
   }
 
   processData(champData) {
-    console.log(champData);
-
     const champion = this.props.name;
     const title = champData.title;
     this.setState({ championName: champion, title: title });
@@ -27,8 +25,6 @@ class ChampionHeader extends Component {
     }`;
 
     const { lastPlayed, lastPlayedPatch } = this.props;
-    console.log(lastPlayed);
-
     const checkIfPlayed = date => {
       if (
         date.getDate() === 9 &&
