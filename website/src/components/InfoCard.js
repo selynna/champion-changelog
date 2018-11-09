@@ -14,19 +14,12 @@ class InfoCard extends Component {
   }
 
   processData(champData) {
-    console.log(champData);
-
-    {/* Champion data - name */}
-    const champion = this.props.name;
-
-    {/* Abilities - passive, Q W E R */}
     const p = champData.passive;
     const q = champData.spells[0];
     const w = champData.spells[1];
     const e = champData.spells[2];
     const r = champData.spells[3];
 
-    {/* Stats - health, health regen, ad, armor, attack speed, ap, mr, movement */}
     const data = champData.stats;
     const stats = {
       hp: [data.hp, data.hpperlevel],
@@ -48,8 +41,6 @@ class InfoCard extends Component {
   }
 
   render() {
-    console.log("test stats");
-    console.log(this.state.stats);
     return (
       <div className={styles.infoCardWrapper}>
         <div className={styles.infoCard}>
