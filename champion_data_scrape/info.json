@@ -1,1 +1,4053 @@
-{'data': [{'items': ["Sterak's Gage", "Death's Dance", "Youmuu's Ghostblade", "Doran's Blade", 'Ninja Tabi', 'Health Potion', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Aatrox', 'runes': [u'Electrocute', u'Resolve', u'Second Wind', u'Sudden Impact', u'Eyeball Collection', u'Precision', u'Coup de Grace', u'Domination', u'Chrysalis', u'Ravenous Hunter', u'Conqueror', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'The Dark Seal', "Mejai's Soulstealer", "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", "Luden's Echo", 'Morellonomicon', 'Void Staff', 'Hextech Protobelt-01', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Ahri', 'runes': [u'Manaflow Band', u'Magical Footwear', u'Glacial Augment', u'Sorcery', u'Transcendence', u'Cheap Shot', u'Domination', u'Time Warp Tonic', u'Ingenious Hunter', u'Biscuit Delivery', u'Inspiration']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", 'Void Staff', 'Morellonomicon', "Doran's Shield", "Rabadon's Deathcap", 'Hextech Gunblade', 'Lich Bane', 'Ninja Tabi', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Akali', 'runes': [u'Electrocute', u'Celerity', u'Sudden Impact', u'Sorcery', u'Domination', u'Eyeball Collection', u'Gathering Storm', u'Ravenous Hunter', u'Chrysalis', u'Bone Plating', u'Resolve']}, {'items': ['Boots of Mobility', 'Redemption', "Knight's Vow", "Zeke's Convergence", 'Locket of the Iron Solari', 'Relic Shield', 'Health Potion', 'Remnant of the Aspect', "Mikael's Crucible"], 'name': 'Alistar', 'runes': [u'Overgrowth', u'Resolve', u'Biscuit Delivery', u'Aftershock', u'Cosmic Insight', u'Conditioning', u'Hextech Flashtraption', u'Minion Dematerializer', u'Bone Plating', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Runic Echoes', 'Enchantment: Cinderhulk', 'Void Staff', "Rabadon's Deathcap", "Hunter's Talisman", 'Morellonomicon', 'Corrupting Potion', 'Abyssal Mask', "Liandry's Torment", 'Ninja Tabi', "Sorcerer's Shoes", 'Thornmail', "Warmog's Armor"], 'name': 'Amumu', 'runes': [u'Overgrowth', u'Electrocute', u'Resolve', u'Nimbus Cloak', u'Sudden Impact', u'Bone Plating', u'Aftershock', u'Domination', u'Precision', u'Transcendence', u'Eyeball Collection', u'Sorcery', u'Conditioning', u'Ravenous Hunter', u'Coup de Grace', u'Triumph']}, {'items': ['Refillable Potion', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Rod of Ages', 'Sapphire Crystal', 'Morellonomicon', "Archangel's Staff", "Liandry's Torment", 'Ninja Tabi', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Anivia', 'runes': [u'Arcane Comet', u'Biscuit Delivery', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Perfect Timing', u'Transcendence', u'Gathering Storm', u'Inspiration']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", "Luden's Echo", 'Spellbinder', 'Morellonomicon', 'Void Staff', 'Hextech Protobelt-01', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Annie', 'runes': [u'Celerity', u'Sorcery', u'Eyeball Collection', u'Predator', u'Cheap Shot', u'Domination', u'Gathering Storm', u'Scorch', u'Ravenous Hunter', u'Relentless Hunter']}, {'items': ["Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', "Doran's Shield", 'Blade of the Ruined King', 'Mercurial Scimitar', "Runaan's Hurricane", "Doran's Blade", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Ashe', 'runes': [u'Celerity', u'Legend: Alacrity', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Gathering Storm', u'Cut Down', u'Triumph', u'Lethal Tempo']}, {'items': ['Refillable Potion', 'The Dark Seal', "Mejai's Soulstealer", "Zhonya's Hourglass", 'Void Staff', "Rabadon's Deathcap", 'Rod of Ages', 'Corrupting Potion', 'Morellonomicon', 'Boots of Swiftness', "Liandry's Torment", "Sorcerer's Shoes", "Rylai's Crystal Scepter"], 'name': 'AurelionSol', 'runes': [u'Celerity', u'Nullifying Orb', u'Phase Rush', u'Sorcery', u'Perfect Timing', u'Waterwalking', u'Time Warp Tonic', u'Minion Dematerializer', u'Inspiration']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", "Luden's Echo", 'Morellonomicon', 'Void Staff', "Sorcerer's Shoes", 'Health Potion', "Nashor's Tooth"], 'name': 'Azir', 'runes': [u'Electrocute', u'Absolute Focus', u'Taste of Blood', u'Eyeball Collection', u'Manaflow Band', u'Sorcery', u'Precision', u'Coup de Grace', u'Domination', u'Gathering Storm', u'Summon Aery', u'Ravenous Hunter', u'Legend: Alacrity']}, {'items': ['Boots of Mobility', 'Redemption', 'Twin Shadows', "Spellthief's Edge", 'Locket of the Iron Solari', "Knight's Vow", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Bard', 'runes': [u'Electrocute', u'Zombie Ward', u'Taste of Blood', u'Sorcery', u'Eyeball Collection', u'Cheap Shot', u'Domination', u'Resolve', u'Scorch', u'Celerity', u'Chrysalis', u'Bone Plating', u'Relentless Hunter']}, {'items': ['Boots of Mobility', "Knight's Vow", "Zeke's Convergence", "Zz'Rot Portal", 'Frozen Heart', 'Locket of the Iron Solari', 'Boots of Swiftness', 'Righteous Glory', 'Ancient Coin', 'Relic Shield', 'Health Potion', 'Remnant of the Aspect'], 'name': 'Blitzcrank', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Biscuit Delivery', u'Aftershock', u'Time Warp Tonic', u'Cosmic Insight', u'Revitalize', u'Conditioning', u'Bone Plating', u'Inspiration']}, {'items': ["Zhonya's Hourglass", 'Void Staff', "Spellthief's Edge", "Liandry's Torment", "Sorcerer's Shoes", "Rylai's Crystal Scepter", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Brand', 'runes': [u'Arcane Comet', u'Absolute Focus', u'Manaflow Band', u'Sorcery', u'Perfect Timing', u'Transcendence', u"Future's Market", u'Cosmic Insight', u'Scorch', u'Inspiration']}, {'items': ['Boots of Mobility', 'Redemption', "Knight's Vow", "Zeke's Convergence", 'Locket of the Iron Solari', 'Boots of Swiftness', 'Relic Shield', 'Health Potion', 'Remnant of the Aspect'], 'name': 'Braum', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Unflinching', u'Magical Footwear', u'Guardian', u'Biscuit Delivery', u'Cosmic Insight', u'Minion Dematerializer', u'Bone Plating', u'Inspiration']}, {'items': ["Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', 'Rapid Firecannon', "Doran's Blade", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Caitlyn', 'runes': [u'Celerity', u'Absolute Focus', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Gathering Storm', u'Scorch', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Hunter's Machete", "Sterak's Gage", 'Trinity Force', "Doran's Blade", 'Ninja Tabi', 'Health Potion', 'Ravenous Hydra', 'Guardian Angel'], 'name': 'Camille', 'runes': [u'Celerity', u'Ghost Poro', u'Sorcery', u'Precision', u'Waterwalking', u'Coup de Grace', u'Press the Attack', u'Domination', u'Relentless Hunter', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Morellonomicon', 'Sapphire Crystal', 'Abyssal Mask', 'Void Staff', "Archangel's Staff", "Liandry's Torment", 'Health Potion', "Rylai's Crystal Scepter"], 'name': 'Cassiopeia', 'runes': [u'Phase Rush', u'Absolute Focus', u'Taste of Blood', u'Manaflow Band', u'Sorcery', u'Ravenous Hunter', u'Transcendence', u'Domination', u'Gathering Storm', u'Scorch']}, {'items': ['Refillable Potion', 'The Dark Seal', 'Void Staff', 'Hextech Protobelt-01', "Doran's Shield", "Luden's Echo", 'Locket of the Iron Solari', 'Righteous Glory', "Liandry's Torment", 'Ninja Tabi', "Sorcerer's Shoes", 'Health Potion', 'Thornmail', "Warmog's Armor", 'Gargoyle Stoneplate'], 'name': 'ChoGath', 'runes': [u'Overgrowth', u'Legend: Tenacity', u'Resolve', u'Second Wind', u'Precision', u'Conditioning', u'Bone Plating', u'Grasp of the Undying', u'Triumph']}, {'items': ['Cull', 'The Bloodthirster', 'Infinity Edge', 'Statikk Shiv', 'Trinity Force', 'Rapid Firecannon', "Doran's Blade", "Sorcerer's Shoes", 'Health Potion', 'Guardian Angel'], 'name': 'Corki', 'runes': [u'Gathering Storm', u'Resolve', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Chrysalis', u'Celerity', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ["Dead Man's Plate", "Sterak's Gage", "Doran's Shield", 'Spirit Visage', "Mercury's Treads", 'Trinity Force', 'Long Sword', 'Ninja Tabi', 'Health Potion', 'Guardian Angel'], 'name': 'Darius', 'runes': [u'Resolve', u'Precision', u'Coup de Grace', u'Chrysalis', u'Conditioning', u'Conqueror', u'Last Stand', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ['The Dark Seal', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Lich Bane', 'Spellbinder', 'Void Staff', "Banshee's Veil", "Sorcerer's Shoes", 'Health Potion', "Nashor's Tooth"], 'name': 'Diana', 'runes': [u'Electrocute', u'Nullifying Orb', u'Absolute Focus', u'Sudden Impact', u'Sorcery', u'Domination', u'Eyeball Collection', u'Gathering Storm', u'Ravenous Hunter']}, {'items': ["Dead Man's Plate", 'Sunfire Cape', "Doran's Shield", 'Spirit Visage', "Mercury's Treads", 'Ninja Tabi', 'Health Potion', 'Thornmail', "Warmog's Armor", 'Gargoyle Stoneplate'], 'name': 'DrMundo', 'runes': [u'Resolve', u'Second Wind', u'Magical Footwear', u'Approach Velocity', u'Revitalize', u'Conditioning', u'Cosmic Insight', u'Bone Plating', u'Grasp of the Undying', u'Inspiration']}, {'items': ["Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', "Doran's Blade", 'Rapid Firecannon', 'Long Sword', 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Draven', 'runes': [u'Celerity', u'Sorcery', u'Precision', u'Coup de Grace', u'Gathering Storm', u'Legend: Bloodline', u'Conqueror', u'Last Stand', u'Legend: Alacrity', u'Triumph']}, {'items': ['The Dark Seal', "Zhonya's Hourglass", 'Hextech Protobelt-01', "Rabadon's Deathcap", 'Lich Bane', 'Corrupting Potion', 'Void Staff', "Luden's Echo", "Sorcerer's Shoes"], 'name': 'Ekko', 'runes': [u'Electrocute', u'Absolute Focus', u'Sudden Impact', u'Sorcery', u'Domination', u'Transcendence', u'Eyeball Collection', u'Gathering Storm', u'Ravenous Hunter']}, {'items': ['Refillable Potion', 'Enchantment: Runic Echoes', 'Boots of Mobility', "Hunter's Machete", 'Void Staff', "Hunter's Talisman", 'Morellonomicon', "Liandry's Torment", "Banshee's Veil", "Sorcerer's Shoes", "Rylai's Crystal Scepter", "Zhonya's Hourglass"], 'name': 'Elise', 'runes': [u'Electrocute', u'Zombie Ward', u'Sudden Impact', u'Eyeball Collection', u'Sorcery', u'Ravenous Hunter', u'Waterwalking', u'Cheap Shot', u'Domination', u'Celerity', u'Relentless Hunter']}, {'items': ['Refillable Potion', 'Enchantment: Runic Echoes', 'Control Ward', "Mejai's Soulstealer", 'Void Staff', "Rabadon's Deathcap", "Hunter's Talisman", 'Lich Bane', 'Morellonomicon', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Evelynn', 'runes': [u'Electrocute', u'Celerity', u'Sudden Impact', u'Sorcery', u'Domination', u'Waterwalking', u'Precision', u'Eyeball Collection', u'Presence of Mind', u'Coup de Grace', u'Relentless Hunter']}, {'items': ['Blade of the Ruined King', 'Trinity Force', 'Ionian Boots of Lucidity', "Lord Dominik's Regards", "Doran's Blade", 'Manamune', 'Health Potion', 'Guardian Angel'], 'name': 'Ezreal', 'runes': [u'Manaflow Band', u'Absolute Focus', u'Biscuit Delivery', u'Magical Footwear', u'Sorcery', u'Perfect Timing', u'Gathering Storm', u'Cosmic Insight', u'Kleptomancy', u'Inspiration']}, {'items': ['Control Ward', 'Boots of Mobility', "Zhonya's Hourglass", "Rabadon's Deathcap", 'Twin Shadows', "Luden's Echo", 'Morellonomicon', "Spellthief's Edge", "Banshee's Veil", "Sorcerer's Shoes", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Fiddlesticks', 'runes': [u'Resolve', u'Unflinching', u'Manaflow Band', u'Sorcery', u'Perfect Timing', u'Aftershock', u'Chrysalis', u'Cosmic Insight', u'Summon Aery', u'Celerity', u'Bone Plating', u'Scorch', u'Inspiration']}, {'items': ['The Bloodthirster', "Sterak's Gage", "Mercury's Treads", 'Corrupting Potion', 'Mercurial Scimitar', 'Trinity Force', "Doran's Blade", 'Ninja Tabi', 'Health Potion', 'Ravenous Hydra', 'Guardian Angel'], 'name': 'Fiora', 'runes': [u'Celerity', u'Nullifying Orb', u'Sorcery', u'Precision', u'Coup de Grace', u'Resolve', u'Conqueror', u'Bone Plating', u'Legend: Alacrity', u'Triumph', u'Chrysalis']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", 'Hextech Protobelt-01', "Rabadon's Deathcap", 'Lich Bane', 'Corrupting Potion', 'Morellonomicon', 'Void Staff', 'Ninja Tabi', "Sorcerer's Shoes"], 'name': 'Fizz', 'runes': [u'Electrocute', u'Celerity', u'Nullifying Orb', u'Sudden Impact', u'Sorcery', u'Domination', u'Eyeball Collection', u'Gathering Storm', u'Scorch', u'Ravenous Hunter', u'Relentless Hunter']}, {'items': ['The Dark Seal', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Rod of Ages', 'Adaptive Helm', "Mercury's Treads", 'Frozen Heart', "Luden's Echo", "Liandry's Torment", "Sorcerer's Shoes", 'Health Potion'], 'name': 'Galio', 'runes': [u'Gathering Storm', u'Overgrowth', u'Resolve', u'Absolute Focus', u'Sorcery', u'Transcendence', u'Aftershock', u'Chrysalis', u'Bone Plating']}, {'items': ['Refillable Potion', "Youmuu's Ghostblade", "Sterak's Gage", 'Corrupting Potion', 'Trinity Force', 'Sapphire Crystal', 'Ninja Tabi', 'Stormrazor', 'Guardian Angel'], 'name': 'Gangplank', 'runes': [u'Gathering Storm', u'Resolve', u'Magical Footwear', u'Biscuit Delivery', u'Sorcery', u'Transcendence', u'Time Warp Tonic', u'Revitalize', u'Chrysalis', u'Bone Plating', u'Kleptomancy', u'Grasp of the Undying', u'Inspiration']}, {'items': ["Dead Man's Plate", "Sterak's Gage", "Doran's Shield", 'Spirit Visage', "Mercury's Treads", 'Trinity Force', 'Long Sword', 'Ninja Tabi', 'Health Potion', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Garen', 'runes': [u'Gathering Storm', u'Overgrowth', u'Legend: Tenacity', u'Resolve', u'Second Wind', u'Demolish', u'Sorcery', u'Precision', u'Celerity', u'Bone Plating', u'Grasp of the Undying', u'Triumph']}, {'items': ['Cull', 'Maw of Malmortius', "Death's Dance", 'Spirit Visage', "Mercury's Treads", "Randuin's Omen", 'Frozen Mallet', "Doran's Blade", 'Ninja Tabi', 'Health Potion', 'The Black Cleaver'], 'name': 'Gnar', 'runes': [u'Electrocute', u'Resolve', u'Fleet Footwork', u'Bone Plating', u'Ghost Poro', u'Ravenous Hunter', u'Precision', u'Cheap Shot', u'Domination', u'Chrysalis', u'Coup de Grace', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'Enchantment: Runic Echoes', "Zhonya's Hourglass", 'Void Staff', "Rabadon's Deathcap", "Hunter's Talisman", 'Morellonomicon', 'Hextech Protobelt-01', "Banshee's Veil", "Sorcerer's Shoes", 'Health Potion'], 'name': 'Gragas', 'runes': [u'Electrocute', u'Celerity', u'Sudden Impact', u'Predator', u'Sorcery', u'Domination', u'Waterwalking', u'Perfect Timing', u'Eyeball Collection', u'Cosmic Insight', u'Relentless Hunter', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Berserker's Greaves", "Hunter's Machete", 'Infinity Edge', "Death's Dance", 'Phantom Dancer', 'Maw of Malmortius', 'Stormrazor', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Graves', 'runes': [u'Legend: Tenacity', u'Sudden Impact', u'Dark Harvest', u'Eyeball Collection', u'Precision', u'Domination', u'Triumph', u'Legend: Alacrity', u'Relentless Hunter']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', 'Boots of Mobility', "Hunter's Machete", "Sterak's Gage", "Hunter's Talisman", 'Enchantment: Cinderhulk', 'Trinity Force', 'Rapid Firecannon', 'Ninja Tabi', "Dead Man's Plate", 'Stormrazor', 'Guardian Angel'], 'name': 'Hecarim', 'runes': [u'Resolve', u'Unflinching', u'Sudden Impact', u'Eyeball Collection', u'Sorcery', u'Domination', u'Waterwalking', u'Predator', u'Aftershock', u'Celerity', u'Conditioning', u'Bone Plating', u'Relentless Hunter']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", "Luden's Echo", 'Morellonomicon', 'Void Staff', "Liandry's Torment", "Sorcerer's Shoes", 'Health Potion'], 'name': 'Heimerdinger', 'runes': [u'Arcane Comet', u'Celerity', u'Absolute Focus', u'Taste of Blood', u'Manaflow Band', u'Sorcery', u'Ravenous Hunter', u'Domination', u'Gathering Storm', u'Summon Aery', u'Scorch']}, {'items': ['Spirit Visage', "Sterak's Gage", "Mercury's Treads", 'Corrupting Potion', "Death's Dance", 'Trinity Force', "Doran's Blade", 'Ninja Tabi', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Illaoi', 'runes': [u'Magical Footwear', u'Sudden Impact', u'Biscuit Delivery', u'Domination', u"Future's Market", u'Time Warp Tonic', u'Ravenous Hunter', u'Kleptomancy', u'Inspiration']}, {'items': ["Wit's End", "Sterak's Gage", "Doran's Shield", 'Corrupting Potion', "Mercury's Treads", 'Trinity Force', "Randuin's Omen", 'Titanic Hydra', 'Ninja Tabi', 'Health Potion', 'Guardian Angel'], 'name': 'Irelia', 'runes': [u'Resolve', u'Nullifying Orb', u'Sorcery', u'Precision', u'Coup de Grace', u'Gathering Storm', u'Conqueror', u'Bone Plating', u'Legend: Alacrity', u'Triumph', u'Chrysalis']}, {'items': ['Refillable Potion', 'Control Ward', 'Boots of Mobility', 'Redemption', "Hunter's Talisman", "Knight's Vow", 'Locket of the Iron Solari', 'Ardent Censer', "Athene's Unholy Grail", 'Health Potion', "Mejai's Soulstealer"], 'name': 'Ivern', 'runes': [u'Resolve', u'Glacial Augment', u'Sorcery', u'Perfect Timing', u'Waterwalking', u"Future's Market", u'Celerity', u'Cosmic Insight', u'Revitalize', u'Nimbus Cloak', u'Summon Aery', u'Font of Life', u'Inspiration']}, {'items': ["Sorcerer's Shoes", 'Boots of Mobility', 'Redemption', "Rabadon's Deathcap", 'Twin Shadows', 'Locket of the Iron Solari', "Spellthief's Edge", 'Ardent Censer', 'Ancient Coin', "Athene's Unholy Grail", 'Health Potion', "Mikael's Crucible", 'Remnant of the Watchers'], 'name': 'Janna', 'runes': [u'Celerity', u'Absolute Focus', u'Biscuit Delivery', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Gathering Storm', u'Cosmic Insight', u'Summon Aery', u'Scorch', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Hunter's Machete", "Hunter's Talisman", 'Spirit Visage', "Mercury's Treads", 'Titanic Hydra', 'Maw of Malmortius', 'Guardian Angel', 'The Black Cleaver'], 'name': 'JarvanIV', 'runes': [u'Electrocute', u'Ghost Poro', u'Sudden Impact', u'Dark Harvest', u'Sorcery', u'Eyeball Collection', u'Waterwalking', u'Precision', u'Domination', u'Celerity', u'Triumph', u'Coup de Grace', u'Relentless Hunter']}, {'items': ['Refillable Potion', 'Enchantment: Bloodrazor', 'Essence Reaver', "Hunter's Machete", "Sterak's Gage", "Mercury's Treads", 'Trinity Force', 'Titanic Hydra', 'Health Potion', 'Guardian Angel'], 'name': 'Jax', 'runes': [u'Magical Footwear', u'Sudden Impact', u'Precision', u'Coup de Grace', u'Press the Attack', u'Domination', u'Time Warp Tonic', u'Ravenous Hunter', u'Conqueror', u'Legend: Alacrity', u'Triumph', u'Inspiration']}, {'items': ['Corrupting Potion', "Death's Dance", 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Ionian Boots of Lucidity', "Lord Dominik's Regards", "Doran's Blade", 'Ninja Tabi', 'Health Potion', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Jayce', 'runes': [u'Celerity', u'Absolute Focus', u'Taste of Blood', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Ravenous Hunter', u'Domination', u'Time Warp Tonic', u'Summon Aery', u'Scorch', u'Inspiration']}, {'items': ['Infinity Edge', 'Rapid Firecannon', 'Boots of Swiftness', "Doran's Blade", "Lord Dominik's Regards", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Jhin', 'runes': [u'Celerity', u'Legend: Alacrity', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Gathering Storm', u'Legend: Bloodline', u'Cut Down', u'Triumph']}, {'items': ['Cull', "Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', 'Rapid Firecannon', "Runaan's Hurricane", "Doran's Blade", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Jinx', 'runes': [u'Celerity', u'Legend: Alacrity', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Gathering Storm', u'Legend: Bloodline', u'Overheal', u'Triumph', u'Lethal Tempo']}, {'items': ["Guinsoo's Rageblade", "Berserker's Greaves", "Zhonya's Hourglass", 'Infinity Edge', "Doran's Shield", 'Blade of the Ruined King', 'Essence Reaver', "Runaan's Hurricane", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'KaiSa', 'runes': [u'Celerity', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Gathering Storm', u'Triumph', u'Legend: Alacrity', u'Presence of Mind']}, {'items': ["Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', "Doran's Shield", 'Blade of the Ruined King', 'Mercurial Scimitar', "Runaan's Hurricane", "Doran's Blade", 'Health Potion', 'Guardian Angel'], 'name': 'Kalista', 'runes': [u'Celerity', u'Overheal', u'Sorcery', u'Precision', u'Coup de Grace', u'Gathering Storm', u'Legend: Alacrity', u'Triumph', u'Lethal Tempo']}, {'items': ['Control Ward', 'Redemption', "Rabadon's Deathcap", "Luden's Echo", 'Locket of the Iron Solari', 'Morellonomicon', "Spellthief's Edge", 'Ardent Censer', "Liandry's Torment", "Sorcerer's Shoes", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Karma', 'runes': [u'Celerity', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Cosmic Insight', u'Summon Aery', u'Nimbus Cloak', u'Scorch', u'Inspiration']}, {'items': ['Void Staff', "Doran's Ring", "Rabadon's Deathcap", 'Rod of Ages', "Luden's Echo", 'Morellonomicon', "Archangel's Staff", "Sorcerer's Shoes", 'Health Potion', "Zhonya's Hourglass"], 'name': 'Karthus', 'runes': [u'Absolute Focus', u'Biscuit Delivery', u'Manaflow Band', u'Sorcery', u'Precision', u'Coup de Grace', u'Transcendence', u'Presence of Mind', u'Gathering Storm', u'Cosmic Insight', u'Summon Aery', u'Scorch', u'Inspiration']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", 'Rejuvenation Bead', 'Rod of Ages', 'Corrupting Potion', "Rabadon's Deathcap", "Archangel's Staff", 'Lich Bane', "Sorcerer's Shoes"], 'name': 'Kassadin', 'runes': [u'Electrocute', u'Taste of Blood', u'Fleet Footwork', u'Ghost Poro', u'Ravenous Hunter', u'Precision', u'Cheap Shot', u'Domination', u'Legend: Tenacity', u'Coup de Grace', u'Triumph']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", 'Void Staff', 'Morellonomicon', "Rabadon's Deathcap", 'Hextech Gunblade', 'Long Sword', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Katarina', 'runes': [u'Electrocute', u'Sudden Impact', u'Domination', u'Precision', u'Eyeball Collection', u'Legend: Tenacity', u'Ravenous Hunter', u'Coup de Grace', u'Triumph']}, {'items': ["Guinsoo's Rageblade", "Berserker's Greaves", "Doran's Ring", "Rabadon's Deathcap", "Runaan's Hurricane", 'Ninja Tabi', 'Health Potion', "Nashor's Tooth", "Rylai's Crystal Scepter"], 'name': 'Kayle', 'runes': [u'Sorcery', u'Precision', u'Coup de Grace', u'Transcendence', u'Gathering Storm', u'Last Stand', u'Legend: Alacrity', u'Triumph', u'Lethal Tempo']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Dead Man's Plate", "Hunter's Talisman", 'Spirit Visage', 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Edge of Night', 'Ninja Tabi', 'Boots of Mobility', 'Health Potion', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Kayn', 'runes': [u'Resolve', u'Sudden Impact', u'Dark Harvest', u'Eyeball Collection', u'Precision', u'Domination', u'Conditioning', u'Ravenous Hunter', u'Coup de Grace', u'Triumph', u'Revitalize']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", 'Hextech Protobelt-01', "Rabadon's Deathcap", 'Void Staff', "Doran's Blade", "Sorcerer's Shoes", 'Health Potion', "Rylai's Crystal Scepter"], 'name': 'Kennen', 'runes': [u'Celerity', u'Taste of Blood', u'Sorcery', u'Ravenous Hunter', u'Perfect Timing', u'Domination', u'Cosmic Insight', u'Summon Aery', u'Nimbus Cloak', u'Scorch', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', 'Boots of Mobility', "Hunter's Machete", "Hunter's Talisman", 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Ninja Tabi', 'Ravenous Hydra', 'Guardian Angel', 'The Black Cleaver'], 'name': 'KhaZix', 'runes': [u'Celerity', u'Dark Harvest', u'Sudden Impact', u'Eyeball Collection', u'Phase Rush', u'Sorcery', u'Precision', u'Waterwalking', u'Coup de Grace', u'Domination', u'Relentless Hunter', u'Nimbus Cloak', u'Triumph']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Berserker's Greaves", "Hunter's Machete", 'Infinity Edge', 'Rapid Firecannon', 'Stormrazor', 'Guardian Angel'], 'name': 'Kindred', 'runes': [u'Celerity', u'Nullifying Orb', u'Sudden Impact', u'Sorcery', u'Precision', u'Coup de Grace', u'Press the Attack', u'Domination', u'Relentless Hunter', u'Legend: Alacrity', u'Triumph']}, {'items': ["Sterak's Gage", "Doran's Shield", "Doran's Blade", 'Titanic Hydra', 'Ninja Tabi', 'Health Potion', 'Thornmail', 'Guardian Angel', 'Gargoyle Stoneplate', 'The Black Cleaver'], 'name': 'Kled', 'runes': [u'Resolve', u'Sudden Impact', u'Eyeball Collection', u'Precision', u'Coup de Grace', u'Press the Attack', u'Domination', u'Chrysalis', u'Conqueror', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ["Guinsoo's Rageblade", "Berserker's Greaves", 'Infinity Edge', 'Blade of the Ruined King', "Runaan's Hurricane", "Doran's Blade", 'Health Potion', 'Guardian Angel'], 'name': 'KogMaw', 'runes': [u'Celerity', u'Absolute Focus', u'Sorcery', u'Precision', u'Coup de Grace', u'Press the Attack', u'Gathering Storm', u'Legend: Alacrity', u'Triumph', u'Lethal Tempo']}, {'items': ["Luden's Echo", "Mejai's Soulstealer", "Zhonya's Hourglass", 'Void Staff', "Rabadon's Deathcap", 'Corrupting Potion', 'Morellonomicon', "Sorcerer's Shoes"], 'name': 'LeBlanc', 'runes': [u'Electrocute', u'Magical Footwear', u'Sudden Impact', u'Domination', u'Ultimate Hunter', u'Eyeball Collection', u'Time Warp Tonic', u'Ravenous Hunter', u'Minion Dematerializer', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Hunter's Machete", 'Rejuvenation Bead', "Sterak's Gage", "Mercury's Treads", "Youmuu's Ghostblade", 'Ninja Tabi', 'Ravenous Hydra', 'Guardian Angel', 'The Black Cleaver'], 'name': 'LeeSin', 'runes': [u'Electrocute', u'Dark Harvest', u'Magical Footwear', u'Sudden Impact', u'Ghost Poro', u'Eyeball Collection', u'Precision', u'Domination', u'Cosmic Insight', u'Triumph', u'Coup de Grace', u'Relentless Hunter', u'Inspiration']}, {'items': ['Boots of Mobility', 'Redemption', "Knight's Vow", "Zeke's Convergence", "Randuin's Omen", 'Locket of the Iron Solari', 'Relic Shield', 'Health Potion', 'Thornmail', 'Remnant of the Aspect'], 'name': 'Leona', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Unflinching', u'Magical Footwear', u'Biscuit Delivery', u'Aftershock', u'Cosmic Insight', u'Conditioning', u'Bone Plating', u'Inspiration']}, {'items': ["Doran's Ring", 'Hextech Protobelt-01', "Rabadon's Deathcap", 'Corrupting Potion', 'Morellonomicon', 'Void Staff', 'Ninja Tabi', "Sorcerer's Shoes", 'Health Potion', "Zhonya's Hourglass"], 'name': 'Lissandra', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Manaflow Band', u'Sorcery', u'Transcendence', u'Aftershock', u'Chrysalis', u'Bone Plating']}, {'items': ["Berserker's Greaves", 'Infinity Edge', 'Blade of the Ruined King', 'Rapid Firecannon', "Doran's Blade", 'Health Potion', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Lucian', 'runes': [u'Celerity', u'Absolute Focus', u'Sorcery', u'Precision', u'Coup de Grace', u'Press the Attack', u'Gathering Storm', u'Nimbus Cloak', u'Legend: Alacrity', u'Triumph']}, {'items': ['Boots of Mobility', 'Redemption', 'Twin Shadows', 'Corrupting Potion', 'Locket of the Iron Solari', "Spellthief's Edge", 'Ardent Censer', "Athene's Unholy Grail", 'Health Potion', "Mikael's Crucible", 'Remnant of the Watchers'], 'name': 'Lulu', 'runes': [u'Celerity', u'Biscuit Delivery', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Gathering Storm', u'Cosmic Insight', u'Summon Aery', u'Scorch', u'Inspiration']}, {'items': ['Refillable Potion', 'The Dark Seal', "Mejai's Soulstealer", "Zhonya's Hourglass", 'Void Staff', "Rabadon's Deathcap", "Luden's Echo", 'Morellonomicon', "Spellthief's Edge", "Sorcerer's Shoes", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Lux', 'runes': [u'Arcane Comet', u'Celerity', u'Eyeball Collection', u'Manaflow Band', u'Sorcery', u'Precision', u'Coup de Grace', u'Transcendence', u'Relentless Hunter', u'Domination', u'Gathering Storm', u'Triumph', u'Scorch']}, {'items': ["Doran's Ring", 'Sunfire Cape', 'Iceborn Gauntlet', 'Corrupting Potion', 'Abyssal Mask', 'Frozen Heart', 'Ninja Tabi', 'Health Potion', 'Thornmail', "Warmog's Armor", 'Gargoyle Stoneplate'], 'name': 'Malphite', 'runes': [u'Overgrowth', u'Arcane Comet', u'Resolve', u'Manaflow Band', u'Sorcery', u'Transcendence', u'Chrysalis', u'Bone Plating', u'Grasp of the Undying', u'Scorch']}, {'items': ['Void Staff', "Doran's Ring", "Rabadon's Deathcap", "Luden's Echo", 'Ionian Boots of Lucidity', "Liandry's Torment", "Sorcerer's Shoes", 'Health Potion', "Rylai's Crystal Scepter", "Zhonya's Hourglass"], 'name': 'Malzahar', 'runes': [u'Celerity', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Transcendence', u"Future's Market", u'Gathering Storm', u'Cosmic Insight', u'Summon Aery', u'Scorch', u'Inspiration']}, {'items': ["Doran's Ring", 'Sunfire Cape', "Doran's Shield", 'Spirit Visage', "Mercury's Treads", "Randuin's Omen", "Shurelya's Reverie", 'Righteous Glory', 'Abyssal Mask', 'Ninja Tabi', 'Health Potion', 'Gargoyle Stoneplate'], 'name': 'Maokai', 'runes': [u'Resolve', u'Second Wind', u'Manaflow Band', u'Sorcery', u'Transcendence', u'Aftershock', u'Revitalize', u'Font of Life', u'Bone Plating', u'Grasp of the Undying', u'Scorch', u'Conditioning']}, {'items': ['Refillable Potion', "Guinsoo's Rageblade", 'Enchantment: Bloodrazor', "Berserker's Greaves", "Hunter's Machete", "Sterak's Gage", 'Blade of the Ruined King', "Mercury's Treads", "Doran's Blade", 'Maw of Malmortius', 'Health Potion', 'Guardian Angel'], 'name': 'MasterYi', 'runes': [u'Sudden Impact', u'Eyeball Collection', u'Precision', u'Hail of Blades', u'Domination', u'Ravenous Hunter', u'Conqueror', u'Coup de Grace', u'Legend: Alacrity', u'Triumph']}, {'items': ["Berserker's Greaves", 'Infinity Edge', 'Statikk Shiv', 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Rapid Firecannon', "Lord Dominik's Regards", "Doran's Blade", 'Health Potion', 'Stormrazor', 'Guardian Angel', 'The Black Cleaver'], 'name': 'MissFortune', 'runes': [u'Manaflow Band', u'Absolute Focus', u'Eyeball Collection', u'Dark Harvest', u'Sorcery', u'Precision', u'Coup de Grace', u'Press the Attack', u'Cheap Shot', u'Domination', u'Gathering Storm', u'Relentless Hunter', u'Celerity', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'The Dark Seal', "Zhonya's Hourglass", 'Void Staff', "Rabadon's Deathcap", "Doran's Shield", 'Spirit Visage', 'Morellonomicon', "Liandry's Torment", "Sorcerer's Shoes", 'Health Potion', "Rylai's Crystal Scepter"], 'name': 'Mordekaiser', 'runes': [u'Celerity', u'Taste of Blood', u'Sorcery', u'Ravenous Hunter', u'Domination', u'Gathering Storm', u'Summon Aery', u'Nimbus Cloak', u'Chrysalis', u'Bone Plating', u'Scorch', u'Resolve']}, {'items': ['Boots of Mobility', "Zhonya's Hourglass", "Doran's Ring", "Luden's Echo", 'Locket of the Iron Solari', 'Morellonomicon', "Spellthief's Edge", 'Redemption', "Banshee's Veil", "Sorcerer's Shoes", 'Health Potion', "Rylai's Crystal Scepter", 'Remnant of the Watchers'], 'name': 'Morgana', 'runes': [u'Arcane Comet', u'Celerity', u'Manaflow Band', u'Sorcery', u'Ravenous Hunter', u'Perfect Timing', u'Transcendence', u'Cheap Shot', u'Domination', u'Cosmic Insight', u'Summon Aery', u'Scorch', u'Inspiration']}, {'items': ['Boots of Mobility', 'Redemption', 'Twin Shadows', 'Locket of the Iron Solari', "Spellthief's Edge", 'Ardent Censer', "Athene's Unholy Grail", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Nami', 'runes': [u'Resolve', u'Absolute Focus', u'Manaflow Band', u'Sorcery', u'Revitalize', u'Summon Aery', u'Celerity', u'Bone Plating', u'Scorch', u'Second Wind']}, {'items': ["Dead Man's Plate", "Doran's Shield", 'Spirit Visage', "Mercury's Treads", 'Trinity Force', 'Sapphire Crystal', 'Frozen Heart', 'Ninja Tabi', 'Health Potion', 'Thornmail', 'Gargoyle Stoneplate'], 'name': 'Nasus', 'runes': [u'Overgrowth', u'Resolve', u'Demolish', u'Magical Footwear', u'Biscuit Delivery', u'Cosmic Insight', u'Conditioning', u'Bone Plating', u'Grasp of the Undying', u'Inspiration']}, {'items': ['Boots of Mobility', 'Redemption', "Knight's Vow", "Zeke's Convergence", 'Locket of the Iron Solari', 'Ancient Coin', 'Relic Shield', 'Health Potion', 'Remnant of the Aspect', "Mikael's Crucible"], 'name': 'Nautilus', 'runes': [u'Resolve', u'Second Wind', u'Unflinching', u'Biscuit Delivery', u'Magical Footwear', u'Aftershock', u'Chrysalis', u'Cosmic Insight', u'Bone Plating', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Runic Echoes', "Athene's Unholy Grail", "Hunter's Machete", 'Void Staff', "Rabadon's Deathcap", "Hunter's Talisman", 'Lich Bane', "Sorcerer's Shoes", "Mejai's Soulstealer", "Zhonya's Hourglass"], 'name': 'Nidalee', 'runes': [u'Celerity', u'Sudden Impact', u'Dark Harvest', u'Sorcery', u'Eyeball Collection', u'Waterwalking', u'Transcendence', u'Domination', u'Relentless Hunter']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Hunter's Machete", "Sterak's Gage", 'Blade of the Ruined King', 'Corrupting Potion', "Mercury's Treads", 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Ninja Tabi', 'Ravenous Hydra', 'Guardian Angel'], 'name': 'Nocturne', 'runes': [u'Celerity', u'Sudden Impact', u'Dark Harvest', u'Sorcery', u'Eyeball Collection', u'Waterwalking', u'Precision', u'Domination', u'Presence of Mind', u'Ravenous Hunter', u'Coup de Grace', u'Legend: Alacrity', u'Triumph', u'Lethal Tempo']}, {'items': ['Refillable Potion', 'Control Ward', "Dead Man's Plate", "Hunter's Talisman", "Knight's Vow", 'Enchantment: Cinderhulk', "Mercury's Treads", 'Spirit Visage', 'Righteous Glory', 'Health Potion', "Warmog's Armor", 'Gargoyle Stoneplate'], 'name': 'Nunu', 'runes': [u'Gathering Storm', u'Overgrowth', u'Resolve', u'Eyeball Collection', u'Sorcery', u'Domination', u'Waterwalking', u'Predator', u'Cheap Shot', u'Aftershock', u'Celerity', u'Conditioning', u'Bone Plating', u'Relentless Hunter']}, {'items': ['Refillable Potion', "Randuin's Omen", 'Spirit Visage', "Dead Man's Plate", "Hunter's Machete", "Hunter's Talisman", 'Enchantment: Cinderhulk', 'Ionian Boots of Lucidity', 'Righteous Glory', 'Ninja Tabi', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Olaf', 'runes': [u'Celerity', u'Sorcery', u'Eyeball Collection', u'Waterwalking', u'Predator', u'Cheap Shot', u'Domination', u'Ingenious Hunter', u'Relentless Hunter']}, {'items': ["Luden's Echo", "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Corrupting Potion', 'Morellonomicon', 'Void Staff', 'Ninja Tabi', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Orianna', 'runes': [u'Celerity', u'Time Warp Tonic', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Transcendence', u'Gathering Storm', u'Cosmic Insight', u'Summon Aery', u'Minion Dematerializer', u'Scorch', u'Inspiration']}, {'items': ['Infernal Mask', 'Sunfire Cape', "Doran's Shield", 'Iceborn Gauntlet', 'Corrupting Potion', "Randuin's Omen", 'Ninja Tabi', 'Gargoyle Stoneplate', 'Thornmail', "Warmog's Armor"], 'name': 'Ornn', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Magical Footwear', u'Biscuit Delivery', u'Time Warp Tonic', u'Revitalize', u'Bone Plating', u'Grasp of the Undying', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', 'Boots of Mobility', "Sterak's Gage", "Hunter's Talisman", "Youmuu's Ghostblade", "Dead Man's Plate", 'Health Potion', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Pantheon', 'runes': [u'Electrocute', u'Celerity', u'Sudden Impact', u'Dark Harvest', u'Sorcery', u'Eyeball Collection', u'Waterwalking', u'Precision', u'Domination', u'Relentless Hunter', u'Ravenous Hunter', u'Coup de Grace', u'Triumph']}, {'items': ['Spirit Visage', "Dead Man's Plate", 'Sunfire Cape', "Doran's Shield", 'Iceborn Gauntlet', 'Corrupting Potion', "Mercury's Treads", 'Adaptive Helm', 'Ninja Tabi', 'Gargoyle Stoneplate', 'Thornmail'], 'name': 'Poppy', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Unflinching', u'Magical Footwear', u'Biscuit Delivery', u'Time Warp Tonic', u'Chrysalis', u'Bone Plating', u'Grasp of the Undying', u'Inspiration']}, {'items': ['Boots of Mobility', "Doran's Shield", 'Spirit Visage', 'Frozen Heart', 'Locket of the Iron Solari', 'Ancient Coin', 'Remnant of the Ascended', 'Health Potion', 'Thornmail', 'Guardian Angel', 'Remnant of the Aspect', 'The Black Cleaver'], 'name': 'Pyke', 'runes': [u'Resolve', u'Magical Footwear', u'Sudden Impact', u'Domination', u'Ultimate Hunter', u'Aftershock', u'Revitalize', u'Cosmic Insight', u'Conditioning', u'Chrysalis', u'Bone Plating', u'Inspiration']}, {'items': ["Berserker's Greaves", 'Infinity Edge', 'Statikk Shiv', "Youmuu's Ghostblade", 'Rapid Firecannon', "Doran's Blade", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Quinn', 'runes': [u'Electrocute', u'Celerity', u'Nullifying Orb', u'Sudden Impact', u'Eyeball Collection', u'Phase Rush', u'Sorcery', u'Precision', u'Domination', u'Gathering Storm', u'Relentless Hunter', u'Legend: Alacrity', u'Triumph']}, {'items': ['Boots of Mobility', 'Redemption', 'Hextech Protobelt-01', "Rabadon's Deathcap", "Knight's Vow", "Luden's Echo", "Zeke's Convergence", 'Void Staff', "Spellthief's Edge", 'Ardent Censer', 'Ancient Coin', 'Relic Shield', "Sorcerer's Shoes", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Rakan', 'runes': [u'Resolve', u'Guardian', u'Sorcery', u'Transcendence', u'Celerity', u'Chrysalis', u'Revitalize', u'Nimbus Cloak', u'Bone Plating']}, {'items': ['Refillable Potion', "Dead Man's Plate", "Hunter's Machete", "Hunter's Talisman", 'Enchantment: Cinderhulk', 'Abyssal Mask', 'Boots of Swiftness', 'Righteous Glory', 'Ninja Tabi', 'Gargoyle Stoneplate', 'Thornmail'], 'name': 'Rammus', 'runes': [u'Overgrowth', u'Resolve', u'Unflinching', u'Sorcery', u'Precision', u'Waterwalking', u'Aftershock', u'Celerity', u'Conditioning', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Hunter's Machete", "Sterak's Gage", "Mercury's Treads", 'Titanic Hydra', 'Ninja Tabi', 'Guardian Angel', 'The Black Cleaver'], 'name': 'RekSai', 'runes': [u'Press the Attack', u'Celerity', u'Sudden Impact', u'Sorcery', u'Eyeball Collection', u'Waterwalking', u'Precision', u'Hail of Blades', u'Domination', u'Triumph', u'Coup de Grace', u'Legend: Alacrity', u'Relentless Hunter']}, {'items': ['Spirit Visage', "Sterak's Gage", 'Long Sword', "Doran's Blade", "Youmuu's Ghostblade", 'Essence Reaver', 'Titanic Hydra', 'Ninja Tabi', 'Health Potion', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Renekton', 'runes': [u'Resolve', u'Sudden Impact', u'Precision', u'Coup de Grace', u'Press the Attack', u'Domination', u'Chrysalis', u'Ingenious Hunter', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ['Enchantment: Warrior', 'Stormrazor', 'Boots of Mobility', "Hunter's Machete", 'Infinity Edge', 'Statikk Shiv', 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Long Sword', 'Ninja Tabi', 'Health Potion', 'Ravenous Hydra', 'Guardian Angel'], 'name': 'Rengar', 'runes': [u'Electrocute', u'Zombie Ward', u'Sudden Impact', u'Sorcery', u'Precision', u'Ultimate Hunter', u'Coup de Grace', u'Fleet Footwork', u'Domination', u'Celerity', u'Waterwalking', u'Legend: Alacrity', u'Triumph']}, {'items': ['Essence Reaver', 'The Bloodthirster', "Sterak's Gage", "Doran's Shield", "Death's Dance", 'Ionian Boots of Lucidity', 'Long Sword', 'Ninja Tabi', 'Health Potion', 'Ravenous Hydra', 'Guardian Angel', 'Stormrazor', 'The Black Cleaver'], 'name': 'Riven', 'runes': [u'Sorcery', u'Precision', u'Coup de Grace', u'Transcendence', u'Gathering Storm', u'Legend: Bloodline', u'Nimbus Cloak', u'Conqueror', u'Legend: Alacrity', u'Triumph']}, {'items': ['Boots of Speed', "Zhonya's Hourglass", 'Void Staff', "Rabadon's Deathcap", "Doran's Shield", "Shurelya's Reverie", 'Hextech Protobelt-01', "Liandry's Torment", "Sorcerer's Shoes", 'Health Potion', "Rylai's Crystal Scepter"], 'name': 'Rumble', 'runes': [u'Arcane Comet', u'Celerity', u'Nullifying Orb', u'Sorcery', u'Perfect Timing', u'Transcendence', u'Resolve', u'Cosmic Insight', u'Nimbus Cloak', u'Chrysalis', u'Bone Plating', u'Scorch', u'Inspiration']}, {'items': ['Refillable Potion', "Zhonya's Hourglass", 'Void Staff', "Rabadon's Deathcap", 'Rod of Ages', 'Morellonomicon', 'Sapphire Crystal', 'Ionian Boots of Lucidity', "Archangel's Staff", 'Twin Shadows', "Sorcerer's Shoes", 'Health Potion', "Rylai's Crystal Scepter"], 'name': 'Ryze', 'runes': [u'Phase Rush', u'Absolute Focus', u'Taste of Blood', u'Manaflow Band', u'Sorcery', u'Ravenous Hunter', u'Transcendence', u'Domination', u'Gathering Storm']}, {'items': ['Refillable Potion', "Dead Man's Plate", "Hunter's Machete", "Hunter's Talisman", 'Enchantment: Cinderhulk', "Mercury's Treads", "Randuin's Omen", 'Frozen Heart', 'Adaptive Helm', 'Ninja Tabi', 'Gargoyle Stoneplate', "Warmog's Armor"], 'name': 'Sejuani', 'runes': [u'Overgrowth', u'Resolve', u'Unflinching', u'Precision', u'Aftershock', u'Conditioning', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', "Berserker's Greaves", "Hunter's Machete", 'Rejuvenation Bead', 'Trinity Force', 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Titanic Hydra', 'Ravenous Hydra', 'Guardian Angel'], 'name': 'Shaco', 'runes': [u'Absolute Focus', u'Sudden Impact', u'Dark Harvest', u'Sorcery', u'Eyeball Collection', u'Precision', u'Cheap Shot', u'Domination', u'Gathering Storm', u'Triumph', u'Legend: Alacrity', u'Relentless Hunter']}, {'items': ['Spirit Visage', 'Sunfire Cape', "Doran's Shield", "Doran's Blade", "Mercury's Treads", 'Locket of the Iron Solari', 'Titanic Hydra', 'Ninja Tabi', 'Health Potion', 'Thornmail', "Warmog's Armor"], 'name': 'Shen', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Precision', u'Chrysalis', u'Bone Plating', u'Legend: Alacrity', u'Grasp of the Undying', u'Triumph']}, {'items': ['Refillable Potion', 'Enchantment: Bloodrazor', "Dead Man's Plate", "Hunter's Machete", "Hunter's Talisman", 'Lich Bane', 'Spirit Visage', "Mercury's Treads", 'Enchantment: Runic Echoes', 'Frozen Mallet', 'Titanic Hydra', "Sorcerer's Shoes", "Nashor's Tooth", "Liandry's Torment", "Zhonya's Hourglass"], 'name': 'Shyvana', 'runes': [u'Celerity', u'Magical Footwear', u'Sorcery', u'Precision', u'Waterwalking', u'Coup de Grace', u'Press the Attack', u'Approach Velocity', u'Legend: Alacrity', u'Triumph', u'Inspiration']}, {'items': ['Refillable Potion', 'The Dark Seal', "Dead Man's Plate", 'Spirit Visage', "Zz'Rot Portal", 'Righteous Glory', "Liandry's Torment", 'Ninja Tabi', "Rylai's Crystal Scepter", 'Thornmail'], 'name': 'Singed', 'runes': [u'Celerity', u'Time Warp Tonic', u'Magical Footwear', u'Sorcery', u"Future's Market", u'Gathering Storm', u'Summon Aery', u'Nimbus Cloak', u'Scorch', u'Inspiration']}, {'items': ['Spirit Visage', "Doran's Ring", 'Sunfire Cape', 'Corrupting Potion', "Mercury's Treads", 'Abyssal Mask', 'Frozen Heart', 'Righteous Glory', 'Adaptive Helm', 'Ninja Tabi', 'Health Potion', "Warmog's Armor", 'Gargoyle Stoneplate'], 'name': 'Sion', 'runes': [u'Overgrowth', u'Resolve', u'Glacial Augment', u'Second Wind', u'Demolish', u'Magical Footwear', u"Future's Market", u'Time Warp Tonic', u'Conditioning', u'Biscuit Delivery', u'Bone Plating', u'Grasp of the Undying', u'Inspiration']}, {'items': ['Cull', "Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', 'Statikk Shiv', 'Rapid Firecannon', "Doran's Blade", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Sivir', 'runes': [u'Celerity', u'Absolute Focus', u'Sorcery', u'Precision', u'Coup de Grace', u'Press the Attack', u'Fleet Footwork', u'Gathering Storm', u'Legend: Bloodline', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Dead Man's Plate", "Hunter's Machete", "Hunter's Talisman", 'Guardian Angel', 'Enchantment: Cinderhulk', "Mercury's Treads", 'Trinity Force', 'Maw of Malmortius', 'Righteous Glory', "Wit's End", "Warmog's Armor"], 'name': 'Skarner', 'runes': [u'Zombie Ward', u'Eyeball Collection', u'Sorcery', u'Predator', u'Waterwalking', u'Cheap Shot', u'Domination', u'Celerity', u'Relentless Hunter']}, {'items': ["Athene's Unholy Grail", 'Redemption', 'Void Staff', "Rabadon's Deathcap", 'Lich Bane', "Luden's Echo", 'Locket of the Iron Solari', "Spellthief's Edge", 'Ardent Censer', "Sorcerer's Shoes", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Sona', 'runes': [u'Resolve', u'Absolute Focus', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Chrysalis', u'Cosmic Insight', u'Summon Aery', u'Celerity', u'Inspiration', u'Scorch', u'Revitalize']}, {'items': ['Control Ward', 'Redemption', "Knight's Vow", 'Locket of the Iron Solari', 'Ionian Boots of Lucidity', "Spellthief's Edge", 'Ardent Censer', 'Boots of Swiftness', 'Remnant of the Ascended', 'Health Potion', "Warmog's Armor", 'Remnant of the Watchers'], 'name': 'Soraka', 'runes': [u'Resolve', u'Second Wind', u'Manaflow Band', u'Sorcery', u'Gathering Storm', u'Summon Aery', u'Celerity', u'Bone Plating', u'Scorch', u'Revitalize']}, {'items': ["Mejai's Soulstealer", "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Rod of Ages', 'Corrupting Potion', 'Morellonomicon', "Liandry's Torment", 'Ninja Tabi', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Swain', 'runes': [u'Celerity', u'Time Warp Tonic', u'Phase Rush', u'Sorcery', u'Perfect Timing', u'Transcendence', u'Gathering Storm', u'Cosmic Insight', u'Nimbus Cloak', u'Minion Dematerializer', u'Scorch', u'Inspiration']}, {'items': ["Luden's Echo", "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Corrupting Potion', 'Morellonomicon', 'Void Staff', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Syndra', 'runes': [u'Electrocute', u'Taste of Blood', u'Eyeball Collection', u'Ghost Poro', u'Ravenous Hunter', u'Domination', u'Time Warp Tonic', u'Minion Dematerializer', u'Inspiration']}, {'items': ['Redemption', "Doran's Shield", 'Locket of the Iron Solari', 'Boots of Swiftness', 'Gargoyle Stoneplate', "Knight's Vow", 'Relic Shield', 'Health Potion', 'Thornmail', 'Remnant of the Aspect'], 'name': 'TahmKench', 'runes': [u'Resolve', u'Second Wind', u'Magical Footwear', u'Guardian', u'Cosmic Insight', u'Revitalize', u'Approach Velocity', u'Bone Plating', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Runic Echoes', "Mejai's Soulstealer", "Hunter's Machete", 'Void Staff', "Rabadon's Deathcap", "Hunter's Talisman", 'Morellonomicon', "Sorcerer's Shoes", "Zhonya's Hourglass"], 'name': 'Taliyah', 'runes': [u'Electrocute', u'Celerity', u'Absolute Focus', u'Sorcery', u'Eyeball Collection', u'Waterwalking', u'Cheap Shot', u'Domination', u'Ravenous Hunter', u'Relentless Hunter']}, {'items': ['Refillable Potion', 'Boots of Mobility', 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Long Sword', 'Health Potion', 'Ravenous Hydra', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Talon', 'runes': [u'Electrocute', u'Celerity', u'Absolute Focus', u'Sudden Impact', u'Sorcery', u'Domination', u'Ultimate Hunter', u'Eyeball Collection', u'Gathering Storm', u'Nimbus Cloak', u'Ravenous Hunter']}, {'items': ['Boots of Mobility', 'Redemption', "Knight's Vow", 'Ardent Censer', "Mercury's Treads", 'Locket of the Iron Solari', 'Ancient Coin', 'Relic Shield', 'Health Potion', "Zeke's Convergence", 'Remnant of the Aspect'], 'name': 'Taric', 'runes': [u'Resolve', u'Second Wind', u'Magical Footwear', u'Guardian', u'Cosmic Insight', u'Revitalize', u'Conditioning', u'Font of Life', u'Bone Plating', u'Inspiration']}, {'items': ['Void Staff', "Doran's Ring", "Rabadon's Deathcap", "Liandry's Torment", 'Morellonomicon', "Sorcerer's Shoes", 'Boots of Speed', 'Health Potion', "Nashor's Tooth", "Zhonya's Hourglass"], 'name': 'Teemo', 'runes': [u'Overgrowth', u'Celerity', u'Second Wind', u'Taste of Blood', u'Manaflow Band', u'Sorcery', u'Ravenous Hunter', u'Precision', u'Domination', u'Resolve', u'Summon Aery', u'Last Stand', u'Bone Plating', u'Legend: Alacrity', u'Grasp of the Undying', u'Scorch']}, {'items': ['Boots of Mobility', 'Redemption', "Knight's Vow", "Zeke's Convergence", 'Locket of the Iron Solari', 'Ancient Coin', 'Remnant of the Ascended', 'Health Potion'], 'name': 'Thresh', 'runes': [u'Overgrowth', u'Resolve', u'Second Wind', u'Biscuit Delivery', u'Aftershock', u'Time Warp Tonic', u'Cosmic Insight', u'Revitalize', u'Conditioning', u'Bone Plating', u'Inspiration']}, {'items': ["Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', "Doran's Shield", 'Rapid Firecannon', 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Tristana', 'runes': [u'Celerity', u'Absolute Focus', u'Sorcery', u'Precision', u'Coup de Grace', u'Press the Attack', u'Gathering Storm', u'Legend: Bloodline', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'Spirit Visage', "Hunter's Machete", "Knight's Vow", 'Adaptive Helm', 'Enchantment: Cinderhulk', "Zeke's Convergence", 'Trinity Force', "Randuin's Omen", 'Titanic Hydra', 'Ninja Tabi', 'Health Potion'], 'name': 'Trundle', 'runes': [u'Celerity', u'Sorcery', u'Precision', u'Waterwalking', u'Coup de Grace', u'Press the Attack', u'Last Stand', u'Legend: Alacrity', u'Triumph']}, {'items': ["Guinsoo's Rageblade", "Berserker's Greaves", 'Infinity Edge', 'Trinity Force', 'Ionian Boots of Lucidity', 'Phantom Dancer', "Doran's Blade", 'Health Potion', 'Ravenous Hydra'], 'name': 'Tryndamere', 'runes': [u'Taste of Blood', u'Precision', u'Domination', u'Ravenous Hunter', u'Conqueror', u'Last Stand', u'Legend: Alacrity', u'Triumph']}, {'items': ['The Dark Seal', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Rod of Ages', "Mercury's Treads", 'Ionian Boots of Lucidity', 'Void Staff', 'Lich Bane', 'Health Potion'], 'name': 'Twisted Fate', 'runes': [u'Arcane Comet', u'Celerity', u'Time Warp Tonic', u'Manaflow Band', u'Sorcery', u'Gathering Storm', u'Minion Dematerializer', u'Scorch', u'Inspiration']}, {'items': ["Berserker's Greaves", 'Infinity Edge', 'Statikk Shiv', "Doran's Shield", 'Blade of the Ruined King', "Runaan's Hurricane", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Twitch', 'runes': [u'Absolute Focus', u'Taste of Blood', u'Sorcery', u'Precision', u'Coup de Grace', u'Press the Attack', u'Domination', u'Gathering Storm', u'Ravenous Hunter', u'Legend: Alacrity', u'Triumph', u'Lethal Tempo']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Dead Man's Plate", "Hunter's Machete", 'Rejuvenation Bead', "Hunter's Talisman", 'Spirit Visage', "Mercury's Treads", 'Trinity Force', 'Thornmail'], 'name': 'Udyr', 'runes': [u'Celerity', u'Nullifying Orb', u'Phase Rush', u'Sorcery', u'Precision', u'Waterwalking', u'Coup de Grace', u'Press the Attack', u'Legend: Alacrity', u'Triumph']}, {'items': ['Corrupting Potion', "Mercury's Treads", 'Righteous Glory', 'Adaptive Helm', 'Ninja Tabi', 'Health Potion', 'Thornmail', "Warmog's Armor", 'Gargoyle Stoneplate', 'The Black Cleaver'], 'name': 'Urgot', 'runes': [u'Overgrowth', u'Resolve', u'Magical Footwear', u'Perfect Timing', u'Unsealed Spellbook', u'Time Warp Tonic', u'Minion Dematerializer', u'Bone Plating', u'Chrysalis', u'Inspiration']}, {'items': ['Cull', "Guinsoo's Rageblade", "Berserker's Greaves", 'Infinity Edge', 'Blade of the Ruined King', "Runaan's Hurricane", "Doran's Blade", 'Health Potion', 'Guardian Angel'], 'name': 'Varus', 'runes': [u'Gathering Storm', u'Arcane Comet', u'Celerity', u'Absolute Focus', u'Biscuit Delivery', u'Manaflow Band', u'Sorcery', u'Precision', u'Coup de Grace', u'Time Warp Tonic', u'Triumph', u'Lethal Tempo', u'Legend: Alacrity', u'Scorch', u'Inspiration']}, {'items': ["Guinsoo's Rageblade", "Berserker's Greaves", 'Infinity Edge', "Doran's Shield", 'Blade of the Ruined King', 'Phantom Dancer', "Doran's Blade", 'Health Potion', 'Guardian Angel'], 'name': 'Vayne', 'runes': [u'Celerity', u'Absolute Focus', u'Cut Down', u'Overheal', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Gathering Storm', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', "Zhonya's Hourglass", "Doran's Ring", "Rabadon's Deathcap", 'Rod of Ages', "Luden's Echo", 'Sapphire Crystal', 'Morellonomicon', 'Void Staff', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Veigar', 'runes': [u'Arcane Comet', u'Manaflow Band', u'Magical Footwear', u'Glacial Augment', u'Sorcery', u'Perfect Timing', u'Transcendence', u'Gathering Storm', u'Cosmic Insight', u'Biscuit Delivery', u'Inspiration']}, {'items': ['Corrupting Potion', "Zhonya's Hourglass", "Rabadon's Deathcap", "Luden's Echo", 'Morellonomicon', "Spellthief's Edge", "Banshee's Veil", "Sorcerer's Shoes", 'Health Potion', 'Remnant of the Watchers'], 'name': 'VelKoz', 'runes': [u'Arcane Comet', u'Absolute Focus', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Perfect Timing', u'Transcendence', u'Cosmic Insight', u'Biscuit Delivery', u'Scorch', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Dead Man's Plate", "Hunter's Machete", "Sterak's Gage", "Mercury's Treads", 'Trinity Force', 'Duskblade of Draktharr', 'Ninja Tabi', 'Stormrazor', 'Guardian Angel'], 'name': 'Vi', 'runes': [u'Electrocute', u'Sudden Impact', u'Dark Harvest', u'Eyeball Collection', u'Precision', u'Domination', u'Triumph', u'Coup de Grace', u'Legend: Alacrity', u'Relentless Hunter']}, {'items': ["Zhonya's Hourglass", 'Abyssal Mask', 'Iceborn Gauntlet', 'Corrupting Potion', 'Perfect Hex Core', 'Ionian Boots of Lucidity', "Rabadon's Deathcap", "Liandry's Torment", 'Ninja Tabi', "Rylai's Crystal Scepter"], 'name': 'Viktor', 'runes': [u'Manaflow Band', u'Time Warp Tonic', u'Magical Footwear', u'Biscuit Delivery', u'Sorcery', u'Transcendence', u'Gathering Storm', u'Cosmic Insight', u'Minion Dematerializer', u'Kleptomancy', u'Inspiration']}, {'items': ['Refillable Potion', 'The Dark Seal', "Mejai's Soulstealer", "Zhonya's Hourglass", 'Hextech Protobelt-01', 'Morellonomicon', "Doran's Shield", "Rabadon's Deathcap", 'Spellbinder', 'Ionian Boots of Lucidity', 'Void Staff', "Sorcerer's Shoes", 'Health Potion'], 'name': 'Vladimir', 'runes': [u'Electrocute', u'Celerity', u'Taste of Blood', u'Magical Footwear', u'Sorcery', u'Eyeball Collection', u'Transcendence', u'Domination', u'Gathering Storm', u'Cosmic Insight', u'Summon Aery', u'Nimbus Cloak', u'Ravenous Hunter', u'Inspiration']}, {'items': ['Refillable Potion', 'Spirit Visage', "Dead Man's Plate", "Hunter's Machete", "Sterak's Gage", "Doran's Shield", 'Enchantment: Cinderhulk', "Mercury's Treads", 'Righteous Glory', 'Health Potion', 'Thornmail', "Warmog's Armor"], 'name': 'Volibear', 'runes': [u'Overgrowth', u'Resolve', u'Precision', u'Coup de Grace', u'Aftershock', u'Conditioning', u'Font of Life', u'Bone Plating', u'Legend: Alacrity', u'Triumph', u'Revitalize']}, {'items': ['Control Ward', "Dead Man's Plate", "Hunter's Machete", 'Rejuvenation Bead', 'Enchantment: Cinderhulk', "Mercury's Treads", 'Frozen Heart', 'Spirit Visage', 'Righteous Glory', 'Titanic Hydra', 'Ninja Tabi', 'Health Potion'], 'name': 'Warwick', 'runes': [u'Celerity', u'Ghost Poro', u'Sorcery', u'Precision', u'Waterwalking', u'Coup de Grace', u'Press the Attack', u'Domination', u'Relentless Hunter', u'Last Stand', u'Legend: Alacrity', u'Triumph']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', 'Boots of Mobility', "Hunter's Talisman", 'Corrupting Potion', 'Duskblade of Draktharr', "Youmuu's Ghostblade", "Lord Dominik's Regards", 'Titanic Hydra', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Wukong', 'runes': [u'Electrocute', u'Celerity', u'Sudden Impact', u'Sorcery', u'Domination', u'Waterwalking', u'Precision', u'Eyeball Collection', u'Coup de Grace', u'Legend: Alacrity', u'Relentless Hunter']}, {'items': ["Berserker's Greaves", 'Infinity Edge', "Doran's Shield", 'Mercurial Scimitar', 'Rapid Firecannon', "Doran's Blade", 'Health Potion', 'Stormrazor', 'Guardian Angel'], 'name': 'Xayah', 'runes': [u'Celerity', u'Absolute Focus', u'Overheal', u'Sorcery', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Gathering Storm', u'Legend: Alacrity', u'Triumph', u'Lethal Tempo']}, {'items': ['Void Staff', "Doran's Ring", "Rabadon's Deathcap", "Luden's Echo", 'Morellonomicon', "Liandry's Torment", "Sorcerer's Shoes", 'Health Potion', "Zhonya's Hourglass"], 'name': 'Xerath', 'runes': [u'Arcane Comet', u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Precision', u'Coup de Grace', u'Transcendence', u'Gathering Storm', u'Cosmic Insight', u'Scorch', u'Presence of Mind', u'Inspiration']}, {'items': ['Refillable Potion', 'Enchantment: Warrior', "Hunter's Machete", "Sterak's Gage", "Hunter's Talisman", "Warmog's Armor", "Mercury's Treads", 'Trinity Force', "Randuin's Omen", 'Ninja Tabi', 'Guardian Angel'], 'name': 'Xin Zhao', 'runes': [u'Celerity', u'Nullifying Orb', u'Sudden Impact', u'Phase Rush', u'Sorcery', u'Precision', u'Waterwalking', u'Domination', u'Triumph', u'Legend: Alacrity', u'Relentless Hunter']}, {'items': ['Frozen Mallet', "Berserker's Greaves", 'The Bloodthirster', 'Infinity Edge', "Sterak's Gage", 'Phantom Dancer', "Doran's Blade", 'Health Potion', 'Guardian Angel'], 'name': 'Yasuo', 'runes': [u'Resolve', u'Taste of Blood', u'Precision', u'Coup de Grace', u'Fleet Footwork', u'Domination', u'Chrysalis', u'Ravenous Hunter', u'Conqueror', u'Bone Plating', u'Legend: Alacrity', u'Triumph']}, {'items': ['Spirit Visage', "Dead Man's Plate", "Sterak's Gage", "Doran's Shield", 'Corrupting Potion', "Mercury's Treads", 'Trinity Force', "Zz'Rot Portal", 'Adaptive Helm', 'Ninja Tabi', 'Health Potion', 'Thornmail'], 'name': 'Yorick', 'runes': [u'Overgrowth', u'Demolish', u'Resolve', u'Second Wind', u'Biscuit Delivery', u'Precision', u'Coup de Grace', u'Time Warp Tonic', u'Conditioning', u'Conqueror', u'Bone Plating', u'Legend: Alacrity', u'Grasp of the Undying', u'Triumph', u'Inspiration']}, {'items': ['Refillable Potion', 'Spirit Visage', 'Ionian Boots of Lucidity', "Hunter's Talisman", 'Enchantment: Cinderhulk', "Randuin's Omen", 'Ninja Tabi', 'Health Potion', 'Thornmail', "Warmog's Armor", 'Gargoyle Stoneplate'], 'name': 'Zac', 'runes': [u'Resolve', u'Magical Footwear', u'Aftershock', u'Revitalize', u'Cosmic Insight', u'Conditioning', u'Font of Life', u'Bone Plating', u'Inspiration']}, {'items': ['Boots of Mobility', "Doran's Shield", "Mercury's Treads", 'Duskblade of Draktharr', "Youmuu's Ghostblade", 'Long Sword', 'Maw of Malmortius', 'Health Potion', 'Stormrazor', 'Guardian Angel', 'The Black Cleaver'], 'name': 'Zed', 'runes': [u'Electrocute', u'Zombie Ward', u'Nullifying Orb', u'Sudden Impact', u'Sorcery', u'Eyeball Collection', u'Ultimate Hunter', u'Precision', u'Domination', u'Triumph', u'Coup de Grace', u'Scorch']}, {'items': ['Void Staff', "Doran's Ring", "Rabadon's Deathcap", "Luden's Echo", 'Morellonomicon', "Sorcerer's Shoes", 'Health Potion', "Zhonya's Hourglass"], 'name': 'Ziggs', 'runes': [u'Arcane Comet', u'Perfect Timing', u'Manaflow Band', u'Sorcery', u'Precision', u'Coup de Grace', u'Transcendence', u'Cosmic Insight', u'Triumph', u'Scorch', u'Inspiration']}, {'items': ['Redemption', 'Void Staff', 'Rod of Ages', 'Corrupting Potion', 'Ionian Boots of Lucidity', "Spellthief's Edge", 'Locket of the Iron Solari', "Archangel's Staff", 'Manamune', "Sorcerer's Shoes", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Zilean', 'runes': [u'Magical Footwear', u'Manaflow Band', u'Sorcery', u'Transcendence', u'Gathering Storm', u'Cosmic Insight', u'Summon Aery', u'Biscuit Delivery', u'Scorch', u'Inspiration']}, {'items': ["Luden's Echo", 'Void Staff', "Doran's Ring", "Rabadon's Deathcap", 'Corrupting Potion', 'Morellonomicon', 'Hextech Protobelt-01', "Banshee's Veil", "Sorcerer's Shoes", 'Health Potion', "Zhonya's Hourglass"], 'name': 'Zoe', 'runes': [u'Electrocute', u'Nullifying Orb', u'Absolute Focus', u'Sudden Impact', u'Sorcery', u'Eyeball Collection', u'Domination', u'Time Warp Tonic', u'Summon Aery', u'Ravenous Hunter', u'Minion Dematerializer', u'Scorch', u'Inspiration']}, {'items': ["Zhonya's Hourglass", 'Void Staff', "Spellthief's Edge", "Liandry's Torment", "Banshee's Veil", "Sorcerer's Shoes", "Rylai's Crystal Scepter", 'Health Potion', 'Remnant of the Watchers'], 'name': 'Zyra', 'runes': [u'Arcane Comet', u'Resolve', u'Second Wind', u'Manaflow Band', u'Sorcery', u'Transcendence', u'Celerity', u'Chrysalis', u'Bone Plating', u'Scorch']}]}
+{
+    "data": [
+      {
+        "items": [
+          "Sterak's Gage",
+          "Death's Dance",
+          "Youmuu's Ghostblade",
+          "Doran's Blade",
+          "Ninja Tabi",
+          "Health Potion",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Aatrox",
+        "runes": [
+          "Electrocute",
+          "Resolve",
+          "Second Wind",
+          "Sudden Impact",
+          "Eyeball Collection",
+          "Precision",
+          "Coup de Grace",
+          "Domination",
+          "Chrysalis",
+          "Ravenous Hunter",
+          "Conqueror",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Mejai's Soulstealer",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Void Staff",
+          "Hextech Protobelt-01",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Ahri",
+        "runes": [
+          "Manaflow Band",
+          "Magical Footwear",
+          "Glacial Augment",
+          "Sorcery",
+          "Transcendence",
+          "Cheap Shot",
+          "Domination",
+          "Time Warp Tonic",
+          "Ingenious Hunter",
+          "Biscuit Delivery",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Morellonomicon",
+          "Doran's Shield",
+          "Rabadon's Deathcap",
+          "Hextech Gunblade",
+          "Lich Bane",
+          "Ninja Tabi",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Akali",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Sudden Impact",
+          "Sorcery",
+          "Domination",
+          "Eyeball Collection",
+          "Gathering Storm",
+          "Ravenous Hunter",
+          "Chrysalis",
+          "Bone Plating",
+          "Resolve"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Knight's Vow",
+          "Zeke's Convergence",
+          "Locket of the Iron Solari",
+          "Relic Shield",
+          "Health Potion",
+          "Remnant of the Aspect",
+          "Mikael's Crucible"
+        ],
+        "name": "Alistar",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Biscuit Delivery",
+          "Aftershock",
+          "Cosmic Insight",
+          "Conditioning",
+          "Hextech Flashtraption",
+          "Minion Dematerializer",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Runic Echoes",
+          "Enchantment: Cinderhulk",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Hunter's Talisman",
+          "Morellonomicon",
+          "Corrupting Potion",
+          "Abyssal Mask",
+          "Liandry's Torment",
+          "Ninja Tabi",
+          "Sorcerer's Shoes",
+          "Thornmail",
+          "Warmog's Armor"
+        ],
+        "name": "Amumu",
+        "runes": [
+          "Overgrowth",
+          "Electrocute",
+          "Resolve",
+          "Nimbus Cloak",
+          "Sudden Impact",
+          "Bone Plating",
+          "Aftershock",
+          "Domination",
+          "Precision",
+          "Transcendence",
+          "Eyeball Collection",
+          "Sorcery",
+          "Conditioning",
+          "Ravenous Hunter",
+          "Coup de Grace",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Sapphire Crystal",
+          "Morellonomicon",
+          "Archangel's Staff",
+          "Liandry's Torment",
+          "Ninja Tabi",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Anivia",
+        "runes": [
+          "Arcane Comet",
+          "Biscuit Delivery",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Perfect Timing",
+          "Transcendence",
+          "Gathering Storm",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Spellbinder",
+          "Morellonomicon",
+          "Void Staff",
+          "Hextech Protobelt-01",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Annie",
+        "runes": [
+          "Celerity",
+          "Sorcery",
+          "Eyeball Collection",
+          "Predator",
+          "Cheap Shot",
+          "Domination",
+          "Gathering Storm",
+          "Scorch",
+          "Ravenous Hunter",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Doran's Shield",
+          "Blade of the Ruined King",
+          "Mercurial Scimitar",
+          "Runaan's Hurricane",
+          "Doran's Blade",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Ashe",
+        "runes": [
+          "Celerity",
+          "Legend: Alacrity",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Cut Down",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Mejai's Soulstealer",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Boots of Swiftness",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "AurelionSol",
+        "runes": [
+          "Celerity",
+          "Nullifying Orb",
+          "Phase Rush",
+          "Sorcery",
+          "Perfect Timing",
+          "Waterwalking",
+          "Time Warp Tonic",
+          "Minion Dematerializer",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Void Staff",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Nashor's Tooth"
+        ],
+        "name": "Azir",
+        "runes": [
+          "Electrocute",
+          "Absolute Focus",
+          "Taste of Blood",
+          "Eyeball Collection",
+          "Manaflow Band",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Domination",
+          "Gathering Storm",
+          "Summon Aery",
+          "Ravenous Hunter",
+          "Legend: Alacrity"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Twin Shadows",
+          "Spellthief's Edge",
+          "Locket of the Iron Solari",
+          "Knight's Vow",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Bard",
+        "runes": [
+          "Electrocute",
+          "Zombie Ward",
+          "Taste of Blood",
+          "Sorcery",
+          "Eyeball Collection",
+          "Cheap Shot",
+          "Domination",
+          "Resolve",
+          "Scorch",
+          "Celerity",
+          "Chrysalis",
+          "Bone Plating",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Knight's Vow",
+          "Zeke's Convergence",
+          "Zz'Rot Portal",
+          "Frozen Heart",
+          "Locket of the Iron Solari",
+          "Boots of Swiftness",
+          "Righteous Glory",
+          "Ancient Coin",
+          "Relic Shield",
+          "Health Potion",
+          "Remnant of the Aspect"
+        ],
+        "name": "Blitzcrank",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Biscuit Delivery",
+          "Aftershock",
+          "Time Warp Tonic",
+          "Cosmic Insight",
+          "Revitalize",
+          "Conditioning",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Spellthief's Edge",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Rylai's Crystal Scepter",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Brand",
+        "runes": [
+          "Arcane Comet",
+          "Absolute Focus",
+          "Manaflow Band",
+          "Sorcery",
+          "Perfect Timing",
+          "Transcendence",
+          "Future's Market",
+          "Cosmic Insight",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Knight's Vow",
+          "Zeke's Convergence",
+          "Locket of the Iron Solari",
+          "Boots of Swiftness",
+          "Relic Shield",
+          "Health Potion",
+          "Remnant of the Aspect"
+        ],
+        "name": "Braum",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Unflinching",
+          "Magical Footwear",
+          "Guardian",
+          "Biscuit Delivery",
+          "Cosmic Insight",
+          "Minion Dematerializer",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Rapid Firecannon",
+          "Doran's Blade",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Caitlyn",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Scorch",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Trinity Force",
+          "Doran's Blade",
+          "Ninja Tabi",
+          "Health Potion",
+          "Ravenous Hydra",
+          "Guardian Angel"
+        ],
+        "name": "Camille",
+        "runes": [
+          "Celerity",
+          "Ghost Poro",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Coup de Grace",
+          "Press the Attack",
+          "Domination",
+          "Relentless Hunter",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Morellonomicon",
+          "Sapphire Crystal",
+          "Abyssal Mask",
+          "Void Staff",
+          "Archangel's Staff",
+          "Liandry's Torment",
+          "Health Potion",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "Cassiopeia",
+        "runes": [
+          "Phase Rush",
+          "Absolute Focus",
+          "Taste of Blood",
+          "Manaflow Band",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Transcendence",
+          "Domination",
+          "Gathering Storm",
+          "Scorch"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Void Staff",
+          "Hextech Protobelt-01",
+          "Doran's Shield",
+          "Luden's Echo",
+          "Locket of the Iron Solari",
+          "Righteous Glory",
+          "Liandry's Torment",
+          "Ninja Tabi",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Thornmail",
+          "Warmog's Armor",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "ChoGath",
+        "runes": [
+          "Overgrowth",
+          "Legend: Tenacity",
+          "Resolve",
+          "Second Wind",
+          "Precision",
+          "Conditioning",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Cull",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Statikk Shiv",
+          "Trinity Force",
+          "Rapid Firecannon",
+          "Doran's Blade",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Corki",
+        "runes": [
+          "Gathering Storm",
+          "Resolve",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Chrysalis",
+          "Celerity",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Dead Man's Plate",
+          "Sterak's Gage",
+          "Doran's Shield",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Long Sword",
+          "Ninja Tabi",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Darius",
+        "runes": [
+          "Resolve",
+          "Precision",
+          "Coup de Grace",
+          "Chrysalis",
+          "Conditioning",
+          "Conqueror",
+          "Last Stand",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Lich Bane",
+          "Spellbinder",
+          "Void Staff",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Nashor's Tooth"
+        ],
+        "name": "Diana",
+        "runes": [
+          "Electrocute",
+          "Nullifying Orb",
+          "Absolute Focus",
+          "Sudden Impact",
+          "Sorcery",
+          "Domination",
+          "Eyeball Collection",
+          "Gathering Storm",
+          "Ravenous Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Dead Man's Plate",
+          "Sunfire Cape",
+          "Doran's Shield",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail",
+          "Warmog's Armor",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "DrMundo",
+        "runes": [
+          "Resolve",
+          "Second Wind",
+          "Magical Footwear",
+          "Approach Velocity",
+          "Revitalize",
+          "Conditioning",
+          "Cosmic Insight",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Doran's Blade",
+          "Rapid Firecannon",
+          "Long Sword",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Draven",
+        "runes": [
+          "Celerity",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Gathering Storm",
+          "Legend: Bloodline",
+          "Conqueror",
+          "Last Stand",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Hextech Protobelt-01",
+          "Rabadon's Deathcap",
+          "Lich Bane",
+          "Corrupting Potion",
+          "Void Staff",
+          "Luden's Echo",
+          "Sorcerer's Shoes"
+        ],
+        "name": "Ekko",
+        "runes": [
+          "Electrocute",
+          "Absolute Focus",
+          "Sudden Impact",
+          "Sorcery",
+          "Domination",
+          "Transcendence",
+          "Eyeball Collection",
+          "Gathering Storm",
+          "Ravenous Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Runic Echoes",
+          "Boots of Mobility",
+          "Hunter's Machete",
+          "Void Staff",
+          "Hunter's Talisman",
+          "Morellonomicon",
+          "Liandry's Torment",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Rylai's Crystal Scepter",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Elise",
+        "runes": [
+          "Electrocute",
+          "Zombie Ward",
+          "Sudden Impact",
+          "Eyeball Collection",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Waterwalking",
+          "Cheap Shot",
+          "Domination",
+          "Celerity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Runic Echoes",
+          "Control Ward",
+          "Mejai's Soulstealer",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Hunter's Talisman",
+          "Lich Bane",
+          "Morellonomicon",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Evelynn",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Sudden Impact",
+          "Sorcery",
+          "Domination",
+          "Waterwalking",
+          "Precision",
+          "Eyeball Collection",
+          "Presence of Mind",
+          "Coup de Grace",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Blade of the Ruined King",
+          "Trinity Force",
+          "Ionian Boots of Lucidity",
+          "Lord Dominik's Regards",
+          "Doran's Blade",
+          "Manamune",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Ezreal",
+        "runes": [
+          "Manaflow Band",
+          "Absolute Focus",
+          "Biscuit Delivery",
+          "Magical Footwear",
+          "Sorcery",
+          "Perfect Timing",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Kleptomancy",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Control Ward",
+          "Boots of Mobility",
+          "Zhonya's Hourglass",
+          "Rabadon's Deathcap",
+          "Twin Shadows",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Spellthief's Edge",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Fiddlesticks",
+        "runes": [
+          "Resolve",
+          "Unflinching",
+          "Manaflow Band",
+          "Sorcery",
+          "Perfect Timing",
+          "Aftershock",
+          "Chrysalis",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Celerity",
+          "Bone Plating",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "The Bloodthirster",
+          "Sterak's Gage",
+          "Mercury's Treads",
+          "Corrupting Potion",
+          "Mercurial Scimitar",
+          "Trinity Force",
+          "Doran's Blade",
+          "Ninja Tabi",
+          "Health Potion",
+          "Ravenous Hydra",
+          "Guardian Angel"
+        ],
+        "name": "Fiora",
+        "runes": [
+          "Celerity",
+          "Nullifying Orb",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Resolve",
+          "Conqueror",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph",
+          "Chrysalis"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Hextech Protobelt-01",
+          "Rabadon's Deathcap",
+          "Lich Bane",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Void Staff",
+          "Ninja Tabi",
+          "Sorcerer's Shoes"
+        ],
+        "name": "Fizz",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Nullifying Orb",
+          "Sudden Impact",
+          "Sorcery",
+          "Domination",
+          "Eyeball Collection",
+          "Gathering Storm",
+          "Scorch",
+          "Ravenous Hunter",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Adaptive Helm",
+          "Mercury's Treads",
+          "Frozen Heart",
+          "Luden's Echo",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Galio",
+        "runes": [
+          "Gathering Storm",
+          "Overgrowth",
+          "Resolve",
+          "Absolute Focus",
+          "Sorcery",
+          "Transcendence",
+          "Aftershock",
+          "Chrysalis",
+          "Bone Plating"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Youmuu's Ghostblade",
+          "Sterak's Gage",
+          "Corrupting Potion",
+          "Trinity Force",
+          "Sapphire Crystal",
+          "Ninja Tabi",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Gangplank",
+        "runes": [
+          "Gathering Storm",
+          "Resolve",
+          "Magical Footwear",
+          "Biscuit Delivery",
+          "Sorcery",
+          "Transcendence",
+          "Time Warp Tonic",
+          "Revitalize",
+          "Chrysalis",
+          "Bone Plating",
+          "Kleptomancy",
+          "Grasp of the Undying",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Dead Man's Plate",
+          "Sterak's Gage",
+          "Doran's Shield",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Long Sword",
+          "Ninja Tabi",
+          "Health Potion",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Garen",
+        "runes": [
+          "Gathering Storm",
+          "Overgrowth",
+          "Legend: Tenacity",
+          "Resolve",
+          "Second Wind",
+          "Demolish",
+          "Sorcery",
+          "Precision",
+          "Celerity",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Cull",
+          "Maw of Malmortius",
+          "Death's Dance",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Randuin's Omen",
+          "Frozen Mallet",
+          "Doran's Blade",
+          "Ninja Tabi",
+          "Health Potion",
+          "The Black Cleaver"
+        ],
+        "name": "Gnar",
+        "runes": [
+          "Electrocute",
+          "Resolve",
+          "Fleet Footwork",
+          "Bone Plating",
+          "Ghost Poro",
+          "Ravenous Hunter",
+          "Precision",
+          "Cheap Shot",
+          "Domination",
+          "Chrysalis",
+          "Coup de Grace",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Runic Echoes",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Hunter's Talisman",
+          "Morellonomicon",
+          "Hextech Protobelt-01",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Gragas",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Sudden Impact",
+          "Predator",
+          "Sorcery",
+          "Domination",
+          "Waterwalking",
+          "Perfect Timing",
+          "Eyeball Collection",
+          "Cosmic Insight",
+          "Relentless Hunter",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Berserker's Greaves",
+          "Hunter's Machete",
+          "Infinity Edge",
+          "Death's Dance",
+          "Phantom Dancer",
+          "Maw of Malmortius",
+          "Stormrazor",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Graves",
+        "runes": [
+          "Legend: Tenacity",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Eyeball Collection",
+          "Precision",
+          "Domination",
+          "Triumph",
+          "Legend: Alacrity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Boots of Mobility",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Hunter's Talisman",
+          "Enchantment: Cinderhulk",
+          "Trinity Force",
+          "Rapid Firecannon",
+          "Ninja Tabi",
+          "Dead Man's Plate",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Hecarim",
+        "runes": [
+          "Resolve",
+          "Unflinching",
+          "Sudden Impact",
+          "Eyeball Collection",
+          "Sorcery",
+          "Domination",
+          "Waterwalking",
+          "Predator",
+          "Aftershock",
+          "Celerity",
+          "Conditioning",
+          "Bone Plating",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Void Staff",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Heimerdinger",
+        "runes": [
+          "Arcane Comet",
+          "Celerity",
+          "Absolute Focus",
+          "Taste of Blood",
+          "Manaflow Band",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Domination",
+          "Gathering Storm",
+          "Summon Aery",
+          "Scorch"
+        ]
+      },
+      {
+        "items": [
+          "Spirit Visage",
+          "Sterak's Gage",
+          "Mercury's Treads",
+          "Corrupting Potion",
+          "Death's Dance",
+          "Trinity Force",
+          "Doran's Blade",
+          "Ninja Tabi",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Illaoi",
+        "runes": [
+          "Magical Footwear",
+          "Sudden Impact",
+          "Biscuit Delivery",
+          "Domination",
+          "Future's Market",
+          "Time Warp Tonic",
+          "Ravenous Hunter",
+          "Kleptomancy",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Wit's End",
+          "Sterak's Gage",
+          "Doran's Shield",
+          "Corrupting Potion",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Randuin's Omen",
+          "Titanic Hydra",
+          "Ninja Tabi",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Irelia",
+        "runes": [
+          "Resolve",
+          "Nullifying Orb",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Gathering Storm",
+          "Conqueror",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph",
+          "Chrysalis"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Control Ward",
+          "Boots of Mobility",
+          "Redemption",
+          "Hunter's Talisman",
+          "Knight's Vow",
+          "Locket of the Iron Solari",
+          "Ardent Censer",
+          "Athene's Unholy Grail",
+          "Health Potion",
+          "Mejai's Soulstealer"
+        ],
+        "name": "Ivern",
+        "runes": [
+          "Resolve",
+          "Glacial Augment",
+          "Sorcery",
+          "Perfect Timing",
+          "Waterwalking",
+          "Future's Market",
+          "Celerity",
+          "Cosmic Insight",
+          "Revitalize",
+          "Nimbus Cloak",
+          "Summon Aery",
+          "Font of Life",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Sorcerer's Shoes",
+          "Boots of Mobility",
+          "Redemption",
+          "Rabadon's Deathcap",
+          "Twin Shadows",
+          "Locket of the Iron Solari",
+          "Spellthief's Edge",
+          "Ardent Censer",
+          "Ancient Coin",
+          "Athene's Unholy Grail",
+          "Health Potion",
+          "Mikael's Crucible",
+          "Remnant of the Watchers"
+        ],
+        "name": "Janna",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Biscuit Delivery",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Hunter's Machete",
+          "Hunter's Talisman",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Titanic Hydra",
+          "Maw of Malmortius",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "JarvanIV",
+        "runes": [
+          "Electrocute",
+          "Ghost Poro",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Sorcery",
+          "Eyeball Collection",
+          "Waterwalking",
+          "Precision",
+          "Domination",
+          "Celerity",
+          "Triumph",
+          "Coup de Grace",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Bloodrazor",
+          "Essence Reaver",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Titanic Hydra",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Jax",
+        "runes": [
+          "Magical Footwear",
+          "Sudden Impact",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Domination",
+          "Time Warp Tonic",
+          "Ravenous Hunter",
+          "Conqueror",
+          "Legend: Alacrity",
+          "Triumph",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Corrupting Potion",
+          "Death's Dance",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Ionian Boots of Lucidity",
+          "Lord Dominik's Regards",
+          "Doran's Blade",
+          "Ninja Tabi",
+          "Health Potion",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Jayce",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Taste of Blood",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Domination",
+          "Time Warp Tonic",
+          "Summon Aery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Infinity Edge",
+          "Rapid Firecannon",
+          "Boots of Swiftness",
+          "Doran's Blade",
+          "Lord Dominik's Regards",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Jhin",
+        "runes": [
+          "Celerity",
+          "Legend: Alacrity",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Legend: Bloodline",
+          "Cut Down",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Cull",
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Rapid Firecannon",
+          "Runaan's Hurricane",
+          "Doran's Blade",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Jinx",
+        "runes": [
+          "Celerity",
+          "Legend: Alacrity",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Legend: Bloodline",
+          "Overheal",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Guinsoo's Rageblade",
+          "Berserker's Greaves",
+          "Zhonya's Hourglass",
+          "Infinity Edge",
+          "Doran's Shield",
+          "Blade of the Ruined King",
+          "Essence Reaver",
+          "Runaan's Hurricane",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "KaiSa",
+        "runes": [
+          "Celerity",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Triumph",
+          "Legend: Alacrity",
+          "Presence of Mind"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Doran's Shield",
+          "Blade of the Ruined King",
+          "Mercurial Scimitar",
+          "Runaan's Hurricane",
+          "Doran's Blade",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Kalista",
+        "runes": [
+          "Celerity",
+          "Overheal",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Gathering Storm",
+          "Legend: Alacrity",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Control Ward",
+          "Redemption",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Locket of the Iron Solari",
+          "Morellonomicon",
+          "Spellthief's Edge",
+          "Ardent Censer",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Karma",
+        "runes": [
+          "Celerity",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Nimbus Cloak",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Void Staff",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Archangel's Staff",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Karthus",
+        "runes": [
+          "Absolute Focus",
+          "Biscuit Delivery",
+          "Manaflow Band",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Transcendence",
+          "Presence of Mind",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Rejuvenation Bead",
+          "Rod of Ages",
+          "Corrupting Potion",
+          "Rabadon's Deathcap",
+          "Archangel's Staff",
+          "Lich Bane",
+          "Sorcerer's Shoes"
+        ],
+        "name": "Kassadin",
+        "runes": [
+          "Electrocute",
+          "Taste of Blood",
+          "Fleet Footwork",
+          "Ghost Poro",
+          "Ravenous Hunter",
+          "Precision",
+          "Cheap Shot",
+          "Domination",
+          "Legend: Tenacity",
+          "Coup de Grace",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Morellonomicon",
+          "Rabadon's Deathcap",
+          "Hextech Gunblade",
+          "Long Sword",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Katarina",
+        "runes": [
+          "Electrocute",
+          "Sudden Impact",
+          "Domination",
+          "Precision",
+          "Eyeball Collection",
+          "Legend: Tenacity",
+          "Ravenous Hunter",
+          "Coup de Grace",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Guinsoo's Rageblade",
+          "Berserker's Greaves",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Runaan's Hurricane",
+          "Ninja Tabi",
+          "Health Potion",
+          "Nashor's Tooth",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "Kayle",
+        "runes": [
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Transcendence",
+          "Gathering Storm",
+          "Last Stand",
+          "Legend: Alacrity",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Dead Man's Plate",
+          "Hunter's Talisman",
+          "Spirit Visage",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Edge of Night",
+          "Ninja Tabi",
+          "Boots of Mobility",
+          "Health Potion",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Kayn",
+        "runes": [
+          "Resolve",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Eyeball Collection",
+          "Precision",
+          "Domination",
+          "Conditioning",
+          "Ravenous Hunter",
+          "Coup de Grace",
+          "Triumph",
+          "Revitalize"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Hextech Protobelt-01",
+          "Rabadon's Deathcap",
+          "Void Staff",
+          "Doran's Blade",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "Kennen",
+        "runes": [
+          "Celerity",
+          "Taste of Blood",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Perfect Timing",
+          "Domination",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Nimbus Cloak",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Boots of Mobility",
+          "Hunter's Machete",
+          "Hunter's Talisman",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Ninja Tabi",
+          "Ravenous Hydra",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "KhaZix",
+        "runes": [
+          "Celerity",
+          "Dark Harvest",
+          "Sudden Impact",
+          "Eyeball Collection",
+          "Phase Rush",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Coup de Grace",
+          "Domination",
+          "Relentless Hunter",
+          "Nimbus Cloak",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Berserker's Greaves",
+          "Hunter's Machete",
+          "Infinity Edge",
+          "Rapid Firecannon",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Kindred",
+        "runes": [
+          "Celerity",
+          "Nullifying Orb",
+          "Sudden Impact",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Domination",
+          "Relentless Hunter",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Sterak's Gage",
+          "Doran's Shield",
+          "Doran's Blade",
+          "Titanic Hydra",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail",
+          "Guardian Angel",
+          "Gargoyle Stoneplate",
+          "The Black Cleaver"
+        ],
+        "name": "Kled",
+        "runes": [
+          "Resolve",
+          "Sudden Impact",
+          "Eyeball Collection",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Domination",
+          "Chrysalis",
+          "Conqueror",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Guinsoo's Rageblade",
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Blade of the Ruined King",
+          "Runaan's Hurricane",
+          "Doran's Blade",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "KogMaw",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Gathering Storm",
+          "Legend: Alacrity",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Luden's Echo",
+          "Mejai's Soulstealer",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Sorcerer's Shoes"
+        ],
+        "name": "LeBlanc",
+        "runes": [
+          "Electrocute",
+          "Magical Footwear",
+          "Sudden Impact",
+          "Domination",
+          "Ultimate Hunter",
+          "Eyeball Collection",
+          "Time Warp Tonic",
+          "Ravenous Hunter",
+          "Minion Dematerializer",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Hunter's Machete",
+          "Rejuvenation Bead",
+          "Sterak's Gage",
+          "Mercury's Treads",
+          "Youmuu's Ghostblade",
+          "Ninja Tabi",
+          "Ravenous Hydra",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "LeeSin",
+        "runes": [
+          "Electrocute",
+          "Dark Harvest",
+          "Magical Footwear",
+          "Sudden Impact",
+          "Ghost Poro",
+          "Eyeball Collection",
+          "Precision",
+          "Domination",
+          "Cosmic Insight",
+          "Triumph",
+          "Coup de Grace",
+          "Relentless Hunter",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Knight's Vow",
+          "Zeke's Convergence",
+          "Randuin's Omen",
+          "Locket of the Iron Solari",
+          "Relic Shield",
+          "Health Potion",
+          "Thornmail",
+          "Remnant of the Aspect"
+        ],
+        "name": "Leona",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Unflinching",
+          "Magical Footwear",
+          "Biscuit Delivery",
+          "Aftershock",
+          "Cosmic Insight",
+          "Conditioning",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Doran's Ring",
+          "Hextech Protobelt-01",
+          "Rabadon's Deathcap",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Void Staff",
+          "Ninja Tabi",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Lissandra",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Manaflow Band",
+          "Sorcery",
+          "Transcendence",
+          "Aftershock",
+          "Chrysalis",
+          "Bone Plating"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Blade of the Ruined King",
+          "Rapid Firecannon",
+          "Doran's Blade",
+          "Health Potion",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Lucian",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Gathering Storm",
+          "Nimbus Cloak",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Twin Shadows",
+          "Corrupting Potion",
+          "Locket of the Iron Solari",
+          "Spellthief's Edge",
+          "Ardent Censer",
+          "Athene's Unholy Grail",
+          "Health Potion",
+          "Mikael's Crucible",
+          "Remnant of the Watchers"
+        ],
+        "name": "Lulu",
+        "runes": [
+          "Celerity",
+          "Biscuit Delivery",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Mejai's Soulstealer",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Spellthief's Edge",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Lux",
+        "runes": [
+          "Arcane Comet",
+          "Celerity",
+          "Eyeball Collection",
+          "Manaflow Band",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Transcendence",
+          "Relentless Hunter",
+          "Domination",
+          "Gathering Storm",
+          "Triumph",
+          "Scorch"
+        ]
+      },
+      {
+        "items": [
+          "Doran's Ring",
+          "Sunfire Cape",
+          "Iceborn Gauntlet",
+          "Corrupting Potion",
+          "Abyssal Mask",
+          "Frozen Heart",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail",
+          "Warmog's Armor",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "Malphite",
+        "runes": [
+          "Overgrowth",
+          "Arcane Comet",
+          "Resolve",
+          "Manaflow Band",
+          "Sorcery",
+          "Transcendence",
+          "Chrysalis",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Scorch"
+        ]
+      },
+      {
+        "items": [
+          "Void Staff",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Ionian Boots of Lucidity",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Rylai's Crystal Scepter",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Malzahar",
+        "runes": [
+          "Celerity",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Transcendence",
+          "Future's Market",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Doran's Ring",
+          "Sunfire Cape",
+          "Doran's Shield",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Randuin's Omen",
+          "Shurelya's Reverie",
+          "Righteous Glory",
+          "Abyssal Mask",
+          "Ninja Tabi",
+          "Health Potion",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "Maokai",
+        "runes": [
+          "Resolve",
+          "Second Wind",
+          "Manaflow Band",
+          "Sorcery",
+          "Transcendence",
+          "Aftershock",
+          "Revitalize",
+          "Font of Life",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Scorch",
+          "Conditioning"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Guinsoo's Rageblade",
+          "Enchantment: Bloodrazor",
+          "Berserker's Greaves",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Blade of the Ruined King",
+          "Mercury's Treads",
+          "Doran's Blade",
+          "Maw of Malmortius",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "MasterYi",
+        "runes": [
+          "Sudden Impact",
+          "Eyeball Collection",
+          "Precision",
+          "Hail of Blades",
+          "Domination",
+          "Ravenous Hunter",
+          "Conqueror",
+          "Coup de Grace",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Statikk Shiv",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Rapid Firecannon",
+          "Lord Dominik's Regards",
+          "Doran's Blade",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "MissFortune",
+        "runes": [
+          "Manaflow Band",
+          "Absolute Focus",
+          "Eyeball Collection",
+          "Dark Harvest",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Cheap Shot",
+          "Domination",
+          "Gathering Storm",
+          "Relentless Hunter",
+          "Celerity",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Doran's Shield",
+          "Spirit Visage",
+          "Morellonomicon",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "Mordekaiser",
+        "runes": [
+          "Celerity",
+          "Taste of Blood",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Domination",
+          "Gathering Storm",
+          "Summon Aery",
+          "Nimbus Cloak",
+          "Chrysalis",
+          "Bone Plating",
+          "Scorch",
+          "Resolve"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Luden's Echo",
+          "Locket of the Iron Solari",
+          "Morellonomicon",
+          "Spellthief's Edge",
+          "Redemption",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Rylai's Crystal Scepter",
+          "Remnant of the Watchers"
+        ],
+        "name": "Morgana",
+        "runes": [
+          "Arcane Comet",
+          "Celerity",
+          "Manaflow Band",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Perfect Timing",
+          "Transcendence",
+          "Cheap Shot",
+          "Domination",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Twin Shadows",
+          "Locket of the Iron Solari",
+          "Spellthief's Edge",
+          "Ardent Censer",
+          "Athene's Unholy Grail",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Nami",
+        "runes": [
+          "Resolve",
+          "Absolute Focus",
+          "Manaflow Band",
+          "Sorcery",
+          "Revitalize",
+          "Summon Aery",
+          "Celerity",
+          "Bone Plating",
+          "Scorch",
+          "Second Wind"
+        ]
+      },
+      {
+        "items": [
+          "Dead Man's Plate",
+          "Doran's Shield",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Sapphire Crystal",
+          "Frozen Heart",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "Nasus",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Demolish",
+          "Magical Footwear",
+          "Biscuit Delivery",
+          "Cosmic Insight",
+          "Conditioning",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Knight's Vow",
+          "Zeke's Convergence",
+          "Locket of the Iron Solari",
+          "Ancient Coin",
+          "Relic Shield",
+          "Health Potion",
+          "Remnant of the Aspect",
+          "Mikael's Crucible"
+        ],
+        "name": "Nautilus",
+        "runes": [
+          "Resolve",
+          "Second Wind",
+          "Unflinching",
+          "Biscuit Delivery",
+          "Magical Footwear",
+          "Aftershock",
+          "Chrysalis",
+          "Cosmic Insight",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Runic Echoes",
+          "Athene's Unholy Grail",
+          "Hunter's Machete",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Hunter's Talisman",
+          "Lich Bane",
+          "Sorcerer's Shoes",
+          "Mejai's Soulstealer",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Nidalee",
+        "runes": [
+          "Celerity",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Sorcery",
+          "Eyeball Collection",
+          "Waterwalking",
+          "Transcendence",
+          "Domination",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Blade of the Ruined King",
+          "Corrupting Potion",
+          "Mercury's Treads",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Ninja Tabi",
+          "Ravenous Hydra",
+          "Guardian Angel"
+        ],
+        "name": "Nocturne",
+        "runes": [
+          "Celerity",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Sorcery",
+          "Eyeball Collection",
+          "Waterwalking",
+          "Precision",
+          "Domination",
+          "Presence of Mind",
+          "Ravenous Hunter",
+          "Coup de Grace",
+          "Legend: Alacrity",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Control Ward",
+          "Dead Man's Plate",
+          "Hunter's Talisman",
+          "Knight's Vow",
+          "Enchantment: Cinderhulk",
+          "Mercury's Treads",
+          "Spirit Visage",
+          "Righteous Glory",
+          "Health Potion",
+          "Warmog's Armor",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "Nunu",
+        "runes": [
+          "Gathering Storm",
+          "Overgrowth",
+          "Resolve",
+          "Eyeball Collection",
+          "Sorcery",
+          "Domination",
+          "Waterwalking",
+          "Predator",
+          "Cheap Shot",
+          "Aftershock",
+          "Celerity",
+          "Conditioning",
+          "Bone Plating",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Randuin's Omen",
+          "Spirit Visage",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Hunter's Talisman",
+          "Enchantment: Cinderhulk",
+          "Ionian Boots of Lucidity",
+          "Righteous Glory",
+          "Ninja Tabi",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Olaf",
+        "runes": [
+          "Celerity",
+          "Sorcery",
+          "Eyeball Collection",
+          "Waterwalking",
+          "Predator",
+          "Cheap Shot",
+          "Domination",
+          "Ingenious Hunter",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Luden's Echo",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Void Staff",
+          "Ninja Tabi",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Orianna",
+        "runes": [
+          "Celerity",
+          "Time Warp Tonic",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Transcendence",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Minion Dematerializer",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Infernal Mask",
+          "Sunfire Cape",
+          "Doran's Shield",
+          "Iceborn Gauntlet",
+          "Corrupting Potion",
+          "Randuin's Omen",
+          "Ninja Tabi",
+          "Gargoyle Stoneplate",
+          "Thornmail",
+          "Warmog's Armor"
+        ],
+        "name": "Ornn",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Magical Footwear",
+          "Biscuit Delivery",
+          "Time Warp Tonic",
+          "Revitalize",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Boots of Mobility",
+          "Sterak's Gage",
+          "Hunter's Talisman",
+          "Youmuu's Ghostblade",
+          "Dead Man's Plate",
+          "Health Potion",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Pantheon",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Sorcery",
+          "Eyeball Collection",
+          "Waterwalking",
+          "Precision",
+          "Domination",
+          "Relentless Hunter",
+          "Ravenous Hunter",
+          "Coup de Grace",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Spirit Visage",
+          "Dead Man's Plate",
+          "Sunfire Cape",
+          "Doran's Shield",
+          "Iceborn Gauntlet",
+          "Corrupting Potion",
+          "Mercury's Treads",
+          "Adaptive Helm",
+          "Ninja Tabi",
+          "Gargoyle Stoneplate",
+          "Thornmail"
+        ],
+        "name": "Poppy",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Unflinching",
+          "Magical Footwear",
+          "Biscuit Delivery",
+          "Time Warp Tonic",
+          "Chrysalis",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Doran's Shield",
+          "Spirit Visage",
+          "Frozen Heart",
+          "Locket of the Iron Solari",
+          "Ancient Coin",
+          "Remnant of the Ascended",
+          "Health Potion",
+          "Thornmail",
+          "Guardian Angel",
+          "Remnant of the Aspect",
+          "The Black Cleaver"
+        ],
+        "name": "Pyke",
+        "runes": [
+          "Resolve",
+          "Magical Footwear",
+          "Sudden Impact",
+          "Domination",
+          "Ultimate Hunter",
+          "Aftershock",
+          "Revitalize",
+          "Cosmic Insight",
+          "Conditioning",
+          "Chrysalis",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Statikk Shiv",
+          "Youmuu's Ghostblade",
+          "Rapid Firecannon",
+          "Doran's Blade",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Quinn",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Nullifying Orb",
+          "Sudden Impact",
+          "Eyeball Collection",
+          "Phase Rush",
+          "Sorcery",
+          "Precision",
+          "Domination",
+          "Gathering Storm",
+          "Relentless Hunter",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Hextech Protobelt-01",
+          "Rabadon's Deathcap",
+          "Knight's Vow",
+          "Luden's Echo",
+          "Zeke's Convergence",
+          "Void Staff",
+          "Spellthief's Edge",
+          "Ardent Censer",
+          "Ancient Coin",
+          "Relic Shield",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Rakan",
+        "runes": [
+          "Resolve",
+          "Guardian",
+          "Sorcery",
+          "Transcendence",
+          "Celerity",
+          "Chrysalis",
+          "Revitalize",
+          "Nimbus Cloak",
+          "Bone Plating"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Hunter's Talisman",
+          "Enchantment: Cinderhulk",
+          "Abyssal Mask",
+          "Boots of Swiftness",
+          "Righteous Glory",
+          "Ninja Tabi",
+          "Gargoyle Stoneplate",
+          "Thornmail"
+        ],
+        "name": "Rammus",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Unflinching",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Aftershock",
+          "Celerity",
+          "Conditioning",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Mercury's Treads",
+          "Titanic Hydra",
+          "Ninja Tabi",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "RekSai",
+        "runes": [
+          "Press the Attack",
+          "Celerity",
+          "Sudden Impact",
+          "Sorcery",
+          "Eyeball Collection",
+          "Waterwalking",
+          "Precision",
+          "Hail of Blades",
+          "Domination",
+          "Triumph",
+          "Coup de Grace",
+          "Legend: Alacrity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Spirit Visage",
+          "Sterak's Gage",
+          "Long Sword",
+          "Doran's Blade",
+          "Youmuu's Ghostblade",
+          "Essence Reaver",
+          "Titanic Hydra",
+          "Ninja Tabi",
+          "Health Potion",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Renekton",
+        "runes": [
+          "Resolve",
+          "Sudden Impact",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Domination",
+          "Chrysalis",
+          "Ingenious Hunter",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Enchantment: Warrior",
+          "Stormrazor",
+          "Boots of Mobility",
+          "Hunter's Machete",
+          "Infinity Edge",
+          "Statikk Shiv",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Long Sword",
+          "Ninja Tabi",
+          "Health Potion",
+          "Ravenous Hydra",
+          "Guardian Angel"
+        ],
+        "name": "Rengar",
+        "runes": [
+          "Electrocute",
+          "Zombie Ward",
+          "Sudden Impact",
+          "Sorcery",
+          "Precision",
+          "Ultimate Hunter",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Domination",
+          "Celerity",
+          "Waterwalking",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Essence Reaver",
+          "The Bloodthirster",
+          "Sterak's Gage",
+          "Doran's Shield",
+          "Death's Dance",
+          "Ionian Boots of Lucidity",
+          "Long Sword",
+          "Ninja Tabi",
+          "Health Potion",
+          "Ravenous Hydra",
+          "Guardian Angel",
+          "Stormrazor",
+          "The Black Cleaver"
+        ],
+        "name": "Riven",
+        "runes": [
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Transcendence",
+          "Gathering Storm",
+          "Legend: Bloodline",
+          "Nimbus Cloak",
+          "Conqueror",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Speed",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Doran's Shield",
+          "Shurelya's Reverie",
+          "Hextech Protobelt-01",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "Rumble",
+        "runes": [
+          "Arcane Comet",
+          "Celerity",
+          "Nullifying Orb",
+          "Sorcery",
+          "Perfect Timing",
+          "Transcendence",
+          "Resolve",
+          "Cosmic Insight",
+          "Nimbus Cloak",
+          "Chrysalis",
+          "Bone Plating",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Morellonomicon",
+          "Sapphire Crystal",
+          "Ionian Boots of Lucidity",
+          "Archangel's Staff",
+          "Twin Shadows",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "Ryze",
+        "runes": [
+          "Phase Rush",
+          "Absolute Focus",
+          "Taste of Blood",
+          "Manaflow Band",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Transcendence",
+          "Domination",
+          "Gathering Storm"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Hunter's Talisman",
+          "Enchantment: Cinderhulk",
+          "Mercury's Treads",
+          "Randuin's Omen",
+          "Frozen Heart",
+          "Adaptive Helm",
+          "Ninja Tabi",
+          "Gargoyle Stoneplate",
+          "Warmog's Armor"
+        ],
+        "name": "Sejuani",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Unflinching",
+          "Precision",
+          "Aftershock",
+          "Conditioning",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Berserker's Greaves",
+          "Hunter's Machete",
+          "Rejuvenation Bead",
+          "Trinity Force",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Titanic Hydra",
+          "Ravenous Hydra",
+          "Guardian Angel"
+        ],
+        "name": "Shaco",
+        "runes": [
+          "Absolute Focus",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Sorcery",
+          "Eyeball Collection",
+          "Precision",
+          "Cheap Shot",
+          "Domination",
+          "Gathering Storm",
+          "Triumph",
+          "Legend: Alacrity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Spirit Visage",
+          "Sunfire Cape",
+          "Doran's Shield",
+          "Doran's Blade",
+          "Mercury's Treads",
+          "Locket of the Iron Solari",
+          "Titanic Hydra",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail",
+          "Warmog's Armor"
+        ],
+        "name": "Shen",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Precision",
+          "Chrysalis",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Grasp of the Undying",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Bloodrazor",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Hunter's Talisman",
+          "Lich Bane",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Enchantment: Runic Echoes",
+          "Frozen Mallet",
+          "Titanic Hydra",
+          "Sorcerer's Shoes",
+          "Nashor's Tooth",
+          "Liandry's Torment",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Shyvana",
+        "runes": [
+          "Celerity",
+          "Magical Footwear",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Coup de Grace",
+          "Press the Attack",
+          "Approach Velocity",
+          "Legend: Alacrity",
+          "Triumph",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Dead Man's Plate",
+          "Spirit Visage",
+          "Zz'Rot Portal",
+          "Righteous Glory",
+          "Liandry's Torment",
+          "Ninja Tabi",
+          "Rylai's Crystal Scepter",
+          "Thornmail"
+        ],
+        "name": "Singed",
+        "runes": [
+          "Celerity",
+          "Time Warp Tonic",
+          "Magical Footwear",
+          "Sorcery",
+          "Future's Market",
+          "Gathering Storm",
+          "Summon Aery",
+          "Nimbus Cloak",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Spirit Visage",
+          "Doran's Ring",
+          "Sunfire Cape",
+          "Corrupting Potion",
+          "Mercury's Treads",
+          "Abyssal Mask",
+          "Frozen Heart",
+          "Righteous Glory",
+          "Adaptive Helm",
+          "Ninja Tabi",
+          "Health Potion",
+          "Warmog's Armor",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "Sion",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Glacial Augment",
+          "Second Wind",
+          "Demolish",
+          "Magical Footwear",
+          "Future's Market",
+          "Time Warp Tonic",
+          "Conditioning",
+          "Biscuit Delivery",
+          "Bone Plating",
+          "Grasp of the Undying",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Cull",
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Statikk Shiv",
+          "Rapid Firecannon",
+          "Doran's Blade",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Sivir",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Legend: Bloodline",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Hunter's Talisman",
+          "Guardian Angel",
+          "Enchantment: Cinderhulk",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Maw of Malmortius",
+          "Righteous Glory",
+          "Wit's End",
+          "Warmog's Armor"
+        ],
+        "name": "Skarner",
+        "runes": [
+          "Zombie Ward",
+          "Eyeball Collection",
+          "Sorcery",
+          "Predator",
+          "Waterwalking",
+          "Cheap Shot",
+          "Domination",
+          "Celerity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Athene's Unholy Grail",
+          "Redemption",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Lich Bane",
+          "Luden's Echo",
+          "Locket of the Iron Solari",
+          "Spellthief's Edge",
+          "Ardent Censer",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Sona",
+        "runes": [
+          "Resolve",
+          "Absolute Focus",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Chrysalis",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Celerity",
+          "Inspiration",
+          "Scorch",
+          "Revitalize"
+        ]
+      },
+      {
+        "items": [
+          "Control Ward",
+          "Redemption",
+          "Knight's Vow",
+          "Locket of the Iron Solari",
+          "Ionian Boots of Lucidity",
+          "Spellthief's Edge",
+          "Ardent Censer",
+          "Boots of Swiftness",
+          "Remnant of the Ascended",
+          "Health Potion",
+          "Warmog's Armor",
+          "Remnant of the Watchers"
+        ],
+        "name": "Soraka",
+        "runes": [
+          "Resolve",
+          "Second Wind",
+          "Manaflow Band",
+          "Sorcery",
+          "Gathering Storm",
+          "Summon Aery",
+          "Celerity",
+          "Bone Plating",
+          "Scorch",
+          "Revitalize"
+        ]
+      },
+      {
+        "items": [
+          "Mejai's Soulstealer",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Liandry's Torment",
+          "Ninja Tabi",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Swain",
+        "runes": [
+          "Celerity",
+          "Time Warp Tonic",
+          "Phase Rush",
+          "Sorcery",
+          "Perfect Timing",
+          "Transcendence",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Nimbus Cloak",
+          "Minion Dematerializer",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Luden's Echo",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Void Staff",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Syndra",
+        "runes": [
+          "Electrocute",
+          "Taste of Blood",
+          "Eyeball Collection",
+          "Ghost Poro",
+          "Ravenous Hunter",
+          "Domination",
+          "Time Warp Tonic",
+          "Minion Dematerializer",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Redemption",
+          "Doran's Shield",
+          "Locket of the Iron Solari",
+          "Boots of Swiftness",
+          "Gargoyle Stoneplate",
+          "Knight's Vow",
+          "Relic Shield",
+          "Health Potion",
+          "Thornmail",
+          "Remnant of the Aspect"
+        ],
+        "name": "TahmKench",
+        "runes": [
+          "Resolve",
+          "Second Wind",
+          "Magical Footwear",
+          "Guardian",
+          "Cosmic Insight",
+          "Revitalize",
+          "Approach Velocity",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Runic Echoes",
+          "Mejai's Soulstealer",
+          "Hunter's Machete",
+          "Void Staff",
+          "Rabadon's Deathcap",
+          "Hunter's Talisman",
+          "Morellonomicon",
+          "Sorcerer's Shoes",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Taliyah",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Absolute Focus",
+          "Sorcery",
+          "Eyeball Collection",
+          "Waterwalking",
+          "Cheap Shot",
+          "Domination",
+          "Ravenous Hunter",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Boots of Mobility",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Long Sword",
+          "Health Potion",
+          "Ravenous Hydra",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Talon",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Absolute Focus",
+          "Sudden Impact",
+          "Sorcery",
+          "Domination",
+          "Ultimate Hunter",
+          "Eyeball Collection",
+          "Gathering Storm",
+          "Nimbus Cloak",
+          "Ravenous Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Knight's Vow",
+          "Ardent Censer",
+          "Mercury's Treads",
+          "Locket of the Iron Solari",
+          "Ancient Coin",
+          "Relic Shield",
+          "Health Potion",
+          "Zeke's Convergence",
+          "Remnant of the Aspect"
+        ],
+        "name": "Taric",
+        "runes": [
+          "Resolve",
+          "Second Wind",
+          "Magical Footwear",
+          "Guardian",
+          "Cosmic Insight",
+          "Revitalize",
+          "Conditioning",
+          "Font of Life",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Void Staff",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Liandry's Torment",
+          "Morellonomicon",
+          "Sorcerer's Shoes",
+          "Boots of Speed",
+          "Health Potion",
+          "Nashor's Tooth",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Teemo",
+        "runes": [
+          "Overgrowth",
+          "Celerity",
+          "Second Wind",
+          "Taste of Blood",
+          "Manaflow Band",
+          "Sorcery",
+          "Ravenous Hunter",
+          "Precision",
+          "Domination",
+          "Resolve",
+          "Summon Aery",
+          "Last Stand",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Grasp of the Undying",
+          "Scorch"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Redemption",
+          "Knight's Vow",
+          "Zeke's Convergence",
+          "Locket of the Iron Solari",
+          "Ancient Coin",
+          "Remnant of the Ascended",
+          "Health Potion"
+        ],
+        "name": "Thresh",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Second Wind",
+          "Biscuit Delivery",
+          "Aftershock",
+          "Time Warp Tonic",
+          "Cosmic Insight",
+          "Revitalize",
+          "Conditioning",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Doran's Shield",
+          "Rapid Firecannon",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Tristana",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Gathering Storm",
+          "Legend: Bloodline",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Spirit Visage",
+          "Hunter's Machete",
+          "Knight's Vow",
+          "Adaptive Helm",
+          "Enchantment: Cinderhulk",
+          "Zeke's Convergence",
+          "Trinity Force",
+          "Randuin's Omen",
+          "Titanic Hydra",
+          "Ninja Tabi",
+          "Health Potion"
+        ],
+        "name": "Trundle",
+        "runes": [
+          "Celerity",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Coup de Grace",
+          "Press the Attack",
+          "Last Stand",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Guinsoo's Rageblade",
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Trinity Force",
+          "Ionian Boots of Lucidity",
+          "Phantom Dancer",
+          "Doran's Blade",
+          "Health Potion",
+          "Ravenous Hydra"
+        ],
+        "name": "Tryndamere",
+        "runes": [
+          "Taste of Blood",
+          "Precision",
+          "Domination",
+          "Ravenous Hunter",
+          "Conqueror",
+          "Last Stand",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "The Dark Seal",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Mercury's Treads",
+          "Ionian Boots of Lucidity",
+          "Void Staff",
+          "Lich Bane",
+          "Health Potion"
+        ],
+        "name": "Twisted Fate",
+        "runes": [
+          "Arcane Comet",
+          "Celerity",
+          "Time Warp Tonic",
+          "Manaflow Band",
+          "Sorcery",
+          "Gathering Storm",
+          "Minion Dematerializer",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Statikk Shiv",
+          "Doran's Shield",
+          "Blade of the Ruined King",
+          "Runaan's Hurricane",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Twitch",
+        "runes": [
+          "Absolute Focus",
+          "Taste of Blood",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Press the Attack",
+          "Domination",
+          "Gathering Storm",
+          "Ravenous Hunter",
+          "Legend: Alacrity",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Rejuvenation Bead",
+          "Hunter's Talisman",
+          "Spirit Visage",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Thornmail"
+        ],
+        "name": "Udyr",
+        "runes": [
+          "Celerity",
+          "Nullifying Orb",
+          "Phase Rush",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Coup de Grace",
+          "Press the Attack",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Corrupting Potion",
+          "Mercury's Treads",
+          "Righteous Glory",
+          "Adaptive Helm",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail",
+          "Warmog's Armor",
+          "Gargoyle Stoneplate",
+          "The Black Cleaver"
+        ],
+        "name": "Urgot",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Magical Footwear",
+          "Perfect Timing",
+          "Unsealed Spellbook",
+          "Time Warp Tonic",
+          "Minion Dematerializer",
+          "Bone Plating",
+          "Chrysalis",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Cull",
+          "Guinsoo's Rageblade",
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Blade of the Ruined King",
+          "Runaan's Hurricane",
+          "Doran's Blade",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Varus",
+        "runes": [
+          "Gathering Storm",
+          "Arcane Comet",
+          "Celerity",
+          "Absolute Focus",
+          "Biscuit Delivery",
+          "Manaflow Band",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Time Warp Tonic",
+          "Triumph",
+          "Lethal Tempo",
+          "Legend: Alacrity",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Guinsoo's Rageblade",
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Doran's Shield",
+          "Blade of the Ruined King",
+          "Phantom Dancer",
+          "Doran's Blade",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Vayne",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Cut Down",
+          "Overheal",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Zhonya's Hourglass",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Rod of Ages",
+          "Luden's Echo",
+          "Sapphire Crystal",
+          "Morellonomicon",
+          "Void Staff",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Veigar",
+        "runes": [
+          "Arcane Comet",
+          "Manaflow Band",
+          "Magical Footwear",
+          "Glacial Augment",
+          "Sorcery",
+          "Perfect Timing",
+          "Transcendence",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Biscuit Delivery",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Corrupting Potion",
+          "Zhonya's Hourglass",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Spellthief's Edge",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "VelKoz",
+        "runes": [
+          "Arcane Comet",
+          "Absolute Focus",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Perfect Timing",
+          "Transcendence",
+          "Cosmic Insight",
+          "Biscuit Delivery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Duskblade of Draktharr",
+          "Ninja Tabi",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Vi",
+        "runes": [
+          "Electrocute",
+          "Sudden Impact",
+          "Dark Harvest",
+          "Eyeball Collection",
+          "Precision",
+          "Domination",
+          "Triumph",
+          "Coup de Grace",
+          "Legend: Alacrity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Zhonya's Hourglass",
+          "Abyssal Mask",
+          "Iceborn Gauntlet",
+          "Corrupting Potion",
+          "Perfect Hex Core",
+          "Ionian Boots of Lucidity",
+          "Rabadon's Deathcap",
+          "Liandry's Torment",
+          "Ninja Tabi",
+          "Rylai's Crystal Scepter"
+        ],
+        "name": "Viktor",
+        "runes": [
+          "Manaflow Band",
+          "Time Warp Tonic",
+          "Magical Footwear",
+          "Biscuit Delivery",
+          "Sorcery",
+          "Transcendence",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Minion Dematerializer",
+          "Kleptomancy",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "The Dark Seal",
+          "Mejai's Soulstealer",
+          "Zhonya's Hourglass",
+          "Hextech Protobelt-01",
+          "Morellonomicon",
+          "Doran's Shield",
+          "Rabadon's Deathcap",
+          "Spellbinder",
+          "Ionian Boots of Lucidity",
+          "Void Staff",
+          "Sorcerer's Shoes",
+          "Health Potion"
+        ],
+        "name": "Vladimir",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Taste of Blood",
+          "Magical Footwear",
+          "Sorcery",
+          "Eyeball Collection",
+          "Transcendence",
+          "Domination",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Nimbus Cloak",
+          "Ravenous Hunter",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Spirit Visage",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Doran's Shield",
+          "Enchantment: Cinderhulk",
+          "Mercury's Treads",
+          "Righteous Glory",
+          "Health Potion",
+          "Thornmail",
+          "Warmog's Armor"
+        ],
+        "name": "Volibear",
+        "runes": [
+          "Overgrowth",
+          "Resolve",
+          "Precision",
+          "Coup de Grace",
+          "Aftershock",
+          "Conditioning",
+          "Font of Life",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph",
+          "Revitalize"
+        ]
+      },
+      {
+        "items": [
+          "Control Ward",
+          "Dead Man's Plate",
+          "Hunter's Machete",
+          "Rejuvenation Bead",
+          "Enchantment: Cinderhulk",
+          "Mercury's Treads",
+          "Frozen Heart",
+          "Spirit Visage",
+          "Righteous Glory",
+          "Titanic Hydra",
+          "Ninja Tabi",
+          "Health Potion"
+        ],
+        "name": "Warwick",
+        "runes": [
+          "Celerity",
+          "Ghost Poro",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Coup de Grace",
+          "Press the Attack",
+          "Domination",
+          "Relentless Hunter",
+          "Last Stand",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Boots of Mobility",
+          "Hunter's Talisman",
+          "Corrupting Potion",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Lord Dominik's Regards",
+          "Titanic Hydra",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Wukong",
+        "runes": [
+          "Electrocute",
+          "Celerity",
+          "Sudden Impact",
+          "Sorcery",
+          "Domination",
+          "Waterwalking",
+          "Precision",
+          "Eyeball Collection",
+          "Coup de Grace",
+          "Legend: Alacrity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Berserker's Greaves",
+          "Infinity Edge",
+          "Doran's Shield",
+          "Mercurial Scimitar",
+          "Rapid Firecannon",
+          "Doran's Blade",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel"
+        ],
+        "name": "Xayah",
+        "runes": [
+          "Celerity",
+          "Absolute Focus",
+          "Overheal",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Gathering Storm",
+          "Legend: Alacrity",
+          "Triumph",
+          "Lethal Tempo"
+        ]
+      },
+      {
+        "items": [
+          "Void Staff",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Liandry's Torment",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Xerath",
+        "runes": [
+          "Arcane Comet",
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Transcendence",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Scorch",
+          "Presence of Mind",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Enchantment: Warrior",
+          "Hunter's Machete",
+          "Sterak's Gage",
+          "Hunter's Talisman",
+          "Warmog's Armor",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Randuin's Omen",
+          "Ninja Tabi",
+          "Guardian Angel"
+        ],
+        "name": "Xin Zhao",
+        "runes": [
+          "Celerity",
+          "Nullifying Orb",
+          "Sudden Impact",
+          "Phase Rush",
+          "Sorcery",
+          "Precision",
+          "Waterwalking",
+          "Domination",
+          "Triumph",
+          "Legend: Alacrity",
+          "Relentless Hunter"
+        ]
+      },
+      {
+        "items": [
+          "Frozen Mallet",
+          "Berserker's Greaves",
+          "The Bloodthirster",
+          "Infinity Edge",
+          "Sterak's Gage",
+          "Phantom Dancer",
+          "Doran's Blade",
+          "Health Potion",
+          "Guardian Angel"
+        ],
+        "name": "Yasuo",
+        "runes": [
+          "Resolve",
+          "Taste of Blood",
+          "Precision",
+          "Coup de Grace",
+          "Fleet Footwork",
+          "Domination",
+          "Chrysalis",
+          "Ravenous Hunter",
+          "Conqueror",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Triumph"
+        ]
+      },
+      {
+        "items": [
+          "Spirit Visage",
+          "Dead Man's Plate",
+          "Sterak's Gage",
+          "Doran's Shield",
+          "Corrupting Potion",
+          "Mercury's Treads",
+          "Trinity Force",
+          "Zz'Rot Portal",
+          "Adaptive Helm",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail"
+        ],
+        "name": "Yorick",
+        "runes": [
+          "Overgrowth",
+          "Demolish",
+          "Resolve",
+          "Second Wind",
+          "Biscuit Delivery",
+          "Precision",
+          "Coup de Grace",
+          "Time Warp Tonic",
+          "Conditioning",
+          "Conqueror",
+          "Bone Plating",
+          "Legend: Alacrity",
+          "Grasp of the Undying",
+          "Triumph",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Refillable Potion",
+          "Spirit Visage",
+          "Ionian Boots of Lucidity",
+          "Hunter's Talisman",
+          "Enchantment: Cinderhulk",
+          "Randuin's Omen",
+          "Ninja Tabi",
+          "Health Potion",
+          "Thornmail",
+          "Warmog's Armor",
+          "Gargoyle Stoneplate"
+        ],
+        "name": "Zac",
+        "runes": [
+          "Resolve",
+          "Magical Footwear",
+          "Aftershock",
+          "Revitalize",
+          "Cosmic Insight",
+          "Conditioning",
+          "Font of Life",
+          "Bone Plating",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Boots of Mobility",
+          "Doran's Shield",
+          "Mercury's Treads",
+          "Duskblade of Draktharr",
+          "Youmuu's Ghostblade",
+          "Long Sword",
+          "Maw of Malmortius",
+          "Health Potion",
+          "Stormrazor",
+          "Guardian Angel",
+          "The Black Cleaver"
+        ],
+        "name": "Zed",
+        "runes": [
+          "Electrocute",
+          "Zombie Ward",
+          "Nullifying Orb",
+          "Sudden Impact",
+          "Sorcery",
+          "Eyeball Collection",
+          "Ultimate Hunter",
+          "Precision",
+          "Domination",
+          "Triumph",
+          "Coup de Grace",
+          "Scorch"
+        ]
+      },
+      {
+        "items": [
+          "Void Staff",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Luden's Echo",
+          "Morellonomicon",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Ziggs",
+        "runes": [
+          "Arcane Comet",
+          "Perfect Timing",
+          "Manaflow Band",
+          "Sorcery",
+          "Precision",
+          "Coup de Grace",
+          "Transcendence",
+          "Cosmic Insight",
+          "Triumph",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Redemption",
+          "Void Staff",
+          "Rod of Ages",
+          "Corrupting Potion",
+          "Ionian Boots of Lucidity",
+          "Spellthief's Edge",
+          "Locket of the Iron Solari",
+          "Archangel's Staff",
+          "Manamune",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Zilean",
+        "runes": [
+          "Magical Footwear",
+          "Manaflow Band",
+          "Sorcery",
+          "Transcendence",
+          "Gathering Storm",
+          "Cosmic Insight",
+          "Summon Aery",
+          "Biscuit Delivery",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Luden's Echo",
+          "Void Staff",
+          "Doran's Ring",
+          "Rabadon's Deathcap",
+          "Corrupting Potion",
+          "Morellonomicon",
+          "Hextech Protobelt-01",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Health Potion",
+          "Zhonya's Hourglass"
+        ],
+        "name": "Zoe",
+        "runes": [
+          "Electrocute",
+          "Nullifying Orb",
+          "Absolute Focus",
+          "Sudden Impact",
+          "Sorcery",
+          "Eyeball Collection",
+          "Domination",
+          "Time Warp Tonic",
+          "Summon Aery",
+          "Ravenous Hunter",
+          "Minion Dematerializer",
+          "Scorch",
+          "Inspiration"
+        ]
+      },
+      {
+        "items": [
+          "Zhonya's Hourglass",
+          "Void Staff",
+          "Spellthief's Edge",
+          "Liandry's Torment",
+          "Banshee's Veil",
+          "Sorcerer's Shoes",
+          "Rylai's Crystal Scepter",
+          "Health Potion",
+          "Remnant of the Watchers"
+        ],
+        "name": "Zyra",
+        "runes": [
+          "Arcane Comet",
+          "Resolve",
+          "Second Wind",
+          "Manaflow Band",
+          "Sorcery",
+          "Transcendence",
+          "Celerity",
+          "Chrysalis",
+          "Bone Plating",
+          "Scorch"
+        ]
+      }
+    ]
+  }
