@@ -14,12 +14,17 @@
   justify-content: space-between;
 }
 
-.champion h1, h2 {
+.champion h1, h2, h4 {
   margin: 0 5px;
 }
 
 .champion h2 {
   font-size: 1em;
+}
+
+.champion h4 {
+  font-size: 0.7em;
+  font-weight: 400;
 }
 
 .championHeaderInfo {

@@ -26,6 +26,19 @@ class ChampionHeader extends Component {
       champData.image.full
     }`;
 
+    const { lastPlayed, lastPlayedPatch } = this.props;
+
+    const checkIfPlayed = date => {
+      if (
+        date.getDate() === 8 &&
+        date.getMonth() &&
+        date.getFullYear() === 2017
+      ) {
+        return false;
+      }
+
+      return true;
+    };
     return (
       <div className={styles.championHeader}>
         <div className={styles.champion}>
@@ -35,7 +48,14 @@ class ChampionHeader extends Component {
               style={{ backgroundImage: `url('${champImg}')` }}
             />
             <h1 className={styles.championName}>{champData.name}</h1>
-            <h2>{champData.title}</h2>
+            <div>
+              <h2>{champData.title}</h2>
+              <h4>
+                {checkIfPlayed(lastPlayed)
+                  ? `Last Played on ${lastPlayed.getMonth()}/${lastPlayed.getDate()}/${lastPlayed.getFullYear()} (Patch ${lastPlayedPatch})`
+                  : "You have not played this champion"}
+              </h4>
+            </div>
           </div>
         </div>
       </div>

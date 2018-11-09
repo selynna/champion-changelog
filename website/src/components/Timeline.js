@@ -4,7 +4,7 @@ import InfoCard from "./InfoCard";
 import ChampionHeader from "./ChampionHeader";
 import HorizontalTimelineContent from "react-horizontal-timeline";
 import ChampionData from "../assets/static-data/championFull.json";
-import Loader from 'react-loader';
+import Loader from "react-loader";
 
 class Timeline extends Component {
   constructor(props) {
@@ -22,7 +22,9 @@ class Timeline extends Component {
       stylesForeground: "#7b9d6f",
       stylesOutline: "#dfdfdf",
       baseStatDifferences: null,
-      loaded: false
+      loaded: false,
+      lastPlayed: null,
+      lastPlayedPatch: ""
     };
   }
 
@@ -41,7 +43,12 @@ class Timeline extends Component {
         console.log("TEST");
         console.log(data);
         console.log(data.baseStatDifferences);
-        this.setState({ baseStatDifferences: data.baseStatDifferences, loaded: true });
+        this.setState({
+          baseStatDifferences: data.baseStatDifferences,
+          loaded: true,
+          lastPlayed: new Date(data.lastPlayed),
+          lastPlayedPatch: data.lastPlayedPatch
+        });
       })
       .catch(err => console.log(err));
   }
@@ -62,11 +69,19 @@ class Timeline extends Component {
             <div className={styles.info}>
               <div className={styles.championHeaderWrapper}>
                 <div className={styles.tmp}>
-                  <ChampionHeader champData={champions[champion]} />
+                  <ChampionHeader
+                    champData={champions[champion]}
+                    lastPlayed={this.state.lastPlayed}
+                    lastPlayedPatch={this.state.lastPlayedPatch}
+                  />
                 </div>
               </div>
               <div className={styles.infoCardContainer}>
-                <InfoCard name={champion} champData={champions[champion]} bsd={baseStatDifferences} />
+                <InfoCard
+                  name={champion}
+                  champData={champions[champion]}
+                  bsd={baseStatDifferences}
+                />
               </div>
             </div>
             <div className={styles.timelineWrapper}>
