@@ -57,7 +57,7 @@ class Timeline extends Component {
     const patches = this.state.patches;
     return (
       <div className={styles.timeline}>
-        <div class={styles.timelineOverallWrapper}>
+        <div className={styles.timelineOverallWrapper}>
           <Loader className={styles.loadedTimeline} loaded={this.state.loaded}>
             <div className={styles.info}>
               <div className={styles.championHeaderWrapper}>
