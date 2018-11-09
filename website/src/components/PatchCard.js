@@ -162,9 +162,9 @@ class PatchCard extends Component {
               <div
                 className={styles.itemIcon}
                 style={{
-                  backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/img/${
+                  background: `url('https://ddragon.leagueoflegends.com/cdn/img/${
                     this.props.runes[section.changes.name]
-                  }')`
+                  }') no-repeat 0 0`, backgroundSize: `100% 100%`
                 }}></div>
               <h5 style={{ color: "#9b59b6" }}>{section.changes.name}</h5>
               {section.changes.isBuff ? (
