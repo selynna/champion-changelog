@@ -34,7 +34,7 @@ class ChampionHeader extends Component {
               className={styles.championPicture}
               style={{ backgroundImage: `url('${champImg}')` }}
             />
-            <h1>{champData.name}</h1>
+            <h1 className={styles.championName}>{champData.name}</h1>
             <h2>{champData.title}</h2>
           </div>
         </div>
