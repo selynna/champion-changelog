@@ -4,6 +4,7 @@ import InfoCard from "./InfoCard";
 import ChampionHeader from "./ChampionHeader";
 import HorizontalTimelineContent from "react-horizontal-timeline";
 import ChampionData from "../assets/static-data/championFull.json";
+import Loader from 'react-loader';
 
 class Timeline extends Component {
   constructor(props) {
@@ -19,7 +20,9 @@ class Timeline extends Component {
       ],
       stylesBackground: "#f8f8f8",
       stylesForeground: "#7b9d6f",
-      stylesOutline: "#dfdfdf"
+      stylesOutline: "#dfdfdf",
+      baseStatDifferences: null,
+      loaded: false
     };
   }
 
@@ -36,6 +39,8 @@ class Timeline extends Component {
       .then(data => {
         console.log("TEST");
         console.log(data);
+        console.log(data.baseStatDifferences);
+        this.setState({ baseStatDifferences: data.baseStatDifferences, loaded: true });
       })
       .catch(err => console.log(err));
   }
@@ -46,34 +51,37 @@ class Timeline extends Component {
 
     const champData = { ChampionData }.ChampionData;
     const champions = champData.data;
+    const baseStatDifferences = this.state.baseStatDifferences;
 
     const patches = this.state.patches;
     return (
       <div className={styles.timeline}>
-        <div className={styles.info}>
-          <div className={styles.championHeaderWrapper}>
-            <div className={styles.tmp}>
-              <ChampionHeader champData={champions[champion]} />
+        <Loader loaded={this.state.loaded}>
+          <div className={styles.info}>
+            <div className={styles.championHeaderWrapper}>
+              <div className={styles.tmp}>
+                <ChampionHeader champData={champions[champion]} />
+              </div>
+            </div>
+            <div className={styles.infoCardContainer}>
+              <InfoCard name={champion} champData={champions[champion]} bsd={baseStatDifferences} />
             </div>
           </div>
-          <div className={styles.infoCardContainer}>
-            <InfoCard name={champion} champData={champions[champion]} />
+          <div className={styles.timelineWrapper}>
+            <HorizontalTimelineContent
+              index={this.state.value}
+              indexClick={index => {
+                this.setState({ value: index, previous: this.state.value });
+              }}
+              styles={{
+                background: this.state.stylesBackground,
+                foreground: this.state.stylesForeground,
+                outline: this.state.stylesOutline
+              }}
+              values={patches}
+            />
           </div>
-        </div>
-        <div className={styles.timelineWrapper}>
-          <HorizontalTimelineContent
-            index={this.state.value}
-            indexClick={index => {
-              this.setState({ value: index, previous: this.state.value });
-            }}
-            styles={{
-              background: this.state.stylesBackground,
-              foreground: this.state.stylesForeground,
-              outline: this.state.stylesOutline
-            }}
-            values={patches}
-          />
-        </div>
+        </Loader>
       </div>
     );
   }

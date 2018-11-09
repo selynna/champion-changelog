@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Stat.module.css';
 
-const Stat = ({ item, base, levelIncrease }) => (
+const Stat = ({ item, base, levelIncrease, buff }) => (
   <div className={styles.statWrapper}>
     <div className={styles.statItemHeader}>
       <div className={styles.statChangeIcon}></div>
@@ -16,6 +16,7 @@ Stat.propTypes = {
   item: PropTypes.string,
   base: PropTypes.string,
   levelIncrease: PropTypes.string,
+  buff: PropTypes.string,
 }
 
 export default Stat;
