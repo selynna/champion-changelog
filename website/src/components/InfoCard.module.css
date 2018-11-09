@@ -2,15 +2,15 @@
   font-family: "Bebas Neue";
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 25vw;
   justify-content: center;
 }
 
 .infoCard {
   border: 1px solid black;
   border-radius: 15px;
-  width: 40vw;
-  min-height: 60vh;
+  width: 33vw;
+  min-height: 75vh;
   padding: 10px;
 }
 
