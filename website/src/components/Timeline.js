@@ -27,10 +27,11 @@ class Timeline extends Component {
     // Fetch data from API
     // Uncomment after API endpoint finished
     const { match } = this.props;
+    console.log(this.props.location);
     fetch(
-      `http://localhost:4000/api/patchdata/${match.params.name}/${
-        match.params.champId
-      }`
+      `http://${window.location.hostname}:4000/api/patchdata/${
+        match.params.name
+      }/${match.params.champId}`
     )
       .then(response => response.json())
       .then(data => {
