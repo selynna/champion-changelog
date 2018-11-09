@@ -1,5 +1,6 @@
 .timeline {
   width: 100vw;
+  min-height: 100vh;
 }
 
 .timelineOverallWrapper {
@@ -37,7 +38,7 @@
 }
 
 .timelineWrapper {
-  width: 60%;
+  width: 50%;
   height: 100%;
   position: absolute;
   margin: 0 auto;
