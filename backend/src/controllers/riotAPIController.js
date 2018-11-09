@@ -1,14 +1,8 @@
 const needle = require("needle")
 const APIKey = 'RGAPI-7b3d9296-3300-4ff6-a4a7-b34b0e28000d';
 const database = require("../database");
-const reworks = {
-    "8.15": "Akali",
-    "8.19": "Nunu",
-    "8.20": "Ezreal"
-}
 let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, reject) => {
     let accountId = 1;
-    console.log("hello")
     try {
         accountId = await getAccountIDFromSummonerName((summoner));
     } catch(e) {
@@ -16,7 +10,6 @@ let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, rej
         reject();
         return;
     }
-    console.log("goodbye")
     needle.get(`https://na1.api.riotgames.com/lol/match/v3/matchlists/by-account/${accountId}?api_key=${APIKey}`, async (error, response,body) => {
         if (error) {
             console.log(error)
@@ -122,14 +115,10 @@ let getAllData = async (req, res) => {
         allData.runeChanges[patchKeys].forEach((rune, i) => {
             allData.runeChanges[patchKeys][i].changes = JSON.parse(allData.runeChanges[patchKeys][i].changes)
             Object.keys(rune.changes).forEach((key) => { // key is COOLDOWN
-                console.log(key)
                 if(key=="name") return;
-                console.log(rune.changes[key])
                 let divider = rune.changes[key].indexOf(" => ")
                 let before = (rune.changes[key].substring(0,divider)).split(/[^0-9]/);
                 let after = (rune.changes[key].substring(divider + 4, rune.changes[key].length)).split(/[^0-9]/);
-                console.log(before)
-                console.log(after)
                 if (before.length == 0 || after.length == 0) return;
 
                 if ((key.includes("COOLDOWN") || key.includes("COST")) && !key.includes("COST REFUND")) {
@@ -137,7 +126,6 @@ let getAllData = async (req, res) => {
                     return;
                 }
                 rune.changes.isBuff = parseInt(after[0]) > parseInt(before[0])
-                console.log(rune.changes)
             })
         })
     })
