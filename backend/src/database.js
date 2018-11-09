@@ -47,6 +47,7 @@ exports.getCurrentPatchForDate = function(date){
 				SELECT *
 				FROM patch
 				WHERE date <= ?
+				ORDER BY date DESC
 				LIMIT 1
 			) UNION (
 				SELECT *
@@ -308,7 +309,7 @@ if(debug){
 //	exports.getAllItemChangesForChampionIdAfterPatchId(104, '8.1').then((response) => {
 //		console.log('xxx', response);
 //	});
-	exports.getCurrentPatchForDate(new Date('2017-11-08T21:33:49.987Z')).then((response) => {
+	exports.getCurrentPatchForDate(new Date('2018-11-08T23:50:00.600Z')).then((response) => {
 		console.log(response);
 	});
 //	exports.getAllChangesForChampionIdAfterDate(142, new Date('2018-01-01')).then((response) => {
