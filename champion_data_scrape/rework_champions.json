@@ -1,242 +1,227 @@
 [
-    {
-        "changes": [
-            {
-                "BASE HEALTH": {
-                    "after": "600",
-                    "before": "580"
+    "8.13": [
+        {
+            "changes": [
+                {
+                    "BASE HEALTH": {
+                        "after": "600",
+                        "before": "580"
+                    },
+                    "Q1 DAMAGE": {
+                        "after": "20/35/50/65/80",
+                        "before": "15/30/45/60/75"
+                    },
+                    "Q2 DAMAGE": {
+                        "after": "125% of Q1 damage (unchanged)",
+                        "before": ""
+                    },
+                    "Q3 DAMAGE": {
+                        "after": "150% of Q1 damage (unchanged)",
+                        "before": ""
+                    },
+                    "SWEET SPOT DAMAGE": {
+                        "after": "150% of damage (unchanged)",
+                        "before": ""
+                    },
+                    "name": "Q - The Darkin Blade"
                 },
-                "Q1 DAMAGE": {
-                    "after": "20/35/50/65/80",
-                    "before": "15/30/45/60/75"
+                {
+                    "PASSIVE HEALING": {
+                        "after": "20/21.25/22.5/23.75/25%",
+                        "before": "15/16.25/17.5/18.75/20%"
+                    },
+                    "DASH RANGE": {
+                        "after": "300",
+                        "before": "250"
+                    },
+                    "C-C-C-Combo": {
+                        "after": "Now resets your basic attack timer",
+                        "before": ""
+                    },
+                    "name": "E - Umbral Dash"
                 },
-                "Q2 DAMAGE": {
-                    "after": "125% of Q1 damage (unchanged)",
-                    "before": ""
+                {
+                    "COOLDOWN": {
+                        "after": "140/130/120 seconds",
+                        "before": "160/140/120 seconds"
+                    },
+                    "name": "R - World Ender"
+                }
+            ],
+            "name": "Aatrox",
+            "overview": "Base health increased. Q damage increased. E healing increased. E distance increased. E now resets attack timer. R cooldown decreased at early ranks."
+        }
+    ],
+    "8.17": [
+        {
+            "changes": [
+                {
+                    "REWORK": {
+                        "after": "Damaging enemy champions, large monsters, or structures increases the attack and movement speed of Willump and a nearby ally for a few seconds (prioritizing the ally with the highest attack speed). \nWhile Willump hears the Call of the Freljord, his basic attacks cleave the immediate area for a portion of the damage.",
+                        "before": ""
+                    },
+                    "name": "P - Call of the Freljord"
                 },
-                "Q3 DAMAGE": {
-                    "after": "150% of Q1 damage (unchanged)",
-                    "before": ""
+                {
+                    "REWORK": {
+                        "after": "Willump takes a bite out of an enemy, dealing true damage to monsters and minions or magic damage to champions, and heals himself.\nThe heal is increased significantly when Nunu & Willump are low on health.",
+                        "before": ""
+                    },
+                    "name": "Q - Consume"
                 },
-                "SWEET SPOT DAMAGE": {
-                    "after": "150% of damage (unchanged)",
-                    "before": ""
+                {
+                    "REWORK": {
+                        "after": "Willump starts rolling a snowball that grows in size and speed. Crashing the snowball into a wall, enemy champion, or large monster damages and knocks up nearby enemies. Reactivating the ability sends the snowball forward in straight line, damaging and knocking up minions in addition to champions and monsters.\nThe damage and duration of the knockup increases with the size of the snowball.",
+                        "before": ""
+                    },
+                    "name": "W - Biggest Snowball Ever!"
                 },
-                "name": "Q - The Darkin Blade"
-            },
-            {
-                "PASSIVE HEALING": {
-                    "after": "20/21.25/22.5/23.75/25%",
-                    "before": "15/16.25/17.5/18.75/20%"
+                {
+                    "REWORK": {
+                        "after": "Nunu rapidly flings up to three volleys of snowballs for a few seconds, damaging champions and monsters and marking them Snowbound. Enemies hit by all three snowballs in a volley are briefly slowed.\nWhen Snowball Barrage ends, all Snowbound enemies near Nunu & Willump are briefly rooted.",
+                        "before": ""
+                    },
+                    "name": "E - Snowball Barrage"
                 },
-                "DASH RANGE": {
-                    "after": "300",
-                    "before": "250"
+                {
+                    "REWORK": {
+                        "after": "Nunu & Willump sap heat from the area around them, gaining a shield and increasingly slowing enemies as they channel. Enemies still in the freezing zone when it reaches absolute zero take massive damage, increased based on the length of the channel.\nAbsolute Zero can be cancelled early, and channeling from brush or fog of war won’t reveal Nunu & Willump.",
+                        "before": ""
+                    },
+                    "name": "R - Absolute Zero"
+                }
+            ],
+            "name": "Nunu",
+            "overview": "They’ll be the greatest heroes ever… one day! After Nunu discovered the fearsome monster of legend was just waiting for a good snowball fight, he and Willump became the best of friends. Now they roam from one adventure to the next, their imagination running wild and wintry magic making it real—unaware that they play with the power to save the Freljord."
+        }
+    ],
+    "8.15": [
+        {
+            "changes": [
+                {
+                    "REWORK": {
+                        "after": "Damaging a champion with an ability creates a ring around them. When the ring forms, Akali gains a burst of movement speed towards it. Once she crosses the ring, Akali gains another burst of movement speed towards the enemy.\nCrossing the ring also empowers her kama, which increases the range and damage of her next attack. This attack also restores a small amount of energy.",
+                        "before": ""
+                    },
+                    "name": "P - Assassin's Mark"
                 },
-                "C-C-C-Combo": {
-                    "after": "Now resets your basic attack timer",
-                    "before": ""
+                {
+                    "REWORK": {
+                        "after": "Akali throws five kunai in a narrow arc, damaging enemies directly in front of her and slowing those at maximum range.\nIf cast with nearly full energy, Akali heals for a percentage of the damage.\nAt rank 5, Five Point Strike deals extra damage to minions and monsters.",
+                        "before": ""
+                    },
+                    "name": "Q - Five Point Strike"
                 },
-                "name": "E - Umbral Dash"
-            },
-            {
-                "COOLDOWN": {
-                    "after": "140/130/120 seconds",
-                    "before": "160/140/120 seconds"
+                {
+                    "REWORK": {
+                        "after": "Akali restores energy and creates a cloud of smoke, which slowly spreads to cover a ring-shaped area. While in the smoke, Akali is obscured and has increased movement speed.\nWhile obscured, Akali is stealthed and though her position can be revealed, Akali herself can't be—meaning she can't be targeted by abilities or attacks, including by turrets.\nAkali can leave the smoke a few times to extend the duration of Twilight Shroud by a small amount.",
+                        "before": ""
+                    },
+                    "name": "W- Twilight Shroud"
                 },
-                "name": "R - World Ender"
-            }
-        ],
-        "name": "Aatrox",
-        "overview": "Base health increased. Q damage increased. E healing increased. E distance increased. E now resets attack timer. R cooldown decreased at early ranks."
-    },
-    {
-        "changes": [
-            {
-                "REWORK": {
-                    "after": "Damaging enemy champions, large monsters, or structures increases the attack and movement speed of Willump and a nearby ally for a few seconds (prioritizing the ally with the highest attack speed).
-
-While Willump hears the Call of the Freljord, his basic attacks cleave the immediate area for a portion of the damage.",
-                    "before": ""
+                {
+                    "REWORK": {
+                        "after": "Akali backflips and throws a shuriken forward, damaging and marking the first enemy hit. The shuriken can also hit and mark the smoke from Twilight Shroud.\nAkali can reactivate Shuriken Flip to dash to the marked target, damaging enemies she passes through.",
+                        "before": ""
+                    },
+                    "name": "E - Shuriken Flip"
                 },
-                "name": "P - Call of the Freljord"
-            },
-            {
-                "REWORK": {
-                    "after": "Willump takes a bite out of an enemy, dealing true damage to monsters and minions or magic damage to champions, and heals himself.
-
-The heal is increased significantly when Nunu & Willump are low on health.",
-                    "before": ""
+                {
+                    "REWORK": {
+                        "after": "Akali dashes up to two times, with a slight delay between. The first dash deals physical damage and briefly stuns, while the second dash deals magic damage based on the missing health of the enemy.",
+                        "before": ""
+                    },
+                    "name": "R - Perfect Execution"
+                }
+            ],
+            "name": "Akali",
+            "overview": "When Akali walked away from the Kinkou Order, she defined her fighting style beyond Shen's teachings. No longer one to cut enemies down in a burst of up-close kama flourishes, Ionia's Rogue Assassin employs hit-and-run tactics: constantly shifting position as she strikes, steps back into stealth, then strikes again."
+        }
+    ],
+    "8.20": [
+        {
+            "changes": [
+                {
+                    "UPDATED": {
+                        "after": "Ezreal and his skins have all received full visual and audio updates!",
+                        "before": ""
+                    },
+                    "SPLASH": {
+                        "after": "Base, Frosted, TPA, Debonair, Ace of Spades, and Arcade Ezreal's splashes have been altered to match Ezreal's new design. Nottingham, Striker, Explorer, and Pulsefire Ezreal have received brand new splashes. ",
+                        "before": ""
+                    },
+                    "LORE": {
+                        "after": "Ezreal's lore has been updated.",
+                        "before": ""
+                    },
+                    "name": "General"
                 },
-                "name": "Q - Consume"
-            },
-            {
-                "REWORK": {
-                    "after": "Willump starts rolling a snowball that grows in size and speed. Crashing the snowball into a wall, enemy champion, or large monster damages and knocks up nearby enemies. Reactivating the ability sends the snowball forward in straight line, damaging and knocking up minions in addition to champions and monsters.
-
-The damage and duration of the knockup increases with the size of the snowball.",
-                    "before": ""
+                {
+                    "RATIO": {
+                        "after": "0.3 ability power",
+                        "before": "0.4 ability power"
+                    },
+                    "name": "Q - Mystic Shot"
                 },
-                "name": "W- Biggest Snowball Ever"!
-            },
-            {
-                "REWORK": {
-                    "after": "Nunu rapidly flings up to three volleys of snowballs for a few seconds, damaging champions and monsters and marking them Snowbound. Enemies hit by all three snowballs in a volley are briefly slowed.
-
-When Snowball Barrage ends, all Snowbound enemies near Nunu & Willump are briefly rooted.",
-                    "before": ""
+                {
+                    "DAMAGE": {
+                        "after": "75/120/165/210/255 magic damage",
+                        "before": ""
+                    },
+                    "RATIO": {
+                        "after": "0.6 bonus attack damage + 0.7 ability power",
+                        "before": ""
+                    },
+                    "RANGE": {
+                        "after": "1150 (same as Q - Mystic Shot)",
+                        "before": ""
+                    },
+                    "COOLDOWN": {
+                        "after": "12 seconds",
+                        "before": ""
+                    },
+                    "ORB DURATION": {
+                        "after": "4 seconds",
+                        "before": ""
+                    },
+                    "COST": {
+                        "after": "50 mana",
+                        "before": ""
+                    },
+                    "MANA REFUND ON ABILITY DETONATION": {
+                        "after": "60 plus the cost of the ability that detonated Essence Flux",
+                        "before": ""
+                    },
+                    "OBJECTIVE": {
+                        "after": "Essence Flux can stick to champions, epic monsters, turrets, inhibitors, and the Nexus",
+                        "before": ""
+                    },
+                    "name": "W- Essence Flux"
                 },
-                "name": "E - Snowball Barrage"
-            },
-            {
-                "REWORK": {
-                    "after": "Nunu & Willump sap heat from the area around them, gaining a shield and increasingly slowing enemies as they channel. Enemies still in the freezing zone when it reaches absolute zero take massive damage, increased based on the length of the channel.
-
-Absolute Zero can be cancelled early, and channeling from brush or fog of war won’t reveal Nunu & Willump.",
-                    "before": ""
+                {
+                    "ESSENCE ATTRACTION": {
+                        "after": "Arcane Shift now prioritizes enemies affected by Essence Flux",
+                        "before": ""
+                    },
+                    "name": "E - Arcane Shift"
                 },
-                "name": "R - Absolute Zero"
-            }
-        ],
-        "name": "Nunu",
-        "overview": "They’ll be the greatest heroes ever… one day! After Nunu discovered the fearsome monster of legend was just waiting for a good snowball fight, he and Willump became the best of friends. Now they roam from one adventure to the next, their imagination running wild and wintry magic making it real—unaware that they play with the power to save the Freljord."
-    },
-    {
-        "changes": [
-            {
-                "REWORK": {
-                    "after": "Damaging a champion with an ability creates a ring around them. When the ring forms, Akali gains a burst of movement speed towards it. Once she crosses the ring, Akali gains another burst of movement speed towards the enemy.
-
-Crossing the ring also empowers her kama, which increases the range and damage of her next attack. This attack also restores a small amount of energy.",
-                    "before": ""
+                {
+                    "ICONIC": {
+                        "after": "No balance or mechanics changes. Just adding this to show off the new icon!",
+                        "before": ""
+                    },
+                    "name": "R - Trueshot Barrage"
                 },
-                "name": "P - Assassin's Mark"
-            },
-            {
-                "REWORK": {
-                    "after": "Akali throws five kunai in a narrow arc, damaging enemies directly in front of her and slowing those at maximum range.
-
-If cast with nearly full energy, Akali heals for a percentage of the damage.
-
-At rank 5, Five Point Strike deals extra damage to minions and monsters.",
-                    "before": ""
-                },
-                "name": "Q - Five Point Strike
-"
-            },
-            {
-                "REWORK": {
-                    "after": "Akali restores energy and creates a cloud of smoke, which slowly spreads to cover a ring-shaped area. While in the smoke, Akali is obscured and has increased movement speed.
-
-While obscured, Akali is stealthed and though her position can be revealed, Akali herself can't be—meaning she can't be targeted by abilities or attacks, including by turrets.
-
-Akali can leave the smoke a few times to extend the duration of Twilight Shroud by a small amount.",
-                    "before": ""
-                },
-                "name": "W- Twilight Shroud"
-            },
-            {
-                "REWORK": {
-                    "after": "Akali backflips and throws a shuriken forward, damaging and marking the first enemy hit. The shuriken can also hit and mark the smoke from Twilight Shroud.
-
-Akali can reactivate Shuriken Flip to dash to the marked target, damaging enemies she passes through.",
-                    "before": ""
-                },
-                "name": "E - Shuriken Flip"
-            },
-            {
-                "REWORK": {
-                    "after": "Akali dashes up to two times, with a slight delay between. The first dash deals physical damage and briefly stuns, while the second dash deals magic damage based on the missing health of the enemy.",
-                    "before": ""
-                },
-                "name": "R - Perfect Execution"
-            }
-        ],
-        "name": "Akali",
-        "overview": "When Akali walked away from the Kinkou Order, she defined her fighting style beyond Shen's teachings. No longer one to cut enemies down in a burst of up-close kama flourishes, Ionia's Rogue Assassin employs hit-and-run tactics: constantly shifting position as she strikes, steps back into stealth, then strikes again."
-    },
-    {
-        "changes": [
-            {
-                "UPDATED": {
-                    "after": "Ezreal and his skins have all received full visual and audio updates!",
-                    "before": ""
-                },
-                "SPLASH": {
-                    "after": "Base, Frosted, TPA, Debonair, Ace of Spades, and Arcade Ezreal's splashes have been altered to match Ezreal's new design. Nottingham, Striker, Explorer, and Pulsefire Ezreal have received brand new splashes. ",
-                    "before": ""
-                },
-                "LORE": {
-                    "after": "Ezreal's lore has been updated.",
-                    "before": ""
-                },
-                "name": "General"
-            },
-            {
-                "RATIO": {
-                    "after": "0.3 ability power",
-                    "before": "0.4 ability power"
-                },
-                "name": "Q - Mystic Shot"
-            },
-            {
-                "DAMAGE": {
-                    "after": "75/120/165/210/255 magic damage",
-                    "before": ""
-                },
-                "RATIO": {
-                    "after": "0.6 bonus attack damage + 0.7 ability power",
-                    "before": ""
-                },
-                "RANGE": {
-                    "after": "1150 (same as Q - Mystic Shot)",
-                    "before": ""
-                },
-                "COOLDOWN": {
-                    "after": "12 seconds",
-                    "before": ""
-                },
-                "ORB DURATION": {
-                    "after": "4 seconds",
-                    "before": ""
-                },
-                "COST": {
-                    "after": "50 mana",
-                    "before": ""
-                },
-                "MANA REFUND ON ABILITY DETONATION": {
-                    "after": "60 plus the cost of the ability that detonated Essence Flux",
-                    "before": ""
-                },
-                "OBJECTIVE": {
-                    "after": "Essence Flux can stick to champions, epic monsters, turrets, inhibitors, and the Nexus",
-                    "before": ""
-                },
-                "name": "W- Essence Flux"
-            },
-            {
-                "ESSENCE ATTRACTION": {
-                    "after": "Arcane Shift now prioritizes enemies affected by Essence Flux",
-                    "before": ""
-                },
-                "name": "E - Arcane Shift"
-            },
-            {
-                "ICONIC": {
-                    "after": "No balance or mechanics changes. Just adding this to show off the new icon!",
-                    "before": ""
-                },
-                "name": "R - Trueshot Barrage"
-            },
-            {
-                "ICONIC": {
-                    "after": "No balance or mechanics changes. Just adding this to show off the new icon!",
-                    "before": ""
-                },
-                "name": "P - Rising Spell Force"
-            }
-        ],
-        "name": "Ezreal",
-        "overview": "W has been redesigned."
-    }
+                {
+                    "ICONIC": {
+                        "after": "No balance or mechanics changes. Just adding this to show off the new icon!",
+                        "before": ""
+                    },
+                    "name": "P - Rising Spell Force"
+                }
+            ],
+            "name": "Ezreal",
+            "overview": "W has been redesigned."
+        }
+    ]
 ]
