@@ -42,9 +42,12 @@
   width: 30px;
   height: 30px;
   margin: 0 20px;
-  background-image: url('../assets/icons/akali-p.png');
+
   background-repeat: no-repeat;
   background-position: center;
+}
+.abilityP:hover, .abilityQ:hover, .abilityW:hover, .abilityE:hover, .abilityR:hover {
+  cursor: pointer;
 }
 
 .costChangeIcon, .rangeChangeIcon {
