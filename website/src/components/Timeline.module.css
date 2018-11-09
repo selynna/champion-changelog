@@ -3,9 +3,11 @@
 }
 
 .timelineOverallWrapper {
-  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
+  height: 98vh;
+
 }
 
 .info {
@@ -58,4 +60,17 @@
   margin-left: 10px;
   width: 100%;
   display: flex;
+}
+
+.noChangesContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex: 1 1;
+}
+.noChanges {
+  border: 1px solid black;
+  border-radius: 15px;
+
+  padding: 20px;
 }

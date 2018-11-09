@@ -6,6 +6,7 @@
   background-size:cover;
   background-repeat: no-repeat;
   color: #fff;
+  min-height: 100vh;
 }
 
 .landing-container {

@@ -5,7 +5,20 @@ import ChampionHeader from "./ChampionHeader";
 import HorizontalTimelineContent from "react-horizontal-timeline";
 import ChampionData from "../assets/static-data/championFull.json";
 import Loader from "react-loader";
-import PatchCard from './PatchCard';
+import PatchCard from "./PatchCard";
+
+const patches = [
+  "8.22",
+  "8.21",
+  "8.20",
+  "8.19",
+  "8.18",
+  "8.17",
+  "8.16",
+  "8.15",
+  "8.14",
+  "8.13"
+];
 
 class Timeline extends Component {
   constructor(props) {
@@ -25,7 +38,8 @@ class Timeline extends Component {
       baseStatDifferences: null,
       loaded: false,
       lastPlayed: null,
-      lastPlayedPatch: ""
+      lastPlayedPatch: "",
+      changes: null
     };
   }
 
@@ -33,7 +47,7 @@ class Timeline extends Component {
     // Fetch data from API
     // Uncomment after API endpoint finished
     const { match } = this.props;
-    console.log(this.props.location);
+
     fetch(
       `http://${window.location.hostname}:4000/api/patchdata/${
         match.params.name
@@ -41,28 +55,61 @@ class Timeline extends Component {
     )
       .then(response => response.json())
       .then(data => {
-        console.log("TEST");
-        console.log(data);
-        console.log(data.baseStatDifferences);
+        const changes = {};
+
+        patches.forEach(function(patchNum) {
+          for (var i = 0; i < data.championChanges.length; i++) {
+            if (data.championChanges[i].patchId === patchNum) {
+              if (!changes[patchNum]) {
+                changes[patchNum] = [];
+              }
+              data.championChanges[i].type = "champion";
+              changes[patchNum].push(data.championChanges[i]);
+            }
+          }
+
+          if (
+            data.itemChanges[patchNum] &&
+            data.itemChanges[patchNum].length > 0
+          ) {
+            if (!changes[patchNum]) {
+              changes[patchNum] = [];
+            }
+
+            data.itemChanges[patchNum].forEach(change => {
+              change.type = "item";
+            });
+            changes[patchNum] = changes[patchNum].concat(
+              data.itemChanges[patchNum]
+            );
+          }
+
+          if (
+            data.itemChanges[patchNum] &&
+            data.runeChanges[patchNum].length > 0
+          ) {
+            if (!changes[patchNum]) {
+              changes[patchNum] = [];
+            }
+
+            data.runeChanges[patchNum].forEach(change => {
+              change.type = "rune";
+            });
+            changes[patchNum] = changes[patchNum].concat(
+              data.runeChanges[patchNum]
+            );
+          }
+        });
+
         this.setState({
           baseStatDifferences: data.baseStatDifferences,
           loaded: true,
           lastPlayed: new Date(data.lastPlayed),
-          lastPlayedPatch: data.lastPlayedPatch
+          lastPlayedPatch: data.lastPlayedPatch,
+          changes: changes
         });
       })
       .catch(err => console.log(err));
-  }
-
-  componentWillMount() {
-    const patches = this.state.patches;
-    this.data = patches.map((date, index) => {
-      return ({
-        date: patches[index][0],
-        title: patches[index][1],
-        component: ( <div className='container' key={index}><p>asdf</p></div>)
-      });
-    });
   }
 
   render() {
@@ -73,11 +120,31 @@ class Timeline extends Component {
     const champions = champData.data;
     const baseStatDifferences = this.state.baseStatDifferences;
 
-    const patches = this.state.patches;
+    console.log(champions[champion]);
+
+    const bg = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
+
+    // const patches = this.state.patches;
+    let patches = [];
+
+    if (this.state.loaded) {
+      patches = Object.keys(this.state.changes).map(patchNum => {
+        return [patchNum, "Patch " + patchNum];
+      });
+
+      console.log(this.state.changes);
+    }
     return (
       <div className={styles.timeline}>
         <Loader className={styles.loadedTimeline} loaded={this.state.loaded}>
-          <div className={styles.timelineOverallWrapper}>
+          <div
+            className={styles.timelineOverallWrapper}
+            style={{
+              background: `linear-gradient(0deg,rgba(56,165,247, 0.8),rgba(56,165,247,0.5)),url(${bg})`,
+              backgroundSize: "cover",
+              backgroundRepeat: "noRepeat"
+            }}
+          >
             <div className={styles.info}>
               <div className={styles.championHeaderWrapper}>
                 <div className={styles.tmp}>
@@ -96,33 +163,52 @@ class Timeline extends Component {
                 />
               </div>
             </div>
-            <div className={styles.timelineCardCombo}>
-              <div className={styles.timelineWrapper}>
-                <div className='text-center'>
-                  <div className={styles.timelinePatchCard}>
-                    <PatchCard
-                      name={champion}
-                      champData={champions[champion]}
-                      bsd={baseStatDifferences}
-                    />
-                    {this.state.value}
+            {patches.length > 0 ? (
+              <div className={styles.timelineCardCombo}>
+                <div className={styles.timelineWrapper}>
+                  <div className="text-center">
+                    <div className={styles.timelinePatchCard}>
+                      <PatchCard
+                        name={champion}
+                        champData={champions[champion]}
+                        bsd={baseStatDifferences}
+                        patch={
+                          this.state.changes &&
+                          Object.keys(this.state.changes).length > 0
+                            ? this.state.changes[patches[this.state.value][0]]
+                            : []
+                        }
+                      />
+
+                      {this.state.value}
+                    </div>
                   </div>
+                  <HorizontalTimelineContent
+                    index={this.state.value}
+                    indexClick={index => {
+                      this.setState({
+                        value: index,
+                        previous: this.state.value
+                      });
+                    }}
+                    styles={{
+                      background: this.state.stylesBackground,
+                      foreground: this.state.stylesForeground,
+                      outline: this.state.stylesOutline
+                    }}
+                    values={patches}
+                  />
                 </div>
-                <HorizontalTimelineContent
-                  content={this.data}
-                  index={this.state.value}
-                  indexClick={index => {
-                    this.setState({ value: index, previous: this.state.value });
-                  }}
-                  styles={{
-                    background: this.state.stylesBackground,
-                    foreground: this.state.stylesForeground,
-                    outline: this.state.stylesOutline
-                  }}
-                  values={patches}
-                />
               </div>
-            </div>
+            ) : (
+              <div className={styles.noChangesContainer}>
+                <div className={styles.noChanges}>
+                  {`There are no changes since you last played ${
+                    champions[champion].name
+                  }`}
+                </div>
+              </div>
+            )}
           </div>
         </Loader>
       </div>

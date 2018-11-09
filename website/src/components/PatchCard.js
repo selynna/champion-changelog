@@ -24,9 +24,17 @@ class PatchCard extends Component {
     const stats = {
       hp: [data.hp, data.hpperlevel, bsd.hp.statChange],
       hpRegen: [data.hpregen, data.hpregenperlevel, bsd.hpregen.statChange],
-      ad: [data.attackdamage, data.attackdamageperlevel, bsd.attackdamage.statChange],
+      ad: [
+        data.attackdamage,
+        data.attackdamageperlevel,
+        bsd.attackdamage.statChange
+      ],
       mrRegen: [data.mpregen, data.mpregenperlevel, bsd.mpregen.statChange],
-      attackSpeed: [data.attackspeed, data.attackspeedperlevel, bsd.attackspeedperlevel.statChange],
+      attackSpeed: [
+        data.attackspeed,
+        data.attackspeedperlevel,
+        bsd.attackspeedperlevel.statChange
+      ],
       armor: [data.armor, data.armorperlevel, bsd.armor.statChange],
       mr: [data.spellblock, data.spellblockperlevel, bsd.spellblock.statChange],
       movement: [data.movespeed, 0, bsd.movespeed.statChange]
@@ -52,10 +60,34 @@ class PatchCard extends Component {
   }
 
   render() {
+    console.log(this.props.patch);
+    const { patch } = this.props;
+
+    const changes = [];
+
+    patch.forEach(section => {
+      if (section.type === "champion") {
+        section.changes.forEach((change, key) => {
+          changes.push(
+            <div key={key}>
+              <p>{change.name}</p>
+            </div>
+          );
+        });
+      } else {
+        changes.push(
+          <div key={section.changes.name}>
+            <p>{section.changes.name}</p>
+          </div>
+        );
+      }
+    });
+    console.log(changes);
     return (
       <div className={styles.patchCardWrapper}>
         <div className={styles.patchCard}>
-          <p>asdf</p>
+          <h2>{`Patch Notes`}</h2>
+          {changes}
         </div>
       </div>
     );

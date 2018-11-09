@@ -1,7 +1,3 @@
-.landing {
-    min-height: 100vh;
-}
-
 .search-champs {
     display: flex;
     flex-flow:column;

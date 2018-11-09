@@ -12,6 +12,7 @@
   width: 33vw;
   min-height: 75vh;
   padding: 10px;
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 600px) {

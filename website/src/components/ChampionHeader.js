@@ -27,11 +27,12 @@ class ChampionHeader extends Component {
     }`;
 
     const { lastPlayed, lastPlayedPatch } = this.props;
+    console.log(lastPlayed);
 
     const checkIfPlayed = date => {
       if (
-        date.getDate() === 8 &&
-        date.getMonth() &&
+        date.getDate() === 9 &&
+        date.getMonth() === 10 &&
         date.getFullYear() === 2017
       ) {
         return false;
@@ -52,8 +53,9 @@ class ChampionHeader extends Component {
               <h2>{champData.title}</h2>
               <h4>
                 {checkIfPlayed(lastPlayed)
-                  ? `Last Played on ${lastPlayed.getMonth()}/${lastPlayed.getDate()}/${lastPlayed.getFullYear()} (Patch ${lastPlayedPatch})`
-                  : "You have not played this champion"}
+                  ? `Last Played on ${lastPlayed.getMonth() +
+                      1}/${lastPlayed.getDate()}/${lastPlayed.getFullYear()} (Patch ${lastPlayedPatch})`
+                  : "You have not played this champion recently"}
               </h4>
             </div>
           </div>
