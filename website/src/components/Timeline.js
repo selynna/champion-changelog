@@ -35,8 +35,8 @@ class Timeline extends Component {
         ["11/04/2015", "Patch 8.19"]
       ],
       stylesBackground: "#f8f8f8",
-      stylesForeground: "#7b9d6f",
-      stylesOutline: "#dfdfdf",
+      stylesForeground: "#F6D96B",
+      stylesOutline: "#f8f8f8",
       baseStatDifferences: null,
       loaded: false,
       lastPlayed: null,
@@ -184,7 +184,6 @@ class Timeline extends Component {
                           }
                         />
 
-                        {this.state.value}
                       </div>
                     </div>
                     <HorizontalTimelineContent
