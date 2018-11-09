@@ -1,7 +1,12 @@
 .timeline {
   width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+}
+
+.loadedTimeline {
+  display: flex;
+  flex-direction: row;
 }
 
 .info {
@@ -16,6 +21,7 @@
   margin: 0 auto;
   position: absolute;
   bottom: 0;
+  right: 0;
 }
 
 .championHeaderWrapper {

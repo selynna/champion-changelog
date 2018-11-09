@@ -60,7 +60,6 @@ class Stat extends Component {
     return (
       <div className={styles.statWrapper}>
         <div className={styles.statItemHeader}>
-          
           {icon} 
           <p className={styles.statItem}>{item}:</p>
         </div>
