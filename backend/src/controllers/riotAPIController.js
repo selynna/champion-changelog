@@ -1,31 +1,33 @@
 const needle = require("needle")
 const APIKey = 'RGAPI-7b3d9296-3300-4ff6-a4a7-b34b0e28000d';
-let lastPlayed = async (req, res) => {
+const database = require("../database");
+let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, reject) => {
     let accountId = 1;
     try {
-        accountId = await getAccountIDFromSummonerName((req.params.summoner));
+        accountId = await getAccountIDFromSummonerName((summoner));
     } catch(e) {
-        res.status(500).send("Internal Server Error");
+        reject();
         return;
     }
     needle.get(`https://na1.api.riotgames.com/lol/match/v3/matchlists/by-account/${accountId}?api_key=${APIKey}`, async (error, response,body) => {
         if (error) {
             console.log(body);
-            res.status(500).send("Internal Server Error");
+            reject();
             return;
         }
-        let championId = await getChampionIDFromName(req.params.champion);
+        let championId = await getChampionIDFromName(champion);
         let lastPlayedGame = body.matches.find((game)=> {
             return game.champion == championId;
         });
         if (!lastPlayedGame) {
             console.log("Could not find match with that champion recently, so defaulting to 12 months...");
-            res.status(200).send({lastPlayed: (new Date((Date.now()-1000*60*60*24*365)))});
+            resolve(new Date((Date.now()-1000*60*60*24*365)));
             return;
         }
         let lastPlayed = new Date(lastPlayedGame.timestamp);
-        res.status(200).send({lastPlayed: lastPlayed});
+        resolve(lastPlayed);
     })
+})
 }
 
 let getAccountIDFromSummonerName = (summonerName) => { return new Promise((resolve, reject)  => {
@@ -46,6 +48,7 @@ let getChampionIDFromName = async (championName) => { //Champion Name is case se
 }
 
 let getChampionFromDDragon = (championName, patchVersion="8.22.1") => {
+    console.log(`http://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/champion/${championName}.json`)
     return new Promise((resolve, reject) => {
         needle.get(`http://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/champion/${championName}.json`, (error, response,body) => {
             if (error) {
@@ -75,7 +78,48 @@ let getChampionDifferences = async (championName, patchVersion) => { // get the 
     return statDifferences;
 }
 
+let getAllData = async (req, res) => {
+    let allData = {}
+    allData.lastPlayed = await lastPlayed(req.params.summoner, req.params.champion);
+    console.log(allData)
+    console.log(allData.lastPlayed)
+    let patchId = (await database.getCurrentPatchForDate(allData.lastPlayed))[0].id
+    console.log("hello")
+    console.log(patchId);
+    longPatchId = patchId+".1";
+    allData.baseStatDifferences = await getChampionDifferences(req.params.champion, longPatchId)
+    let championId = await getChampionIDFromName(req.params.champion);
+    allData.championChanges = await database.getAllChangesForChampionIdAfterDate(championId,allData.lastPlayed);
+    allData.championChanges.forEach((patchData) => patchData.changes = JSON.parse(patchData.changes))
+    console.log(patchId, championId)
+    allData.runeChanges = await database.getAllRuneChangesForChampionIdAfterPatchId(championId,patchId);
+    Object.keys(allData.runeChanges).forEach((patchKeys) => {
+        allData.runeChanges[patchKeys].forEach((rune, i) => allData.runeChanges[patchKeys][i].changes = JSON.parse(allData.runeChanges[patchKeys][i].changes))
+    })
+    allData.itemChanges = await database.getAllItemChangesForChampionIdAfterPatchId(championId,patchId);
+    Object.keys(allData.itemChanges).forEach((patchKeys) => {
+        allData.itemChanges[patchKeys].forEach((rune, i) => allData.itemChanges[patchKeys][i].changes = JSON.parse(allData.itemChanges[patchKeys][i].changes))
+    })
+    // console.log(await database.getAllItemChangesForPatchIdAndChampionId("8.15", "104"))
+    // let items = (await database.getRelevantItemsForChampionId(championId)).map((element) => element.itemId)
+    // console.log(items)
+    // // console.log("runes")
+    // let runes = (await database.getRelevantRunesForChampionId(championId)).map((element) => element.runeId)
+    // console.log(runes)
+    // await items.forEach(async (itemId) => {
+    //     console.log(await database.getAllItemChangesForPatchIdAndChampionId(patchId, itemId))
+    //     // allData.itemChanges[itemId] = await database.getAllItemChangesForPatchIdAndChampionId(patchId, itemId);
+    // })
+    // await runes.forEach(async (runeId) => {
+    //     console.log(patchId, runeId)
+    //     console.log(await database.getAllRuneChangesForPatchIdAndChampionId(patchId, runeId))
+    //     allData.runeChanges[runeId] = await database.getAllRuneChangesForPatchIdAndChampionId(patchId, runeId);
+    // })
+    res.status(200).send(allData);
+}
+
 module.exports = {
     lastPlayed: lastPlayed,
-    statChanges: statChanges
+    statChanges: statChanges,
+    getAllData: getAllData
 }

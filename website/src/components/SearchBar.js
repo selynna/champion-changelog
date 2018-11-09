@@ -3,10 +3,6 @@ import "./SearchBar.css";
 import championList from "./ChampionsList";
 
 class SearchItem extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <li

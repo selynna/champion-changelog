@@ -42,16 +42,19 @@
   width: 30px;
   height: 30px;
   margin: 0 20px;
-  background-image: url('../assets/icons/akali-p.png');
+
   background-repeat: no-repeat;
   background-position: center;
+}
+.abilityP:hover, .abilityQ:hover, .abilityW:hover, .abilityE:hover, .abilityR:hover {
+  cursor: pointer;
 }
 
 .costChangeIcon, .rangeChangeIcon {
   height: 1em;
   width: 1em;
   margin-right: 3px;
-  background-image: url('../assets/icons/up1.svg');
+  background-image: url('../assets/icons/up.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }
