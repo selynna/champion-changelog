@@ -17,7 +17,8 @@ def create_page_soup(version):
     #Creates Beautiful Soup object using the champion page
     return bs4.BeautifulSoup(page.text, 'lxml')
 
-
+# Find the location of the items section in the Patch Notes
+# Returns the tag of the primary header
 def find_items(page_soup):
     header_list = page_soup.find_all('header', class_='header-primary')
     # Find items by iterating through headers and looking for "Items"
@@ -27,7 +28,8 @@ def find_items(page_soup):
             return header
     return
 
-
+# Extracts the items in a patch note 
+# Returns a list of each item and the relevant changes
 def get_items(items_header):
     items_list = []
 
@@ -43,36 +45,41 @@ def get_items(items_header):
             except Exception:
                 continue
     
-            # iterate to find attributes
+            # iterate to find all attributes
             attributes_list = []
             attribute_changes = div.find_all('div', {'class':['attribute-change', 'class2']})
             for each_change in attribute_changes:
-                new_attribute = {}
-
-                # Create 3 fields of attributes
-                #import pdb; pdb.set_trace()
-                for class_name in LIST_OF_ATTRIBUTES:
-                    sub_class_name = ''
-                    try:
-                        name = each_change.find('span', class_=class_name).text.encode('ascii','ignore')
-                        # Grab the name of the tag (either 'new', 'removed', or 'updated')
-                        try:
-                            sub_class_name = each_change.find('span', {'class': ATTRIBUTE_TAGS}).text.encode('ascii','ignore')
-                        except Exception:
-                            pass
-
-                        new_attribute['attribute-type'] = sub_class_name
-                        new_attribute[class_name] = name[len(sub_class_name if class_name == 'attribute' else ''):]
-
-                    except Exception:
-                        continue
-                attributes_list.append(new_attribute)
-            
+                attributes_list.append(extract_attributes(each_change))
             new_item['attributes'] = attributes_list
 
             items_list.append(new_item)
 
     return items_list
+
+# Extract an individual item's attribute (ONLY 1) as per in LIST_OF_ATTRIBUTES. These are mostly the before & after portions of each individual attribute. 
+# Inside the JSON, this exracts each entry in the "attributes" key
+# Returns an individual attribute for 1 item
+def extract_attributes(each_change):
+    new_attribute = {}
+    # Create 3 fields of attributes
+    #import pdb; pdb.set_trace()
+    for class_name in LIST_OF_ATTRIBUTES:
+        sub_class_name = ''
+        try:
+            name = each_change.find('span', class_=class_name).text.encode('ascii','ignore')
+            # Grab the name of the tag (either 'new', 'removed', or 'updated')
+            try:
+                sub_class_name = each_change.find('span', {'class': ATTRIBUTE_TAGS}).text.encode('ascii','ignore')
+            except Exception:
+                pass
+
+            new_attribute['attribute-type'] = sub_class_name
+            new_attribute[class_name] = name[len(sub_class_name if class_name == 'attribute' else ''):]
+
+        except Exception:
+            continue
+
+    return new_attribute
 
 
 def write_to_json(items_list):

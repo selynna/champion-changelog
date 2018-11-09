@@ -51,21 +51,19 @@
                         "attribute-after": "75", 
                         "attribute-before": "80", 
                         "attribute-type": ""
-                    },
-                    "Torment":[
-                        {
-                            "attribute": "DoT against non impaired targets", 
-                            "attribute-after": "1.5% Max HP per second", 
-                            "attribute-before": "1% Max HP per second", 
-                            "attribute-type": ""
-                        }, 
-                        {
-                            "attribute": "DoT against impaired targets", 
-                            "attribute-after": "2.5% Max HP per second", 
-                            "attribute-before": "2% Max HP per second", 
-                            "attribute-type": ""
-                        }
-                    ]
+                    }, 
+                    {
+                        "attribute": "DoT against non impaired targets", 
+                        "attribute-after": "1.5% Max HP per second", 
+                        "attribute-before": "1% Max HP per second", 
+                        "attribute-type": ""
+                    }, 
+                    {
+                        "attribute": "DoT against impaired targets", 
+                        "attribute-after": "2.5% Max HP per second", 
+                        "attribute-before": "2% Max HP per second", 
+                        "attribute-type": ""
+                    }
                 ], 
                 "item_name": "Liandry's Torment", 
                 "summary": "Passive max HP burn increased. AP decreased."
