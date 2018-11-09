@@ -1,12 +1,8 @@
 # Champion Changelog
 
---
-
 Champion Changelog is a patch TL;DR since you last played the champion.
 
 ## Public endpoint
-
---
 
 Scraping patch data is difficult, so we made an endpoint to help others also use the patch data we scraped from the Riot PatchNotes. Our data goes from 7.22 (Runes Reforged) to 8.22 for Runes and 8.13 to 8.22 for champion data.
 
