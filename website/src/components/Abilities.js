@@ -4,7 +4,7 @@ import styles from './Abilities.module.css';
 class Abilities extends Component {
   constructor(props) {
     super(props);
-    this.state = { abilities: this.props.abilities, currAbility: 1 };
+    this.state = { abilities: this.props.abilities, currAbility: 0, togglePassive: true };
     console.log("abilities");
     console.log(this.state.abilities);
     this.handleClick = this.handleClick.bind(this);
@@ -19,19 +19,20 @@ class Abilities extends Component {
     console.log(clickedClass);
 
     if (clickedClass === "abilityP") {
-      this.setState({ abilities: this.state.abilities, currAbility: 0 });
+      this.setState({ abilities: this.state.abilities, currAbility: 0, togglePassive: true });
     } else if (clickedClass === "abilityQ") {
-      this.setState({ abilities: this.state.abilities, currAbility: 1 });
+      this.setState({ abilities: this.state.abilities, currAbility: 1, togglePassive: false });
     } else if (clickedClass === "abilityW") {
-      this.setState({ abilities: this.state.abilities, currAbility: 2 });
+      this.setState({ abilities: this.state.abilities, currAbility: 2, togglePassive: false });
     } else if (clickedClass === "abilityE") {
-      this.setState({ abilities: this.state.abilities, currAbility: 3 });
+      this.setState({ abilities: this.state.abilities, currAbility: 3, togglePassive: false });
     } else if (clickedClass === "abilityR") {
-      this.setState({ abilities: this.state.abilities, currAbility: 4 });
+      this.setState({ abilities: this.state.abilities, currAbility: 4, togglePassive: false });
     }
   }
 
   render() {
+    const togglePassive = this.state.togglePassive;
     const abilities = this.state.abilities;
     const ability = abilities[this.state.currAbility];
     return (
@@ -49,16 +50,18 @@ class Abilities extends Component {
           <div className={styles.abilityName}>
             <p>{ability.name}</p>
           </div>
-          <div className={styles.costrange}>
-            <div className={styles.cost}>
-              <div className={styles.costChangeIcon}></div>
-              <p>Cost: {ability.costBurn} {ability.costType}</p>
+          { !togglePassive && (
+            <div className={styles.costrange}>
+              <div className={styles.cost}>
+                <div className={styles.costChangeIcon}></div>
+                <p>Cost: {ability.costBurn} {ability.costType}</p>
+              </div>
+              <div className={styles.range}>
+                <div className={styles.rangeChangeIcon}></div>
+                <p>Range: {ability.rangeBurn}</p>
+              </div>
             </div>
-            <div className={styles.range}>
-              <div className={styles.rangeChangeIcon}></div>
-              <p>Range: {ability.rangeBurn}</p>
-            </div>
-          </div>
+          )}
           <div className={styles.abilityDesc}>
             <p>{ability.description}</p>
           </div>
