@@ -7,6 +7,7 @@
   margin: 15px 0;
   font-size: 1.5em;
   color: #fff;
+  height: 2em;
 }
 
 .champion {
@@ -39,15 +40,14 @@
   display: flex;
   align-items: flex-end;
   align-content: flex-end;
-
   line-height: 0.75em;
- 
   margin-block-start: 0;
   margin-block-end: 0;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   margin: 0 10px;
 }
+
 .championPicture {
   height: 2.5em;
   width: 2.5em;

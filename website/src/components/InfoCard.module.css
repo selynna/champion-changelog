@@ -10,16 +10,11 @@
   /* border: 1px solid black; */
   box-shadow: 0 0 1em 0.25em rgba(0,0,0,0.2);
   border-radius: 15px;
-  width: 33vw;
-  min-height: 75vh;
+  width: 40vw;
+  max-height: 72vh;
   padding: 10px;
   background-color: #fff;
-}
-
-@media only screen and (max-width: 600px) {
-  .infoCard {
-  }
-
+  overflow-y: auto;
 }
 
 .championHeader {

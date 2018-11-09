@@ -39,11 +39,16 @@ class InfoCard extends Component {
       } else if (stats[stat][2] < 0) {
         buff = "nerf";
       }
-      stats[stat] = [
-        parseFloat(stats[stat][0]).toFixed(1),
-        parseFloat(stats[stat][1]).toFixed(1),
-        buff
-      ];
+      var num = parseFloat(stats[stat][0]).toFixed(1);
+      var numPL = parseFloat(stats[stat][1]).toFixed(1);
+
+      if (num.endsWith(".0")) {
+        num = num.substring(0, num.length - 2);
+      }
+      if (numPL.endsWith(".0")) {
+        numPL = numPL.substring(0, numPL.length - 2);
+      }
+      stats[stat] = [ num, numPL, buff ];
     }
 
     const abilities = [p, q, w, e, r];
