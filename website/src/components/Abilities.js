@@ -121,7 +121,8 @@ class Abilities extends Component {
               <div className={styles.cost}>
                 <div className={styles.costChangeIcon} />
                 <p>
-                  Cost: {ability.costBurn} {ability.costType}
+                  {/* Cost: {ability.costBurn} {ability.costType} */}
+                  {`Cost: ${ability.costBurn} ${this.props.partype}`}
                 </p>
               </div>
               <div className={styles.range}>
