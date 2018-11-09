@@ -2,12 +2,15 @@
   width: 100vw;
   display: flex;
   flex-direction: row;
-  margin: 10px;
 }
 
 .loadedTimeline {
   display: flex;
   flex-direction: row;
+}
+
+.timelineOverallWrapper {
+  margin: 10px;
 }
 
 .info {
