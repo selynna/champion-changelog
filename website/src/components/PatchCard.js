@@ -77,16 +77,24 @@ class PatchCard extends Component {
                 .map(attribute => {
                   if (change[attribute].before && change[attribute].after) {
                     return (
-                      <p key={attribute}>{`${attribute}: ${
-                        change[attribute].before
-                      } => ${change[attribute].after}`}</p>
+                      <p key={attribute}>
+                        <span className={styles.attributeName}>
+                          {attribute}
+                        </span>
+                        {`: ${change[attribute].before} => ${
+                          change[attribute].after
+                        }`}
+                      </p>
                     );
                   } else if (change[attribute].removed) {
                     const attributeLabel = attribute.slice("removed".length);
                     return (
-                      <p key={attribute}>{`${attributeLabel}: Removed => ${
-                        change[attribute].removed
-                      }`}</p>
+                      <p key={attribute}>
+                        <span className={styles.attributeName}>
+                          {attributeLabel}
+                        </span>
+                        {`: Removed => ${change[attribute].removed}`}
+                      </p>
                     );
                   } else return null;
                 })}
@@ -99,11 +107,16 @@ class PatchCard extends Component {
             <h5 style={{ color: "#1abc9c" }}>{section.changes.item_name}</h5>
             {section.changes.attributes.map(attribute => {
               return (
-                <p key={attribute.attribute}>{`${attribute.attribute}: ${
-                  attribute["attribute-before"]
-                    ? attribute["attribute-before"] + " => "
-                    : ""
-                }${attribute["attribute-after"]}`}</p>
+                <p key={attribute.attribute}>
+                  <span className={styles.attributeName}>
+                    {attribute.attribute}
+                  </span>
+                  {`: ${
+                    attribute["attribute-before"]
+                      ? attribute["attribute-before"] + " => "
+                      : ""
+                  }${attribute["attribute-after"]}`}
+                </p>
               );
             })}
           </div>
@@ -116,9 +129,10 @@ class PatchCard extends Component {
               .filter(attribute => attribute !== "name")
               .map(attribute => {
                 return (
-                  <p key={attribute}>{`${attribute}: ${
-                    section.changes[attribute]
-                  }`}</p>
+                  <p key={attribute}>
+                    <span className={styles.attributeName}>{attribute}</span>
+                    {`: ${section.changes[attribute]}`}
+                  </p>
                 );
               })}
           </div>
@@ -128,7 +142,7 @@ class PatchCard extends Component {
     console.log(changes);
     return (
       <div className={styles.patchCardWrapper}>
-        <div className={styles.patchCard} style={{overflowY: 'scroll'}}>
+        <div className={styles.patchCard} style={{ overflowY: "scroll" }}>
           <h2>{`Patch Notes`}</h2>
           {changes}
         </div>
