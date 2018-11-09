@@ -21,7 +21,7 @@ let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, rej
         });
         if (!lastPlayedGame) {
             console.log("Could not find match with that champion recently, so defaulting to 12 months...");
-            resolve({lastPlayed: (new Date((Date.now()-1000*60*60*24*365)))});
+            resolve(new Date((Date.now()-1000*60*60*24*365)));
             return;
         }
         let lastPlayed = new Date(lastPlayedGame.timestamp);
@@ -91,8 +91,8 @@ let getAllData = async (req, res) => {
     let championId = await getChampionIDFromName(req.params.champion);
     allData.championChanges = await database.getAllChangesForChampionIdAfterDate(championId,allData.lastPlayed);
     console.log(patchId, championId)
-    allData.runeChanges = await database.getAllRuneChangesForChampionIdAfterPatchId("104","8.15");
-    allData.itemChanges = await database.getAllItemChangesForChampionIdAfterPatchId("104","8.15");
+    allData.runeChanges = await database.getAllRuneChangesForChampionIdAfterPatchId(championId,patchId);
+    allData.itemChanges = await database.getAllItemChangesForChampionIdAfterPatchId(championId,patchId);
     // console.log(await database.getAllItemChangesForPatchIdAndChampionId("8.15", "104"))
     // let items = (await database.getRelevantItemsForChampionId(championId)).map((element) => element.itemId)
     // console.log(items)
