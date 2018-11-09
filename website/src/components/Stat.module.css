@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   flex: 30%;
-  margin: 10px 2px;
+  margin: 4px 2px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -24,11 +24,29 @@
   margin: 0;
 }
 
-.statChangeIcon {
+.statUpIcon {
   height: 1em;
   width: 1em;
   margin-right: 3px;
-  background-image: url('../assets/icons/up1.svg');
+  background-image: url('../assets/icons/up.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.statDownIcon {
+  height: 1em;
+  width: 1em;
+  margin-right: 3px;
+  background-image: url('../assets/icons/down.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.statNoChangeIcon {
+  height: 1em;
+  width: 1em;
+  margin-right: 3px;
+  background-image: url('../assets/icons/nochange.svg');
   background-repeat: no-repeat;
   background-position: center center;
 }

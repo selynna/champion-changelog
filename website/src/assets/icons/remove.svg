@@ -1,0 +1,11 @@
+<svg width="10px" height="10px" viewBox="31 1 10 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch
+         -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Remove" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(32.000000, 2.000000)">
+        <ellipse id="Oval-2" stroke="#FF0000" stroke-width="1.5" cx="4" cy="4" rx="4" ry="4"></ellipse>
+        <path d="M5.29032258,2.96774194 L2.96774194,5.29032258" id="Line" stroke="#FF0000" stroke-width="1.5" stroke-linecap="square"></path>
+        <path d="M5.29032258,2.96774194 L2.96774194,5.29032258" id="Line" stroke="#FF0000" stroke-width="1.5" stroke-linecap="square" transform="translate(4.129032, 4.129032) scale(1, -1) translate(-4.129032, -4.129032) "></path>
+    </g>
+</svg>

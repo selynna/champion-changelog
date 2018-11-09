@@ -4,6 +4,7 @@ const needle = require("needle");
 const app = express(); //server object
 const router = express.Router();
 const riotAPIController = require("./controllers/riotAPIController");
+var database = require("./database");
 
 const port = 4000;
 app.set("port", port);
@@ -35,9 +36,11 @@ router.route("/endpoint").post(function(req, res) {
   res.status(200).send("Successful POST request");
 });
 
-router.route("/endpoint").get(function(req, res) {
+router.route("/endpoint").get(async function(req, res) {
+  console.log(await database.getAllChangesForChampionId(62));
   res.status(200).send("Successful GET request");
 });
 
-router.get("/lastplayed/:summoner/:champion", riotAPIController.lastPlayed);
-router.get("/statchanges/:champion/:patch",riotAPIController.statChanges);
+// router.get("/lastplayed/:summoner/:champion", riotAPIController.lastPlayed);
+// router.get("/statchanges/:champion/:patch",riotAPIController.statChanges);
+router.get("/patchdata/:summoner/:champion", riotAPIController.getAllData);

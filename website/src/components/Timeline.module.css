@@ -1,24 +1,64 @@
 .timeline {
   width: 100vw;
+}
+
+.timelineOverallWrapper {
+  margin: 10px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
 }
 
 .info {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 1;
+}
+
+.events {
+  bottom: 0;
+}
+
+.timelineCardCombo {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  align-content: center;
 }
 
 .timelineWrapper {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  right: 20px;
+}
+
+.timelinePatchCard {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  height: 90vh;
+}
+
+.timelineBar {
   width: 60%;
   height: 100px;
   margin: 0 auto;
   position: absolute;
   bottom: 0;
+  right: 0;
+
 }
 
 .championHeaderWrapper {
+  margin-left: 10px;
   width: 100%;
   display: flex;
 }

@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import styles from "./InfoCard.module.css";
-import Statistics from "./Statistics";
-import Abilities from "./Abilities";
+import styles from "./PatchCard.module.css";
 
-class InfoCard extends Component {
+class PatchCard extends Component {
   constructor(props) {
     super(props);
     this.processData.bind(this);
@@ -20,6 +18,8 @@ class InfoCard extends Component {
     const e = champData.spells[2];
     const r = champData.spells[3];
 
+    console.log("bsd");
+    console.log(bsd.hp.statChange);
     const data = champData.stats;
     const stats = {
       hp: [data.hp, data.hpperlevel, bsd.hp.statChange],
@@ -46,24 +46,20 @@ class InfoCard extends Component {
       ];
     }
 
+    console.log(stats);
     const abilities = [p, q, w, e, r];
     this.setState({ abilities: abilities, stats: stats });
   }
 
   render() {
     return (
-      <div className={styles.infoCardWrapper}>
-        <div className={styles.infoCard}>
-          <Statistics stats={this.state.stats} />
-          {/* <Abilities abilities={this.state.abilities} /> */}
-          <Abilities
-            abilities={this.state.abilities}
-            partype={this.props.champData.partype}
-          />
+      <div className={styles.patchCardWrapper}>
+        <div className={styles.patchCard}>
+          <p>asdf</p>
         </div>
       </div>
     );
   }
 }
 
-export default InfoCard;
+export default PatchCard;

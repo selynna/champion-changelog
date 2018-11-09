@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.champion h1, h2 {
+.champion h1, h2, h4 {
   margin: 0 5px;
 }
 
@@ -22,15 +22,34 @@
   font-size: 1em;
 }
 
+.champion h4 {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
 .championHeaderInfo {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+}
 
+.championName {
+  font-size: 48px;
+  display: flex;
+  align-items: flex-end;
+  align-conten: flex-end;
+  float: bottom;
+  line-height: 0.75em;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 .championPicture {
   height: 2em;
   width: 2em;
-  background-image: url('../assets/img/akali.png');
+  /* background-image: url('../assets/img/akali.png'); */
   background-size: 100% 100%;
   background-position: center;
 }
