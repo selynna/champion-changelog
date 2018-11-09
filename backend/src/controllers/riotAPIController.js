@@ -90,9 +90,16 @@ let getAllData = async (req, res) => {
     allData.baseStatDifferences = await getChampionDifferences(req.params.champion, longPatchId)
     let championId = await getChampionIDFromName(req.params.champion);
     allData.championChanges = await database.getAllChangesForChampionIdAfterDate(championId,allData.lastPlayed);
+    allData.championChanges.forEach((patchData) => patchData.changes = JSON.parse(patchData.changes))
     console.log(patchId, championId)
     allData.runeChanges = await database.getAllRuneChangesForChampionIdAfterPatchId(championId,patchId);
+    Object.keys(allData.runeChanges).forEach((patchKeys) => {
+        allData.runeChanges[patchKeys].forEach((rune, i) => allData.runeChanges[patchKeys][i].changes = JSON.parse(allData.runeChanges[patchKeys][i].changes))
+    })
     allData.itemChanges = await database.getAllItemChangesForChampionIdAfterPatchId(championId,patchId);
+    Object.keys(allData.itemChanges).forEach((patchKeys) => {
+        allData.itemChanges[patchKeys].forEach((rune, i) => allData.itemChanges[patchKeys][i].changes = JSON.parse(allData.itemChanges[patchKeys][i].changes))
+    })
     // console.log(await database.getAllItemChangesForPatchIdAndChampionId("8.15", "104"))
     // let items = (await database.getRelevantItemsForChampionId(championId)).map((element) => element.itemId)
     // console.log(items)
