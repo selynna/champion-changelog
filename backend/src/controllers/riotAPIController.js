@@ -21,7 +21,7 @@ let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, rej
         });
         if (!lastPlayedGame) {
             console.log("Could not find match with that champion recently, so defaulting to 12 months...");
-            resolve({lastPlayed: (new Date((Date.now()-1000*60*60*24*365)))});
+            resolve(new Date((Date.now()-1000*60*60*24*365)));
             return;
         }
         let lastPlayed = new Date(lastPlayedGame.timestamp);
@@ -79,9 +79,10 @@ let getChampionDifferences = async (championName, patchVersion) => { // get the 
 }
 
 let getAllData = async (req, res) => {
-    let allData = {runeChanges: {}, itemChanges: {}}
+    let allData = {}
     allData.lastPlayed = await lastPlayed(req.params.summoner, req.params.champion);
     console.log(allData)
+    console.log(allData.lastPlayed)
     let patchId = (await database.getCurrentPatchForDate(allData.lastPlayed))[0].id
     console.log("hello")
     console.log(patchId);
@@ -90,7 +91,9 @@ let getAllData = async (req, res) => {
     let championId = await getChampionIDFromName(req.params.champion);
     allData.championChanges = await database.getAllChangesForChampionIdAfterDate(championId,allData.lastPlayed);
     console.log(patchId, championId)
-    console.log(await database.getAllItemChangesForPatchIdAndChampionId("8.15", "104"))
+    allData.runeChanges = await database.getAllRuneChangesForChampionIdAfterPatchId(championId,patchId);
+    allData.itemChanges = await database.getAllItemChangesForChampionIdAfterPatchId(championId,patchId);
+    // console.log(await database.getAllItemChangesForPatchIdAndChampionId("8.15", "104"))
     // let items = (await database.getRelevantItemsForChampionId(championId)).map((element) => element.itemId)
     // console.log(items)
     // // console.log("runes")

@@ -1,25 +1,11 @@
 import React, { Component } from 'react';
 import styles from './Statistics.module.css';
 import Stat from './Stat';
-import Abilities from './Abilities';
 
 class Statistics extends Component {
   constructor(props) {
     super(props);
     this.state = { stats: this.props.stats };
-    this.processStats.bind(this);
-    console.log("asdf");
-    console.log(this.props.stats);
-  }
-
-  componentDidMount() {
-    this.processStats(this.state.stats);
-    console.log("stasadf");
-    console.log(this.state.stats);
-  }
-
-  processStats(stats) {
-    console.log(stats);
   }
 
   render() {

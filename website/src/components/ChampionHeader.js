@@ -5,7 +5,7 @@ class ChampionHeader extends Component {
   constructor(props) {
     super(props);
     this.state = { champData: this.props.champData };
-    this.processData.bind(this);
+    this.processData = this.processData.bind(this);
   }
 
   componentDidMount() {
@@ -15,9 +15,6 @@ class ChampionHeader extends Component {
   processData(champData) {
     console.log(champData);
 
-    {
-      /* Champion data - name, title */
-    }
     const champion = this.props.name;
     const title = champData.title;
     this.setState({ championName: champion, title: title });
