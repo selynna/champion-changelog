@@ -89,7 +89,7 @@ class Timeline extends Component {
           }
 
           if (
-            data.itemChanges[patchNum] &&
+            data.runeChanges[patchNum] &&
             data.runeChanges[patchNum].length > 0
           ) {
             if (!changes[patchNum]) {
