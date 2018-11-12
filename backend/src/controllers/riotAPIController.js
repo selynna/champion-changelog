@@ -1,6 +1,6 @@
 const needle = require("needle")
 const APIKey = 'RGAPI-7b3d9296-3300-4ff6-a4a7-b34b0e28000d';
-const database = require("../database");
+const database = require("../database/wrapper");
 let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, reject) => {
     let accountId = 1;
     try {

@@ -4,7 +4,7 @@ const needle = require("needle");
 const app = express(); //server object
 const router = express.Router();
 const riotAPIController = require("./controllers/riotAPIController");
-var database = require("./database");
+const database = require("./database/wrapper");
 
 const port = 4000;
 app.set("port", port);
