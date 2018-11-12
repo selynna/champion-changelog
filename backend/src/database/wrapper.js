@@ -1,8 +1,8 @@
-const DB = require('./base');
+var DB = require('./base');
 
 var debug = false;
 
-exports.getAllPatches = function(limit){
+exports.getAllPatches = ((limit) => {
 	return new Promise((resolve, reject) => {
 		if(!limit){
 			limit = 2147483647;
@@ -12,19 +12,19 @@ exports.getAllPatches = function(limit){
 				FROM patch
 				ORDER BY date DESC
 				LIMIT ?
-			`, [limit], function(data, error){
+			`, [limit], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getAllPatches] result: ', data);
+				if(debug) console.log('[DEBUG][getAllPatches] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getAllPatches] error: ' + error);
+				if(debug) console.log('[DEBUG][getAllPatches] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getCurrentPatchForDate = function(date){
+exports.getCurrentPatchForDate = ((date) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			(
@@ -41,19 +41,19 @@ exports.getCurrentPatchForDate = function(date){
 			)
 			ORDER BY date DESC
 			LIMIT 1
-		`, [date], function(data, error){
+		`, [date], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getCurrentPatchForDate] result: ', data);
+				if(debug) console.log('[DEBUG][getCurrentPatchForDate] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getCurrentPatchForDate] error: ' + error);
+				if(debug) console.log('[DEBUG][getCurrentPatchForDate] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getAllChangesForChampionId = function(championId, limit){
+exports.getAllChangesForChampionId = ((championId, limit) => {
 	return new Promise((resolve, reject) => {
 		if(!limit){
 			limit = 2147483647;
@@ -64,19 +64,19 @@ exports.getAllChangesForChampionId = function(championId, limit){
 			WHERE championId = ?
 			ORDER BY patchId DESC
 			LIMIT ?
-		`, [championId, limit], function(data, error){
+		`, [championId, limit], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getAllChangesForChampionId] result: ', data);
+				if(debug) console.log('[DEBUG][getAllChangesForChampionId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getAllChangesForChampionId] error: ' + error);
+				if(debug) console.log('[DEBUG][getAllChangesForChampionId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getAllChangesForChampionIdAfterDate = function(championId, date){
+exports.getAllChangesForChampionIdAfterDate = ((championId, date) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
@@ -85,57 +85,57 @@ exports.getAllChangesForChampionIdAfterDate = function(championId, date){
 			WHERE championId = ?
 			AND date > ?
 			ORDER BY patchId DESC
-		`, [championId, date], function(data, error){
+		`, [championId, date], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getAllChangesForChampionIdAfterDate] result: ', data);
+				if(debug) console.log('[DEBUG][getAllChangesForChampionIdAfterDate] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getAllChangesForChampionIdAfterDate] error: ' + error);
+				if(debug) console.log('[DEBUG][getAllChangesForChampionIdAfterDate] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getRelevantItemsForChampionId = function(championId){
+exports.getRelevantItemsForChampionId = ((championId) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
 			FROM champion_items
 			WHERE championId = ?
 			ORDER BY championId DESC
-		`, [championId], function(data, error){
+		`, [championId], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getRelevantItemsForChampionId] result: ', data);
+				if(debug) console.log('[DEBUG][getRelevantItemsForChampionId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getRelevantItemsForChampionId] error: ' + error);
+				if(debug) console.log('[DEBUG][getRelevantItemsForChampionId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getRelevantRunesForChampionId = function(championId){
+exports.getRelevantRunesForChampionId = ((championId) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
 			FROM champion_runes
 			WHERE championId = ?
 			ORDER BY runeId DESC
-		`, [championId], function(data, error){
+		`, [championId], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getRelevantRunesForChampionId] result: ', data);
+				if(debug) console.log('[DEBUG][getRelevantRunesForChampionId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getRelevantRunesForChampionId] error: ' + error);
+				if(debug) console.log('[DEBUG][getRelevantRunesForChampionId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getItemChangesForPatchIdAndItemId = function(patchId, itemId){
+exports.getItemChangesForPatchIdAndItemId = ((patchId, itemId) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
@@ -143,19 +143,19 @@ exports.getItemChangesForPatchIdAndItemId = function(patchId, itemId){
 			WHERE patchId = ?
 			AND itemId = ?
 			ORDER BY patchId DESC
-		`, [patchId, itemId], function(data, error){
+		`, [patchId, itemId], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getItemChangesForPatchIdAndItemId] result: ', data);
+				if(debug) console.log('[DEBUG][getItemChangesForPatchIdAndItemId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getItemChangesForPatchIdAndItemId] error: ' + error);
+				if(debug) console.log('[DEBUG][getItemChangesForPatchIdAndItemId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getRuneChangesForPatchIdAndRuneId = function(patchId, runeId){
+exports.getRuneChangesForPatchIdAndRuneId = ((patchId, runeId) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
@@ -163,19 +163,19 @@ exports.getRuneChangesForPatchIdAndRuneId = function(patchId, runeId){
 			WHERE patchId = ?
 			AND runeId = ?
 			ORDER BY patchId DESC
-		`, [patchId, runeId], function(data, error){
+		`, [patchId, runeId], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getRuneChangesForPatchIdAndRuneId] result: ', data);
+				if(debug) console.log('[DEBUG][getRuneChangesForPatchIdAndRuneId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getRuneChangesForPatchIdAndRuneId] error: ' + error);
+				if(debug) console.log('[DEBUG][getRuneChangesForPatchIdAndRuneId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getAllItemChangesForPatchIdAndChampionId = function(patchId, championId){
+exports.getAllItemChangesForPatchIdAndChampionId = ((patchId, championId) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
@@ -184,19 +184,19 @@ exports.getAllItemChangesForPatchIdAndChampionId = function(patchId, championId)
 			WHERE patch_item_changes.patchId = ?
 			AND champion_items.championId = ?
 			ORDER BY champion_items.itemId ASC
-		`, [patchId, championId], function(data, error){
+		`, [patchId, championId], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getAllItemChangesForPatchIdAndChampionId] result: ', data);
+				if(debug) console.log('[DEBUG][getAllItemChangesForPatchIdAndChampionId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getAllItemChangesForPatchIdAndChampionId] error: ' + error);
+				if(debug) console.log('[DEBUG][getAllItemChangesForPatchIdAndChampionId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId){
+exports.getAllRuneChangesForPatchIdAndChampionId = ((patchId, championId) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
@@ -205,19 +205,19 @@ exports.getAllRuneChangesForPatchIdAndChampionId = function(patchId, championId)
 			WHERE patch_rune_changes.patchId = ?
 			AND champion_runes.championId = ?
 			ORDER BY champion_runes.runeId ASC
-		`, [patchId, championId], function(data, error){
+		`, [patchId, championId], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getAllRuneChangesForPatchIdAndChampionId] result: ', data);
+				if(debug) console.log('[DEBUG][getAllRuneChangesForPatchIdAndChampionId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getAllRuneChangesForPatchIdAndChampionId] error: ' + error);
+				if(debug) console.log('[DEBUG][getAllRuneChangesForPatchIdAndChampionId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getAllPatchesAfterPatchId = function(patchId){
+exports.getAllPatchesAfterPatchId = ((patchId) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
 			SELECT *
@@ -228,19 +228,19 @@ exports.getAllPatchesAfterPatchId = function(patchId){
 				WHERE id = ?
 			)
 			ORDER BY date DESC
-		`, [patchId], function(data, error){
+		`, [patchId], ((data, error) => {
 			if(!error){
-				if(debug) console.log('[DEBUG][getAllPatchesAfterPatchId] result: ', data);
+				if(debug) console.log('[DEBUG][getAllPatchesAfterPatchId] result:', data);
 				resolve(data);
 			}else{
-				if(debug) console.log('[DEBUG][getAllPatchesAfterPatchId] error: ' + error);
+				if(debug) console.log('[DEBUG][getAllPatchesAfterPatchId] error:', error);
 				reject();
 			}
-		});
+		}));
 	});
-};
+});
 
-exports.getAllItemChangesForChampionIdAfterPatchId = function(championId, patchId){
+exports.getAllItemChangesForChampionIdAfterPatchId = ((championId, patchId) => {
 	return new Promise(async (resolve, reject) => {
 		let result = {};
 		let patches = await exports.getAllPatchesAfterPatchId(patchId);
@@ -250,19 +250,17 @@ exports.getAllItemChangesForChampionIdAfterPatchId = function(championId, patchI
 		}
 
 		let i = 0;
-//		console.log("PPPPPPPPPPPPPPPPPPPPPPPPPPPP", patches.length);
 		patches.forEach(async (patch) => {
 			let changes = await exports.getAllItemChangesForPatchIdAndChampionId(patch.id, championId);
 			result[patch.id] = changes;
 			if(++i == patches.length){
-//				console.log("quitterino at", i);
 				resolve(result);
 			}
 		});
 	});
-};
+});
 
-exports.getAllRuneChangesForChampionIdAfterPatchId = function(championId, patchId){
+exports.getAllRuneChangesForChampionIdAfterPatchId = ((championId, patchId) => {
 	return new Promise(async (resolve, reject) => {
 		let result = {};
 		let patches = await exports.getAllPatchesAfterPatchId(patchId);
@@ -280,7 +278,7 @@ exports.getAllRuneChangesForChampionIdAfterPatchId = function(championId, patchI
 			}
 		});
 	});
-};
+});
 
 // testing
 if(debug){

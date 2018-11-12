@@ -1,32 +1,37 @@
-const mysql = require('mysql');
-const config = require('./config');
+var mysql = require('mysql');
+var config = require('./config');
 
 var pool = mysql.createPool(config);
 
-var DB = (function(){
+var DB = (() => {
 	function _query(query, params, callback){
-		pool.getConnection(function(err, connection){
+		pool.getConnection((err, connection) => {
 			if(err){
-				connection.release();
+				if(connection && connection.release){
+					connection.release();
+				}
 				callback(null, err);
 				throw err;
 			}
 
-			connection.query(query, params, function(err, rows){
-				connection.release();
+			connection.query(query, params, ((err, rows) => {
+				if(connection && connection.release){
+					connection.release();
+				}
 				if(!err){
 					callback(rows);
 				}else{
 					callback(null, err);
 				}
+			}));
 
-			});
-
-			connection.on('error', function(err){
-				connection.release();
+			connection.on('error', ((err) => {
+				if(connection && connection.release){
+					connection.release();
+				}
 				callback(null, err);
 				throw err;
-			});
+			}));
 		});
 	};
 
