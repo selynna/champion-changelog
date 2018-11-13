@@ -24,6 +24,25 @@ exports.getAllPatches = ((limit) => {
 	});
 });
 
+exports.getCurrentPatch = (() => {
+	return new Promise((resolve, reject) => {
+		DB.query(`
+			SELECT *
+			FROM patch
+			ORDER BY date DESC
+			LIMIT 1
+		`, null, ((data, error) => {
+			if(!error){
+				if(debug) console.log('[DEBUG][getCurrentPatch] result:', data);
+				resolve(data);
+			}else{
+				if(debug) console.log('[DEBUG][getCurrentPatch] error:', error);
+				reject();
+			}
+		}));
+	});
+});
+
 exports.getCurrentPatchForDate = ((date) => {
 	return new Promise((resolve, reject) => {
 		DB.query(`
@@ -282,6 +301,9 @@ exports.getAllRuneChangesForChampionIdAfterPatchId = ((championId, patchId) => {
 
 // testing
 if(debug){
+	exports.getCurrentPatch().then((response) => {
+		console.log(response);
+	});
 //	exports.getAllPatches().then((response) => {
 //		console.log(response);
 //	});

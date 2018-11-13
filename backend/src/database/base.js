@@ -1,4 +1,4 @@
-var mysql = require('mysql');
+var mysql = require('mysql2');
 var config = require('./config');
 
 var pool = mysql.createPool(config);

@@ -1,6 +1,9 @@
-const needle = require("needle")
+var needle = require("needle")
+var database = require("../database/wrapper");
+var cache = require('./cacheController');
+
 const APIKey = 'RGAPI-7b3d9296-3300-4ff6-a4a7-b34b0e28000d';
-const database = require("../database/wrapper");
+
 let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, reject) => {
     let accountId = 1;
     try {
@@ -17,7 +20,9 @@ let lastPlayed = (summoner, champion) => {return new Promise(async (resolve, rej
             reject();
             return;
         }
-        let championId = await getChampionIDFromName(champion);
+		let currentPatchVersion = await getCurrentPatchVersion();
+		let currentChampionJson = await cache.getChampionJson(champion, currentPatchVersion);
+        let championId = currentChampionJson.data[champion].key;
         let lastPlayedGame = body.matches.find((game)=> {
             return game.champion == championId;
         });
@@ -44,23 +49,12 @@ let getAccountIDFromSummonerName = (summonerName) => { return new Promise((resol
 })
 }
 
-let getChampionIDFromName = async (championName) => { //Champion Name is case sensitive, Syndra, not syndra
-    let body = await getChampionFromDDragon(championName);
-    return body.data[championName].key;
-}
-
-let getChampionFromDDragon = (championName, patchVersion="8.22.1") => {
-    return new Promise((resolve, reject) => {
-        needle.get(`http://ddragon.leagueoflegends.com/cdn/${patchVersion}/data/en_US/champion/${championName}.json`, (error, response,body) => {
-            if (error) {
-                console.log(body);
-                reject();
-                return;
-            }
-            resolve(body);
-        })
-    })
-}
+let getCurrentPatchVersion = (async () => {
+	let currentPatch = await database.getCurrentPatch();
+	let currentPatchId = currentPatch[0].id;
+	let currentPatchVersion = currentPatchId + '.1';
+	return currentPatchVersion;
+});
 
 let statChanges = async (req, res) => {
     let stats = await getChampionDifferences(req.params.champion, req.params.patch)
@@ -68,8 +62,11 @@ let statChanges = async (req, res) => {
 }
 
 let getChampionDifferences = async (championName, patchVersion) => { // get the differences of that champion since the version
-    let currentStats = (await getChampionFromDDragon(championName)).data[championName].stats
-    let oldStats = (await getChampionFromDDragon(championName, patchVersion)).data[championName].stats
+	let currentPatchVersion = await getCurrentPatchVersion();
+	let currentChampionJson = await cache.getChampionJson(championName, currentPatchVersion);
+	let oldChampionJson = await cache.getChampionJson(championName, patchVersion);
+    let currentStats = currentChampionJson.data[championName].stats
+    let oldStats = oldChampionJson.data[championName].stats
     let statDifferences = {}
     Object.keys(currentStats).forEach((key)=> {
         let difference = currentStats[key] - oldStats[key]
@@ -86,8 +83,10 @@ let getAllData = async (req, res) => {
     allData.lastPlayedPatch = patchId;
     longPatchId = patchId+".1";
     console.log(longPatchId)
+	let currentPatchVersion = await getCurrentPatchVersion();
     allData.baseStatDifferences = await getChampionDifferences(req.params.champion, longPatchId)
-    let championId = await getChampionIDFromName(req.params.champion);
+	let currentChampionJson = await cache.getChampionJson(req.params.champion, currentPatchVersion);
+    let championId = currentChampionJson.data[req.params.champion].key;
     allData.championChanges = await database.getAllChangesForChampionIdAfterDate(championId,allData.lastPlayed);
     allData.championChanges.forEach((patchData) => {
         patchData.changes = JSON.parse(patchData.changes)
