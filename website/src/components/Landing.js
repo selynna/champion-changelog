@@ -52,18 +52,17 @@ class Landing extends Component {
                   onChange={this.handleNameChange}
                 />
               </div>
-              <button className="submit-button">
                 <Link
                   to={
                     this.state.champ && this.state.name.length > 0
                       ? `/timeline/${this.state.name}/${this.state.champ.id}`
                       : "/"
                   }
-                  style={{ textDecoration: "none", color: "White" }}
+                  style={{ textDecoration: "none", color: "White", textAlign: "center", lineHeight: "50px" }}
+                  className="submit-button"
                 >
                   Submit
                 </Link>
-              </button>
             </div>
           </div>
         </div>
