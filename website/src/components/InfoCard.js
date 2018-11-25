@@ -24,14 +24,23 @@ class InfoCard extends Component {
     const stats = {
       hp: [data.hp, data.hpperlevel, bsd.hp.statChange],
       hpRegen: [data.hpregen, data.hpregenperlevel, bsd.hpregen.statChange],
-      ad: [data.attackdamage, data.attackdamageperlevel, bsd.attackdamage.statChange],
+      ad: [
+        data.attackdamage,
+        data.attackdamageperlevel,
+        bsd.attackdamage.statChange
+      ],
       mrRegen: [data.mpregen, data.mpregenperlevel, bsd.mpregen.statChange],
-      attackSpeed: [data.attackspeed, data.attackspeedperlevel, bsd.attackspeedperlevel.statChange],
+      attackSpeed: [
+        data.attackspeed,
+        data.attackspeedperlevel,
+        bsd.attackspeedperlevel.statChange
+      ],
       armor: [data.armor, data.armorperlevel, bsd.armor.statChange],
       mr: [data.spellblock, data.spellblockperlevel, bsd.spellblock.statChange],
       movement: [data.movespeed, 0, bsd.movespeed.statChange]
     };
 
+    console.log(champData);
     for (var stat in stats) {
       let buff = "buff";
       if (stats[stat][2] === 0) {
@@ -48,15 +57,15 @@ class InfoCard extends Component {
       if (numPL.endsWith(".0")) {
         numPL = numPL.substring(0, numPL.length - 2);
       }
-      stats[stat] = [ num, numPL, buff ];
+      stats[stat] = [num, numPL, buff];
     }
 
     const abilities = [p, q, w, e, r];
     for (var i = 0; i < abilities.length; i++) {
-        var regex = /(<([^>]+)>)/ig
-        ,   body = abilities[i].description 
-        ,   result = body.replace(regex, "");
-        abilities[i].description = result;
+      var regex = /(<([^>]+)>)/gi,
+        body = abilities[i].description,
+        result = body.replace(regex, "");
+      abilities[i].description = result;
     }
 
     this.setState({ abilities: abilities, stats: stats });
@@ -67,7 +76,6 @@ class InfoCard extends Component {
       <div className={styles.infoCardWrapper}>
         <div className={styles.infoCard}>
           <Statistics stats={this.state.stats} />
-          {/* <Abilities abilities={this.state.abilities} /> */}
           <Abilities
             abilities={this.state.abilities}
             partype={this.props.champData.partype}

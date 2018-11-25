@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import styles from "./Abilities.module.css";
 
+const STATIC_URL = "https://ddragon.leagueoflegends.com/cdn/8.22.1/img";
+
 class Abilities extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      abilities: this.props.abilities,
-      currAbility: 0,
-      togglePassive: true
+      currAbility: 0
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -16,92 +16,94 @@ class Abilities extends Component {
     e.stopPropagation();
 
     const clickedClass = e.target.className.split("_")[1];
+    let currAbility;
 
     if (clickedClass === "abilityP") {
-      this.setState({
-        abilities: this.state.abilities,
-        currAbility: 0,
-        togglePassive: true
-      });
+      currAbility = 0;
     } else if (clickedClass === "abilityQ") {
-      this.setState({
-        abilities: this.state.abilities,
-        currAbility: 1,
-        togglePassive: false
-      });
+      currAbility = 1;
     } else if (clickedClass === "abilityW") {
-      this.setState({
-        abilities: this.state.abilities,
-        currAbility: 2,
-        togglePassive: false
-      });
+      currAbility = 2;
     } else if (clickedClass === "abilityE") {
-      this.setState({
-        abilities: this.state.abilities,
-        currAbility: 3,
-        togglePassive: false
-
-      });
+      currAbility = 3;
     } else if (clickedClass === "abilityR") {
-      this.setState({
-        abilities: this.state.abilities,
-        currAbility: 4,
-        togglePassive: false
-      });
+      currAbility = 4;
     }
+
+    this.setState({ currAbility });
   }
 
   render() {
-    // const { passive, spells } = this.props;
-    const togglePassive = this.state.togglePassive;
-    const abilities = this.state.abilities;
-    const ability = abilities[this.state.currAbility];
+    const { abilities } = this.props;
+    const { currAbility } = this.state;
+
+    const ability = abilities[currAbility];
     return (
       <div className={styles.abilitiesWrapper}>
         <h1 className={styles.abilitiesHeader}>Abilities</h1>
         <div className={styles.abilityIcons}>
           <div
-            className={ this.state.currAbility === 0 ? `${styles.abilityP} ${styles.abilityBorder}` : `${styles.abilityP}`}
+            className={
+              currAbility === 0
+                ? `${styles.abilityP} ${styles.abilityBorder}`
+                : `${styles.abilityP}`
+            }
             onClick={this.handleClick}
             style={{
-              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/passive/${
+              backgroundImage: `url('${STATIC_URL}/passive/${
                 abilities[0].image.full
               }')`
             }}
           />
           <div className={styles.vline} />
           <div
-            className={ this.state.currAbility === 1 ? `${styles.abilityQ} ${styles.abilityBorder}` : `${styles.abilityQ}`}
+            className={
+              currAbility === 1
+                ? `${styles.abilityQ} ${styles.abilityBorder}`
+                : `${styles.abilityQ}`
+            }
             onClick={this.handleClick}
             style={{
-              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+              backgroundImage: `url('${STATIC_URL}/spell/${
                 abilities[1].image.full
               }')`
             }}
           />
           <div
-            className={ this.state.currAbility === 2 ? `${styles.abilityW} ${styles.abilityBorder}` : `${styles.abilityW}`}
+            className={
+              currAbility === 2
+                ? `${styles.abilityW} ${styles.abilityBorder}`
+                : `${styles.abilityW}`
+            }
             onClick={this.handleClick}
             style={{
-              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+              backgroundImage: `url('${STATIC_URL}/spell/${
                 abilities[2].image.full
               }')`
             }}
           />
           <div
-            className={ this.state.currAbility === 3 ? `${styles.abilityE} ${styles.abilityBorder}` : `${styles.abilityE}`}
+            className={
+              currAbility === 3
+                ? `${styles.abilityE} ${styles.abilityBorder}`
+                : `${styles.abilityE}`
+            }
             onClick={this.handleClick}
             style={{
-              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+              backgroundImage: `url('${STATIC_URL}/spell/${
                 abilities[3].image.full
               }')`
             }}
           />
           <div
-            className={ this.state.currAbility === 4 ? `${styles.abilityR} ${styles.abilityBorder}` : `${styles.abilityR}`}
+            className={
+              currAbility === 4
+                ? `${styles.abilityR} ${styles.abilityBorder}`
+                : `${styles.abilityR}`
+            }
             onClick={this.handleClick}
             style={{
-              backgroundImage: `url('https://ddragon.leagueoflegends.com/cdn/8.22.1/img/spell/${
+              backgroundImage: `url('${STATIC_URL}/spell/${
                 abilities[4].image.full
               }')`
             }}
@@ -111,21 +113,18 @@ class Abilities extends Component {
           <div className={styles.abilityName}>
             <p>{ability.name}</p>
           </div>
-          {!togglePassive && (
+          {currAbility !== 0 ? (
             <div className={styles.costrange}>
               <div className={styles.cost}>
                 <div className={styles.costChangeIcon} />
-                <p>
-                  {/* Cost: {ability.costBurn} {ability.costType} */}
-                  {`Cost: ${ability.costBurn} ${this.props.partype}`}
-                </p>
+                <p>{`Cost: ${ability.costBurn} ${this.props.partype}`}</p>
               </div>
               <div className={styles.range}>
                 <div className={styles.rangeChangeIcon} />
                 <p>Range: {ability.rangeBurn}</p>
               </div>
             </div>
-          )}
+          ) : null}
           <div className={styles.abilityDesc}>
             <p>{ability.description}</p>
           </div>

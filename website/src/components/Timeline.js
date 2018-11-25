@@ -6,8 +6,8 @@ import HorizontalTimelineContent from "react-horizontal-timeline";
 import ChampionData from "../assets/static-data/championFull.json";
 import Loader from "react-loader";
 import PatchCard from "./PatchCard";
-import Items from '../assets/static-data/itemsFinal.json';
-import Runes from '../assets/static-data/reversedRunes.json';
+import Items from "../assets/static-data/itemsFinal.json";
+import Runes from "../assets/static-data/reversedRunes.json";
 
 import Navbar from "./Navbar";
 
@@ -49,7 +49,6 @@ class Timeline extends Component {
 
   componentDidMount() {
     // Fetch data from API
-    // Uncomment after API endpoint finished
     const { match } = this.props;
 
     fetch(
@@ -117,25 +116,9 @@ class Timeline extends Component {
   }
 
   render() {
-
     let items = { Items }.Items;
     let runes = { Runes }.Runes;
 
-    /*
-    let itemsArr = { ItemsArr }.ItemsArr.data;
-    let itemsTmp = {};
-    console.log(itemsArr);
-    for (var item in itemsArr) {
-      itemsTmp[itemsArr[item].name] = {
-        name: itemsArr[item].name,
-        id: item,
-        image: itemsArr[item].image
-      }
-    }
-
-    console.log(JSON.stringify(itemsTmp));
-    */
-    
     const { match } = this.props;
     const champion = match.params.champId;
 
@@ -161,7 +144,7 @@ class Timeline extends Component {
             style={{
               background: `linear-gradient(0deg,rgba(56,165,247, 0.8),rgba(56,165,247,0.5)),url(${bg})`,
               backgroundSize: "cover",
-              backgroundRepeat: "noRepeat"
+              backgroundRepeat: "no-repeat"
             }}
           >
             <Navbar />
@@ -202,7 +185,6 @@ class Timeline extends Component {
                           items={items}
                           runes={runes}
                         />
-
                       </div>
                     </div>
                     <HorizontalTimelineContent
