@@ -1,9 +1,9 @@
 module.exports = {
 	connectionLimit:50,
-	host:'aurora.lolskill.net',
+	host:'localhost',
 	port:3306,
-	user:'hackathon',
-	password:'yoBhM61tfxSEJCxS',
-	database:'hackathon',
+	user:'root',
+	password:'',
+	database:'riotpatchnotes',
 	charset:'UTF8_GENERAL_CI',
 };
