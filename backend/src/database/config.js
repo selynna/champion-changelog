@@ -1,9 +1,9 @@
 module.exports = {
 	connectionLimit:50,
-	host:'localhost',
+	host:'aurora.lolskill.net',
 	port:3306,
-	user:'root',
-	password:'',
-	database:'championchangelog',
-	charset:'UTF8_GENERAL_CI'
+	user:'championlog',
+	password:'koBbhCpmmRcfNC4a',
+	database:'championlog',
+	charset:'UTF8_GENERAL_CI',
 };
